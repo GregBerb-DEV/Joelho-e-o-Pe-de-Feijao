@@ -12,35 +12,39 @@ public class Controle : MonoBehaviour
     private bool _isGoingRight = true;
     private Rigidbody2D _rigidbody2D;
 
+    private void Awake()
+    {
+        _rigidbody2D = GetComponent<Rigidbody2D>();
+    }
+
     void Update()
     {
         MovePlayer();
-    }
-
-    private void LateUpdate()
-    {
         TurnPlayer();
     }
 
     void MovePlayer()
     {
         _movementHorizontalDirection = Input.GetAxis("Horizontal");
-        _rigidbody2D.velocity = new Vector2(_movementHorizontalDirection * _moveSpeed,
-                                                                     gameObject.GetComponent<Rigidbody2D>().velocity.y);
+        if (_rigidbody2D)
+            _rigidbody2D.velocity = new Vector2(_movementHorizontalDirection * _moveSpeed,
+                                                                         gameObject.GetComponent<Rigidbody2D>().velocity.y);
         if (Input.GetButtonDown("Jump"))
         {
-            pula();
+            Jump();
         }
 
     }
 
-    void pula()
+    void Jump()
     {
-        GetComponent<Rigidbody2D>().AddForce(Vector2.up * _jumpStrength);
+        if (_rigidbody2D)
+            _rigidbody2D.AddForce(Vector2.up * _jumpStrength);
     }
 
     void TurnPlayer()
     {
+        Vector2 scale = transform.localScale;
         if (_movementHorizontalDirection > 0)
         {
             _isGoingRight = true;
@@ -49,11 +53,10 @@ public class Controle : MonoBehaviour
         {
             _isGoingRight = false;
         }
-        Vector2 escala = transform.localScale;
-        if ((escala.x > 0 && !_isGoingRight) || (escala.x < 0 && _isGoingRight))
+        if ((scale.x > 0 && !_isGoingRight) || (scale.x < 0 && _isGoingRight))
         {
-            escala.x = escala.x * -1;
-            transform.localScale = escala;
+            scale.x = scale.x * -1;
+            transform.localScale = scale;
         }
     }
 }
