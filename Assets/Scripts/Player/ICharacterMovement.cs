@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface ICharacterMovement
 {
-    void PlayerMove();
-    void PlayerJump();
+    void CharacterMove();
+    void CharacterJump();
 }

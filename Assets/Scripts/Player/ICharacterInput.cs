@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface ICharacterController
+public interface ICharacterInput
 {
     float InputHorizontalMovement();
     bool InputJump();

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInput : MonoBehaviour, ICharacterController
+public class PlayerInput : MonoBehaviour, ICharacterInput
 {
     public float InputHorizontalMovement()
     {
