@@ -9,16 +9,17 @@ public class PlayerMovement : MonoBehaviour, ICharacterMovement
     [SerializeField]
     private int _jumpStrength = 1250;
     private float _movementHorizontalDirection;
-    private bool _isGoingRight = true;
     private Rigidbody2D _rigidbody2D;
     private ICharacterInput _characterInput;
     private ICharacterMovement _characterMovement;
+    private ICharacterSpriteManager _characterSpriteManager;
 
     private void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _characterInput = GetComponent<ICharacterInput>();
         _characterMovement = GetComponent<ICharacterMovement>();
+        _characterSpriteManager = GetComponent<ICharacterSpriteManager>();
     }
 
     //FixedUpdate não depende da framerate pra ser chamado
@@ -27,7 +28,7 @@ public class PlayerMovement : MonoBehaviour, ICharacterMovement
         CharacterMove();
         if (_characterInput.InputJump())
             CharacterJump();
-        TurnPlayerSprite(); //Extrair para componente no próprio sprite talvez
+        _characterSpriteManager.TurnCharacterSprite(_movementHorizontalDirection);
     }
 
     public void CharacterMove()
@@ -42,23 +43,5 @@ public class PlayerMovement : MonoBehaviour, ICharacterMovement
     {
         if (_rigidbody2D)
             _rigidbody2D.AddForce(Vector2.up * _jumpStrength);
-    }
-
-    void TurnPlayerSprite()
-    {
-        Vector2 scale = transform.localScale;
-        if (_movementHorizontalDirection > 0)
-        {
-            _isGoingRight = true;
-        }
-        else if (_movementHorizontalDirection < 0)
-        {
-            _isGoingRight = false;
-        }
-        if ((scale.x > 0 && !_isGoingRight) || (scale.x < 0 && _isGoingRight))
-        {
-            scale.x = scale.x * -1;
-            transform.localScale = scale;
-        }
     }
 }
