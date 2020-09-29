@@ -5746,7 +5746,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1324571271}
   m_Layer: 0
-  m_Name: personagem
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7081,7 +7081,7 @@ GameObject:
   - component: {fileID: 2114493355}
   - component: {fileID: 2114493358}
   m_Layer: 0
-  m_Name: Run (32x32)_0
+  m_Name: PlayerGraphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7202,8 +7202,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be7036fa379272a438754a9725661898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 7
-  forcaDoPulo: 200
+  _moveSpeed: 10
+  _jumpStrength: 1250
 --- !u!1 &2122597976
 GameObject:
   m_ObjectHideFlags: 0
