@@ -11,28 +11,29 @@ public class Controle : MonoBehaviour
     private float _movementHorizontalDirection;
     private bool _isGoingRight = true;
     private Rigidbody2D _rigidbody2D;
+    private ICharacterController _characterController;
+    private ICharacterMovement _characterMovement;
 
     private void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _characterController = GetComponent<ICharacterController>();
+        _characterMovement = GetComponent<ICharacterMovement>();
     }
 
     //FixedUpdate não depende da framerate pra ser chamado
     void FixedUpdate()
     {
-        MovePlayer();
-        TurnPlayerSprite();
+        _characterMovement.MovePlayer();
+        TurnPlayerSprite(); //Extrair para componente no próprio sprite talvez
     }
 
     void MovePlayer()
     {
-        _movementHorizontalDirection = Input.GetAxis("Horizontal");
+        _movementHorizontalDirection = _characterController.InputHorizontalMovement();
         if (_rigidbody2D)
             _rigidbody2D.velocity = new Vector2(_movementHorizontalDirection * _moveSpeed, _rigidbody2D.velocity.y);
-        if (Input.GetButtonDown("Jump"))
-        {
-            Jump();
-        }
+        _characterController.InputJump();
 
     }
 
