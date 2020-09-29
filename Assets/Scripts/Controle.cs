@@ -27,8 +27,7 @@ public class Controle : MonoBehaviour
     {
         _movementHorizontalDirection = Input.GetAxis("Horizontal");
         if (_rigidbody2D)
-            _rigidbody2D.velocity = new Vector2(_movementHorizontalDirection * _moveSpeed,
-                                                                         gameObject.GetComponent<Rigidbody2D>().velocity.y);
+            _rigidbody2D.velocity = new Vector2(_movementHorizontalDirection * _moveSpeed, _rigidbody2D.velocity.y);
         if (Input.GetButtonDown("Jump"))
         {
             Jump();
