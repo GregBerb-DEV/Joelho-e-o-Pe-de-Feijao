@@ -17,10 +17,11 @@ public class Controle : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    //FixedUpdate não depende da framerate pra ser chamado
+    void FixedUpdate()
     {
         MovePlayer();
-        TurnPlayer();
+        TurnPlayerSprite();
     }
 
     void MovePlayer()
@@ -41,7 +42,7 @@ public class Controle : MonoBehaviour
             _rigidbody2D.AddForce(Vector2.up * _jumpStrength);
     }
 
-    void TurnPlayer()
+    void TurnPlayerSprite()
     {
         Vector2 scale = transform.localScale;
         if (_movementHorizontalDirection > 0)
