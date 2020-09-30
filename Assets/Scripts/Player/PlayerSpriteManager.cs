@@ -6,6 +6,7 @@ public class PlayerSpriteManager : MonoBehaviour, ICharacterSpriteManager
 {
     private GameObject _playerSprite;
 
+
     void Awake()
     {
         _playerSprite = GetComponentInChildren<SpriteRenderer>().gameObject;
