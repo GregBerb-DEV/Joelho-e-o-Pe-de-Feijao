@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ZonaMortal : MonoBehaviour
+public class KillOnCollision : MonoBehaviour
 {
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<Saude>().danoMax();
+            other.gameObject.GetComponent<PlayerHealth>().Kill();
         }
         else
         {

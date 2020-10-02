@@ -4,40 +4,40 @@ using UnityEngine;
 
 public class IAInimigoRonda : MonoBehaviour
 {
-    public GameObject inimigo;
+    [SerializeField]
+    private GameObject inimigo;
+    [SerializeField]
+    private GameObject[] pontos;
+    [SerializeField]
+    private float velocidade = 5f;
+    [SerializeField]
+    private float espera = 2f;
+    [SerializeField]
+    private bool loop = true;
+    [SerializeField]
+    private bool atacando = false;
+    private int i = 0;
+    private float proxTempo;
+    private bool seMovendo = true;
 
-    public GameObject[] pontos;
-
-    public float velocidade = 5f;
-    public float espera = 2f;
-
-    public bool loop = true;
-    public bool atacando = false;
-
-    private Transform transform;
-    int i = 0;
-    float proxTempo;
-    bool seMovendo = true;
-
-    Animator animator;
-    Saude saude;
+    PlayerAnimation _playerAnimation;
+    PlayerHealth _playerHealth;
 
     // Start is called before the first frame update
     void Start()
     {
-        transform = inimigo.transform;
         proxTempo = 0f;
         seMovendo = true;
-        animator = inimigo.GetComponent<Animator>();
-        saude = gameObject.GetComponent<Saude>();
+        _playerAnimation = inimigo.GetComponent<PlayerAnimation>();
+        _playerHealth = gameObject.GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!saude.morto)
+        if (!_playerHealth.IsDead)
         {
-            if(Time.time >= proxTempo)
+            if (Time.time >= proxTempo)
             {
                 if (!seMovendo)
                 {
@@ -57,20 +57,20 @@ public class IAInimigoRonda : MonoBehaviour
     void movimenta()
     {
 
-        if((pontos.Length != 0) && (seMovendo))
+        if ((pontos.Length != 0) && (seMovendo))
         {
             transform.position = Vector3.MoveTowards(transform.position,
                                                        pontos[i].transform.position,
                                                        velocidade * Time.deltaTime);
 
-            animator.SetBool("Running", true);
+            //Setar animação pra correr
 
-            if(Vector3.Distance(pontos[i].transform.position, transform.position) <= 0.1)
+            if (Vector3.Distance(pontos[i].transform.position, transform.position) <= 0.1)
             {
                 i++;
                 proxTempo = Time.time + espera;
                 seMovendo = false;
-                animator.SetBool("Running", false);
+                //Setar animação pra andar
             }
 
             if (i >= pontos.Length)
@@ -97,7 +97,7 @@ public class IAInimigoRonda : MonoBehaviour
     {
         if (!atacando)
         {
-            animator.SetTrigger("Attack");
+            //Setar animação pra atacar
 
         }
     }
