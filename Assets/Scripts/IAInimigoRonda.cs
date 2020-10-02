@@ -97,8 +97,7 @@ public class IAInimigoRonda : MonoBehaviour
     {
         if (!atacando)
         {
-            //Setar animação pra atacar
-
+            SetBool("Attacking", true)
         }
     }
 }
