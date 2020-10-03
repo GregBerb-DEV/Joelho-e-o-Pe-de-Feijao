@@ -6,14 +6,7 @@ public class KillOnCollision : MonoBehaviour
 {
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "Player")
-        {
-            other.gameObject.GetComponent<PlayerHealth>().Kill();
-        }
-        else
-        {
-            Object.Destroy(other.gameObject);
-        }
+        if(other.gameObject.GetComponent<IHaveHealth>() != null)
+            other.gameObject.GetComponent<IHaveHealth>().Kill();
     }
-
 }

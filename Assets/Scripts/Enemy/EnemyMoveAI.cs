@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IAInimigoRonda : MonoBehaviour
+public class EnemyMoveAI : MonoBehaviour
 {
     [SerializeField]
-    private GameObject _enemyGameObject
+    private GameObject _enemyGameObject;
     [SerializeField]
     private GameObject[] _nodes;
     [SerializeField]
@@ -21,6 +21,7 @@ public class IAInimigoRonda : MonoBehaviour
     private bool _isMoving = true;
     private PlayerAnimation _playerAnimation;
     private PlayerHealth _playerHealth;
+    private EnemyAttack _enemyAttack;
 
     void Start()
     {
@@ -28,6 +29,8 @@ public class IAInimigoRonda : MonoBehaviour
         _isMoving = true;
         _playerAnimation = _enemyGameObject.GetComponent<PlayerAnimation>();
         _playerHealth = GetComponent<PlayerHealth>();
+        _enemyAttack = GetComponent<EnemyAttack>();
+
     }
 
     void Update()
@@ -36,68 +39,60 @@ public class IAInimigoRonda : MonoBehaviour
         {
             if (Time.time >= _nextTimeToMove)
             {
-                if (!_isMoving)
-                {
-                    Vector2 enemyScale = transform.localScale;
-                    enemyScale.x = enemyScale.x * -1;
-                    transform.localScale = enemyScale;
-                    _isMoving = true;
-                }
+                CheckIfTurn();
             }
-            if (!_isAttacking)
+            if (!_enemyAttack.IsAttacking)
             {
                 MoveToNextNode();
             }
         }
     }
 
-    void MoveToNextNode()
-    {
+    void CheckIfTurn(){
 
-        if ((_nodes.Length != 0) && (_isMoving))
+        if (!_isMoving)
         {
+            Vector2 enemyScale = transform.localScale;
+            enemyScale.x = enemyScale.x * -1;
+            transform.localScale = enemyScale;
+            _isMoving = true;
+        }   
+    }
+
+    void MoveToNextNode(){
+        if ((_nodes.Length != 0) && (_isMoving)){
             transform.position = Vector3.MoveTowards(transform.position,
                                                        _nodes[_currentNodeIndex].transform.position,
                                                        _enemySpeed
-                                                 * Time.deltaTime);
-
+                                                    * Time.deltaTime);
+                                                 
             //Setar animação pra correr
+            CheckIfIsOnNode(); // nome horrivel
+            CheckIfLoop();
+        }
+    }
 
-            if (Vector3.Distance(_nodes[_currentNodeIndex].transform.position, transform.position) <= 0.1)
+    void CheckIfIsOnNode(){
+        if (Vector3.Distance(_nodes[_currentNodeIndex].transform.position, transform.position) <= 0.1)
+        {
+            _currentNodeIndex++;
+            _nextTimeToMove = Time.time + _waitTimeBetweenLoops;
+            _isMoving = false;
+            //Setar animação pra andar
+        }
+    }
+    void CheckIfLoop(){
+
+        if (_currentNodeIndex >= _nodes.Length)
+        {
+            if (_willLoopNodes)
             {
-                _currentNodeIndex++;
-                _nextTimeToMove = Time.time + _waitTimeBetweenLoops
-        ;
+                _currentNodeIndex = 0;
+            }
+            else
+            {
                 _isMoving = false;
-                //Setar animação pra andar
             }
-
-            if (_currentNodeIndex >= _nodes.Length)
-            {
-                if (_willLoopNodes)
-                {
-                    _currentNodeIndex = 0;
-                }
-                else
-                {
-                    _isMoving = false;
-                }
-            }
-        }
-    }
-
-    void OnTriggerStay2D(Collider2D outro)
-    {
-        if (outro.gameObject.tag == "Player")
-        {
-            Attack();
-        }
-    }
-    void Attack()
-    {
-        if (!_isAttacking)
-        {
-            //Setar animação pra atacar
         }
     }
 }

@@ -41,6 +41,6 @@ public class PlayerAnimation : MonoBehaviour
 
     public void PlayDeathAnimation()
     {
-        _animator.SetTrigger("Die");
+        _animator.SetTrigger("IsDead");
     }
 }
