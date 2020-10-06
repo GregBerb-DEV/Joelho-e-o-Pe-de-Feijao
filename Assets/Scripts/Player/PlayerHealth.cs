@@ -18,6 +18,7 @@ public class PlayerHealth : MonoBehaviour, IHaveHealth
 
     public void TakeDamage(int damageTaken)
     {
+        _playerAnimation.SetDamageTrigger();
         _playerHealth -= damageTaken;
         if (_playerHealth <= 0)
             Kill();

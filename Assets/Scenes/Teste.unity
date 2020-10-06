@@ -8155,7 +8155,6 @@ GameObject:
   - component: {fileID: 1664894658}
   - component: {fileID: 1664894664}
   - component: {fileID: 1664894663}
-  - component: {fileID: 1664894660}
   - component: {fileID: 1664894662}
   - component: {fileID: 1664894659}
   - component: {fileID: 1664894674}
@@ -8171,7 +8170,7 @@ GameObject:
   - component: {fileID: 1664894661}
   - component: {fileID: 1664894675}
   m_Layer: 0
-  m_Name: Sapo
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8214,18 +8213,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1664894660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1664894657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4f7475ddfc04a42960d7ff0ff91813, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1664894661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8315,7 +8302,7 @@ SpriteRenderer:
   m_SortingLayerID: -1716579017
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7166236263522030466, guid: e362bc6a7c79fce4db16d145d43a5550, type: 3}
+  m_Sprite: {fileID: -523671021743979066, guid: 641e16871e9ab4d48bdeb0056fa462df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
