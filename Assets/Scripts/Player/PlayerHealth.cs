@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour, IHaveHealth
         _playerHealth = 0;
         IsDead = true;
         StartCoroutine(PlayerDeath());
-        }
+        
     }
 
     IEnumerator PlayerDeath()

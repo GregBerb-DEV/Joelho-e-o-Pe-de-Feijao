@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public interface IHaveHealth{
-    void TakeDamage();
+    void TakeDamage(int damageTaken);
     void Kill();
 }
 
