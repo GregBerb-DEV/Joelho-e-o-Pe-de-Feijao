@@ -96,5 +96,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  lifeTime: 2
-  destroyEffect: {fileID: 0}
+  lifeTime: 0.3
+  distance: 2
+  WhatIsSolid:
+    serializedVersion: 2
+    m_Bits: 512
+  destroyEffect: {fileID: 5290929973403201724, guid: 7c9e51af05e0fd2499966f1adf72188a, type: 3}

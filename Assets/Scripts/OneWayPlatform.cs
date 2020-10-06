@@ -32,9 +32,7 @@ public class OneWayPlatform : MonoBehaviour
             }
         }
 
-        if(Input.GetButtonDown("Jump")){
-            Debug.Log("entrou");
+        if(Input.GetButtonDown("Jump"))
             effector.rotationalOffset = 0f;
-        }
     }
 }
