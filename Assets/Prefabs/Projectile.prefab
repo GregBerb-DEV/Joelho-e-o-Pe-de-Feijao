@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4362164328708466}
   - component: {fileID: 212255098341365152}
   - component: {fileID: 4087242530920187097}
+  - component: {fileID: 246793517}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -102,3 +103,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   destroyEffect: {fileID: 5290929973403201724, guid: 7c9e51af05e0fd2499966f1adf72188a, type: 3}
+--- !u!58 &246793517
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385549284409674}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.08
