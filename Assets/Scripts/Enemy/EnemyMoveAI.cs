@@ -27,9 +27,9 @@ public class EnemyMoveAI : MonoBehaviour
     {
         _nextTimeToMove = 0f;
         _isMoving = true;
-        _enemyAnimation = GetComponentInChildren<EnemyAnimation>();
-        _enemyHealth = GetComponentInChildren<EnemyHealth>();
-        _enemyAttack = GetComponentInChildren<EnemyAttack>();
+        _enemyAnimation = GetComponent<EnemyAnimation>();
+        _enemyHealth = GetComponent<EnemyHealth>();
+        _enemyAttack = GetComponent<EnemyAttack>();
 
     }
 
@@ -76,7 +76,7 @@ public class EnemyMoveAI : MonoBehaviour
 
     void CheckIfIsOnNode(){
         Debug.Log("check if is on node 1");
-        if (Vector3.Distance(_nodes[_currentNodeIndex].transform.position, _enemyGameObject.transform.position) <= 2)
+        if (Vector3.Distance(_nodes[_currentNodeIndex].transform.position, _enemyGameObject.transform.position) <= 0.001)
         {
             _currentNodeIndex++;
             _nextTimeToMove = Time.time + _waitTimeBetweenLoops;

@@ -6,7 +6,10 @@ public class EnemyAttack : MonoBehaviour {
 
     public bool IsAttacking = false;
     private float _waitTime = 1.0f;
+    [SerializeField]
+    private int _forca = 5;
     private EnemyAnimation _enemyAnimation;
+
 
     void Start(){
         _enemyAnimation = GetComponent<EnemyAnimation>();
@@ -16,13 +19,18 @@ public class EnemyAttack : MonoBehaviour {
     void OnTriggerStay2D(Collider2D outro)
     {
         if (outro.gameObject.tag == "Player")
-            Attack();
+            Attack(outro);
     }
 
-    void Attack()
+    void Attack(Collider2D outro)
     {
         if (!IsAttacking)
         {
+            if(outro.gameObject.GetComponent<PlayerHealth>()){
+                PlayerHealth playerHealth = outro.gameObject.GetComponent<PlayerHealth>();
+                playerHealth.TakeDamage(_forca);                
+            }
+
             StartCoroutine(WaitAttack());
         }
     }
