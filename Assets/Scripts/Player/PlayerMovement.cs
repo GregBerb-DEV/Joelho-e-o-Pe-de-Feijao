@@ -12,11 +12,17 @@ public class PlayerMovement : MonoBehaviour
     private Transform groundTransform;
     [SerializeField]
     private LayerMask groundLayer;
+    [SerializeField]
+    private GameObject LandParticle;
+
+    //dustEffect
 
     private float horizontalMovement;
     private bool isPlayerOnGround;
     private bool isJumpButton;
     private bool extraJump;
+    private bool land;
+
     private Rigidbody2D _rigidbody2D;
     private PlayerAnimation _playerAnimation;
     private PlayerInput _playerInput;
@@ -39,8 +45,8 @@ public class PlayerMovement : MonoBehaviour
         isJumpButton = _playerInput.GetJumpButton();
         PlayerJump();
         _playerSpriteHandler.TurnPlayer(horizontalMovement);
-        isPlayerOnGround = Physics2D.Linecast(transform.position, groundTransform.position, groundLayer);
-        _playerAnimation.SetOnGroundTrigger(isPlayerOnGround);
+
+        SetIfIsOnGround();
         GetExtraJump();
         PlayerMove();
     }
@@ -56,9 +62,14 @@ public class PlayerMovement : MonoBehaviour
     {
         if ((isJumpButton && isPlayerOnGround)){
             _rigidbody2D.velocity = Vector2.up * jumpStrength;
+            if(LandParticle)
+                Instantiate(LandParticle, groundTransform.position, Quaternion.identity);
         } else if(isJumpButton && extraJump){
+            _playerAnimation.SetDoubleJumping(true);
+            Debug.Log("setei pra true");
             _rigidbody2D.velocity = Vector2.up * jumpStrength;
             extraJump = false;
+            
         }
     }
 
@@ -66,4 +77,27 @@ public class PlayerMovement : MonoBehaviour
         if(isPlayerOnGround)
             extraJump = true;
     }
+
+    void SetIfIsOnGround(){
+        isPlayerOnGround = Physics2D.Linecast(transform.position, groundTransform.position, groundLayer);
+        _playerAnimation.SetOnGroundBool(isPlayerOnGround);
+
+        if(isPlayerOnGround){
+            _playerAnimation.SetDoubleJumping(false);
+            Land();
+
+        }else{
+            land = true;
+        }  
+    }
+
+    void Land(){
+        if(land){
+            _playerAnimation.SetCamShakeTrigger();
+            if(LandParticle)
+                Instantiate(LandParticle, groundTransform.position, Quaternion.identity);
+            land = false;
+        }
+    }
+
 }

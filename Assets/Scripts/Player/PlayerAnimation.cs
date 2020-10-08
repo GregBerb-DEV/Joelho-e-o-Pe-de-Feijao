@@ -6,10 +6,12 @@ public class PlayerAnimation : MonoBehaviour
 {
     private Animator _animator;
     private const string ATTACK_BOOL = "Attack";
-    private const string ON_GROUND_TRIGGER = "OnGround";
+    private const string ON_GROUND_BOOL = "OnGround";
     private const string RUNNING_BOOL = "Running";
     private const string IS_DEAD_TRIGGER = "IsDead";
     private const string TAKE_DAMAGE_TRIGGER = "TakeDamage";
+    private const string DOUBLE_JUMPING_BOOL = "DoubleJump";
+    private const string CAM_SHAKE_TRIGGER = "CamShake";
 
     // Start is called before the first frame update
     void Start()
@@ -22,14 +24,19 @@ public class PlayerAnimation : MonoBehaviour
         _animator.SetBool(ATTACK_BOOL, true);
     }
 
-    public void SetOnGroundTrigger(bool onGround)
+    public void SetOnGroundBool(bool onGround)
     {
-        _animator.SetBool(ON_GROUND_TRIGGER, onGround);
+        _animator.SetBool(ON_GROUND_BOOL, onGround);
     }
 
     public void SetRunning(bool isRunning)
     {
         _animator.SetBool(RUNNING_BOOL, isRunning);
+    }
+
+    public void SetDoubleJumping(bool isJumping)
+    {
+        _animator.SetBool(DOUBLE_JUMPING_BOOL, isJumping);
     }
 
     public void CheckForRunning(float movementDirection)
@@ -44,13 +51,21 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
+
     public void PlayDeathAnimation()
     {
         _animator.SetTrigger(IS_DEAD_TRIGGER);
     }
 
+
     public void SetDamageTrigger()
     {
         _animator.SetTrigger(TAKE_DAMAGE_TRIGGER);
     }
+
+    public void SetCamShakeTrigger(){
+        _animator.SetTrigger(CAM_SHAKE_TRIGGER);
+    }
+
+
 }
