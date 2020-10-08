@@ -3293,6 +3293,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5418516197396271905, guid: f84ec63adb02d7840a23adf1d9424d4f, type: 3}
+      propertyPath: jumpStrength
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5418516197396271913, guid: f84ec63adb02d7840a23adf1d9424d4f, type: 3}
       propertyPath: m_Name
       value: Player

@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float playerSpeed = 10;
     [SerializeField]
-    private float jumpStrength = 800;
+    private float jumpStrength = 50;
     [SerializeField]
     private Transform groundTransform;
     [SerializeField]
@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private float horizontalMovement;
     private bool isPlayerOnGround;
     private bool isJumpButton;
+    private bool extraJump;
     private Rigidbody2D _rigidbody2D;
     private PlayerAnimation _playerAnimation;
     private PlayerInput _playerInput;
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        extraJump = true;
         _playerAnimation = GetComponent<PlayerAnimation>();
         _playerInput = GetComponent<PlayerInput>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
@@ -39,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
         _playerSpriteHandler.TurnPlayer(horizontalMovement);
         isPlayerOnGround = Physics2D.Linecast(transform.position, groundTransform.position, groundLayer);
         _playerAnimation.SetOnGroundTrigger(isPlayerOnGround);
+        GetExtraJump();
         PlayerMove();
     }
 
@@ -51,7 +54,16 @@ public class PlayerMovement : MonoBehaviour
 
     void PlayerJump()
     {
-        if (isJumpButton && isPlayerOnGround)
-            _rigidbody2D.AddForce(Vector2.up * jumpStrength);
+        if ((isJumpButton && isPlayerOnGround)){
+            _rigidbody2D.velocity = Vector2.up * jumpStrength;
+        } else if(isJumpButton && extraJump){
+            _rigidbody2D.velocity = Vector2.up * jumpStrength;
+            extraJump = false;
+        }
+    }
+
+    void GetExtraJump(){
+        if(isPlayerOnGround)
+            extraJump = true;
     }
 }
