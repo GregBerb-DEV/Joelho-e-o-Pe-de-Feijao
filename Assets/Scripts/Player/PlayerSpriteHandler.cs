@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerSpriteHandler : MonoBehaviour
 {
     private Vector2 escala;
-    private bool isRight = true;
+    public bool isRight = true;
 
     public void TurnPlayer(float movementDirection)
     {

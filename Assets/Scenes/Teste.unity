@@ -2231,6 +2231,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!4 &1256331645 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5418516196904713139, guid: f84ec63adb02d7840a23adf1d9424d4f, type: 3}
+  m_PrefabInstance: {fileID: 5418516195739244008}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1470823755
 GameObject:
   m_ObjectHideFlags: 0
@@ -3032,6 +3037,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5418516197396271913, guid: f84ec63adb02d7840a23adf1d9424d4f, type: 3}
   m_PrefabInstance: {fileID: 5418516195739244008}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1664894658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664894657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dece72e60250d9d45ac449f7652b57fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1385549284409674, guid: 486f42fcb063b4b4fa79b395c40825eb, type: 3}
+  shotPoint: {fileID: 1256331645}
+  startTimeBtwShots: 0.5
 --- !u!1 &1865564661
 GameObject:
   m_ObjectHideFlags: 0
@@ -3345,5 +3365,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5418516197396271931, guid: f84ec63adb02d7840a23adf1d9424d4f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f84ec63adb02d7840a23adf1d9424d4f, type: 3}
