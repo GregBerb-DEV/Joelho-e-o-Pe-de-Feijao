@@ -10,7 +10,7 @@ public class Shot : MonoBehaviour
 
     private float timeBtwShots;
     public float startTimeBtwShots = 0.5f;
-    private bool side;
+    public bool side;
     private int quaternionZ;
 
 
@@ -22,15 +22,9 @@ public class Shot : MonoBehaviour
     void Update()
     {
         IsSide();
-        if(timeBtwShots <= 0){
-            if (Input.GetMouseButtonDown(0)){
-                Instantiate(projectile, shotPoint.position, Quaternion.Euler(0,0,quaternionZ));
-                timeBtwShots = startTimeBtwShots;
-            } 
-        } else {
-                timeBtwShots -= Time.deltaTime;
-        }
+        WhaitBtwShot();
     }
+
 
     void IsSide(){
         side = _playerSpriteHandler.isRight;
@@ -38,6 +32,18 @@ public class Shot : MonoBehaviour
             quaternionZ = 0;
         }else{
             quaternionZ = 90;
+        }
+    }
+
+
+    void WhaitBtwShot(){
+        if(timeBtwShots <= 0){
+            if (Input.GetMouseButtonDown(0)){
+                Instantiate(projectile, shotPoint.position, Quaternion.Euler(0,0,quaternionZ));
+                timeBtwShots = startTimeBtwShots;
+            } 
+        } else {
+                timeBtwShots -= Time.deltaTime;
         }
     }
 }

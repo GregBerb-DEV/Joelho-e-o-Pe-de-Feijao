@@ -14,25 +14,36 @@ public class Pojectile : MonoBehaviour
     public LayerMask WhatIsSolid;
     public GameObject destroyEffect;
 
+
     private void Start(){
         Invoke("DestroyProjectile", lifeTime);
 
     }
+
+
     void Update()
     {
-
         RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.up, distance, WhatIsSolid);
-        if (hitInfo.collider != null){
-            Debug.Log("hit collider != null");
-            if (hitInfo.collider.CompareTag("inimigo")){
-                Debug.Log("compareTag == inimigo");
-                hitInfo.collider.GetComponent<EnemyHealth>().TakeDamage(damage);
-
-            }
-            DestroyProjectile();
-        }
+        HitSomething(hitInfo);
         transform.Translate(transform.right * speed * Time.deltaTime);
     }
+
+
+    void HitSomething(RaycastHit2D hitInfo){
+        if (hitInfo.collider != null){
+            HitEnemy(hitInfo);
+            DestroyProjectile();
+        }
+
+    }
+
+
+    void HitEnemy(RaycastHit2D hitInfo){
+        if (hitInfo.collider.CompareTag("inimigo")){
+            hitInfo.collider.GetComponent<EnemyHealth>().TakeDamage(damage);
+        }
+    }
+
 
     void DestroyProjectile() {
         if(destroyEffect)
