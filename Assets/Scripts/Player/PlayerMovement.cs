@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     private PlayerInput _playerInput;
     private PlayerSpriteHandler _playerSpriteHandler;
     private PlayerAttack _playerAttack;
+    private Shot _shot;
 
     void Start()
     {
@@ -37,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _playerSpriteHandler = GetComponent<PlayerSpriteHandler>();
         _playerAttack = GetComponent<PlayerAttack>();
+        _shot = GetComponent<Shot>();
     }
 
     void Update()
@@ -66,8 +68,8 @@ public class PlayerMovement : MonoBehaviour
                 Instantiate(LandParticle, groundTransform.position, Quaternion.identity);
         } else if(isJumpButton && extraJump){
             _playerAnimation.SetDoubleJumping(true);
-            Debug.Log("setei pra true");
             _rigidbody2D.velocity = Vector2.up * jumpStrength;
+            _shot.ShotDoubleJump();
             extraJump = false;
             
         }

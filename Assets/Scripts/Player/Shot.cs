@@ -10,7 +10,7 @@ public class Shot : MonoBehaviour
 
     private float timeBtwShots;
     public float startTimeBtwShots = 0.5f;
-    public bool side;
+    public bool right;
     private int quaternionZ;
 
 
@@ -27,8 +27,8 @@ public class Shot : MonoBehaviour
 
 
     void IsSide(){
-        side = _playerSpriteHandler.isRight;
-        if(side){
+        right = _playerSpriteHandler.isRight;
+        if(right){
             quaternionZ = 0;
         }else{
             quaternionZ = 90;
@@ -45,5 +45,9 @@ public class Shot : MonoBehaviour
         } else {
                 timeBtwShots -= Time.deltaTime;
         }
+    }
+
+    public void ShotDoubleJump(){
+        Instantiate(projectile, shotPoint.position, Quaternion.Euler(0,0,135));
     }
 }
