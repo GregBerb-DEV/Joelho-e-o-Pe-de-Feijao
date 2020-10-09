@@ -9,11 +9,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float _jumpStrength = 15;
     [SerializeField]
-    private Transform _groundTransform;
+    private Transform _groundTransform = default;
     [SerializeField]
-    private LayerMask _groundLayer;
+    private LayerMask _groundLayer = default;
     [SerializeField]
-    private GameObject _landParticle;
+    private GameObject _landParticle = default;
     private float _horizontalMovement;
     private bool _isPlayerOnGround;
     private bool isJumpButtonPressed;

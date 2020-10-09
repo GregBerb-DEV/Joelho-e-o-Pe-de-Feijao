@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAttack : MonoBehaviour {
+public class EnemyAttack : MonoBehaviour
+{
 
     public bool IsAttacking = false;
-    private float _waitTime = 1.0f;
     [SerializeField]
     private int _forca = 5;
     private EnemyAnimation _enemyAnimation;
 
 
-    void Start(){
+    void Start()
+    {
         _enemyAnimation = GetComponent<EnemyAnimation>();
     }
 
@@ -26,16 +27,18 @@ public class EnemyAttack : MonoBehaviour {
     {
         if (!IsAttacking)
         {
-            if(outro.gameObject.GetComponent<PlayerHealth>()){
+            if (outro.gameObject.GetComponent<PlayerHealth>())
+            {
                 PlayerHealth playerHealth = outro.gameObject.GetComponent<PlayerHealth>();
-                playerHealth.TakeDamage(_forca);                
+                playerHealth.TakeDamage(_forca);
             }
 
             StartCoroutine(WaitAttack());
         }
     }
 
-    IEnumerator WaitAttack(){
+    IEnumerator WaitAttack()
+    {
         IsAttacking = true;
         _enemyAnimation.EnemyAttack();
         yield return new WaitForSeconds(1f);

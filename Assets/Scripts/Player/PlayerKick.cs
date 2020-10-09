@@ -9,7 +9,7 @@ public class PlayerKick : MonoBehaviour
     [SerializeField]
     private string _enemyTag = "inimigo";
     [SerializeField]
-    private GameObject _explosionEffect;
+    private GameObject _explosionEffect = default;
 
     private void OnTriggerEnter2D(Collider2D other)
     {

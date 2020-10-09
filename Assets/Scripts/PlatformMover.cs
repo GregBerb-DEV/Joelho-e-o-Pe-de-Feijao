@@ -7,7 +7,7 @@ public class PlatformMover : MonoBehaviour
     [SerializeField]
     private GameObject _platformObject;
     [SerializeField]
-    private GameObject[] _followNodes;
+    private GameObject[] _followNodes = default;
 
     [SerializeField]
     private float _moveSpeed = 5f;

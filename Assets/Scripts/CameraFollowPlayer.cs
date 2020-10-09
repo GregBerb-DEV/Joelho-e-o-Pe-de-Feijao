@@ -6,15 +6,15 @@ public class CameraFollowPlayer : MonoBehaviour
 {
 
     [SerializeField]
-    private GameObject player;
+    private GameObject player = default;
     [SerializeField]
-    private float xMax;
+    private float xMax = default;
     [SerializeField]
-    private float xMin;
+    private float xMin = default;
     [SerializeField]
-    private float yMax;
+    private float yMax = default;
     [SerializeField]
-    private float yMin;
+    private float yMin = default;
 
     // Update is called once per frame
     void LateUpdate()

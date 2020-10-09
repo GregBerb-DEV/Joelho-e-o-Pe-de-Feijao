@@ -5,17 +5,15 @@ using UnityEngine;
 public class EnemyMoveAI : MonoBehaviour
 {
     [SerializeField]
-    private GameObject _enemyGameObject;
+    private GameObject _enemyGameObject = default;
     [SerializeField]
-    private GameObject[] _nodes;
+    private GameObject[] _nodes = default;
     [SerializeField]
     private float _enemySpeed = 5f;
     [SerializeField]
     private float _waitTimeBetweenLoops = 2f;
     [SerializeField]
     private bool _willLoopNodes = true;
-    [SerializeField]
-    private bool _isAttacking = false;
     private int _currentNodeIndex = 0;
     private float _nextTimeToMove;
     private bool _isMoving = true;
@@ -43,13 +41,13 @@ public class EnemyMoveAI : MonoBehaviour
             }
             if (!_enemyAttack.IsAttacking)
             {
-                Debug.Log("Is attacking");
                 MoveToNextNode();
             }
         }
     }
 
-    void CheckIfTurn(){
+    void CheckIfTurn()
+    {
 
         if (!_isMoving)
         {
@@ -57,35 +55,36 @@ public class EnemyMoveAI : MonoBehaviour
             enemyScale.x = enemyScale.x * -1;
             transform.localScale = enemyScale;
             _isMoving = true;
-        }   
+        }
     }
 
-    void MoveToNextNode(){
-        if ((_nodes.Length != 0) && (_isMoving)){
+    void MoveToNextNode()
+    {
+        if ((_nodes.Length != 0) && (_isMoving))
+        {
             transform.position = Vector3.MoveTowards(_enemyGameObject.transform.position,
                                                        _nodes[_currentNodeIndex].transform.position,
                                                        _enemySpeed
                                                     * Time.deltaTime);
-                                                 
+
             //Setar animação pra correr
-            Debug.Log("Move to next");
             CheckIfIsOnNode(); // nome horrivel
             CheckIfLoop();
         }
     }
 
-    void CheckIfIsOnNode(){
-        Debug.Log("check if is on node 1");
+    void CheckIfIsOnNode()
+    {
         if (Vector3.Distance(_nodes[_currentNodeIndex].transform.position, _enemyGameObject.transform.position) <= 0.001)
         {
             _currentNodeIndex++;
             _nextTimeToMove = Time.time + _waitTimeBetweenLoops;
             _isMoving = false;
             //Setar animação pra andar
-            Debug.Log("check if is on node 2");
         }
     }
-    void CheckIfLoop(){
+    void CheckIfLoop()
+    {
 
         if (_currentNodeIndex >= _nodes.Length)
         {
