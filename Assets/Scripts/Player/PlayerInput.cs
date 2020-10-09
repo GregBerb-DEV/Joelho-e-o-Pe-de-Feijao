@@ -4,44 +4,44 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    private const string HORIZONTAL_AXIS = "HorizontalMovement";
+    private const string HORIZONTAL_AXIS = "Horizontal";
     private const string JUMP_BUTTON = "Jump";
     private const string KICK_BUTTON = "Kick";
     private const string SHOOT_BUTTON = "Shoot";
     private const string PAUSE_BUTTON = "Pause";
     private const string NEXT_HAT_BUTTON = "NextHat";
     private const string PREVIOUS_HAT_BUTTON = "PreviousHat";
-    public bool CheckForKickButton()
-    {
-        return Input.GetButtonDown(KICK_BUTTON);
-    }
 
     public float GetHorizontalMovement()
     {
         return Input.GetAxisRaw(HORIZONTAL_AXIS);
     }
 
-    public bool GetJumpButton()
+    public bool CheckForKickButton()
     {
-        return Input.GetKeyDown(JUMP_BUTTON);
+        return Input.GetButtonDown(KICK_BUTTON);
+    }
+    public bool CheckForJumpButton()
+    {
+        return Input.GetButtonDown(JUMP_BUTTON);
     }
 
-    public bool GetShootButton()
+    public bool CheckForShootButton()
     {
-        return Input.GetButtonDown(SHOOT_BUTTON);
+        return Input.GetButton(SHOOT_BUTTON);
     }
 
-    public bool GetPauseButton()
+    public bool CheckForPauseButton()
     {
         return Input.GetButtonDown(PAUSE_BUTTON);
     }
 
-    public bool GetNextHatButton()
+    public bool CheckForNextHatButton()
     {
         return Input.GetButtonDown(NEXT_HAT_BUTTON);
     }
 
-    public bool GetPreviousHatButton()
+    public bool CheckForPreviousHatButton()
     {
         return Input.GetButtonDown(PREVIOUS_HAT_BUTTON);
     }

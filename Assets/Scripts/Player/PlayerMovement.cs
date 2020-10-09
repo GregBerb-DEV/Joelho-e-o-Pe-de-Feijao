@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float _playerSpeed = 10;
     [SerializeField]
-    private float _jumpStrength = 50;
+    private float _jumpStrength = 15;
     [SerializeField]
     private Transform _groundTransform;
     [SerializeField]
@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         _horizontalMovement = _playerInput.GetHorizontalMovement();
-        isJumpButtonPressed = _playerInput.GetJumpButton();
+        isJumpButtonPressed = _playerInput.CheckForJumpButton();
         PlayerJump();
         _playerSpriteHandler.TurnPlayer(_horizontalMovement);
 
@@ -70,7 +70,6 @@ public class PlayerMovement : MonoBehaviour
             _rigidbody2D.velocity = Vector2.up * _jumpStrength;
             _shot.ShotDoubleJump();
             _hasExtraJump = false;
-
         }
     }
 

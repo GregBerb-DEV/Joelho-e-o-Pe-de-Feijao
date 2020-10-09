@@ -8,13 +8,15 @@ public class PlayerShoot : MonoBehaviour
     public Transform ShootPoint;
     [SerializeField]
     private float _startTimeBetweenShots = 0.5f;
-    private PlayerSpriteHandler _playerSpriteHandler;
     private float _timeBetweenShots;
     private int quaternionZ;
+    private PlayerSpriteHandler _playerSpriteHandler;
+    private PlayerInput _playerInput;
 
     void Start()
     {
-        _playerSpriteHandler = gameObject.GetComponent<PlayerSpriteHandler>();
+        _playerSpriteHandler = GetComponent<PlayerSpriteHandler>();
+        _playerInput = GetComponent<PlayerInput>();
     }
 
     void Update()
@@ -40,7 +42,7 @@ public class PlayerShoot : MonoBehaviour
     {
         if (_timeBetweenShots <= 0)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (_playerInput.CheckForShootButton())
             {
                 Instantiate(Projectile, ShootPoint.position, Quaternion.Euler(0, 0, quaternionZ));
                 _timeBetweenShots = _startTimeBetweenShots;

@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 2020498553821162044}
   - component: {fileID: 2020498553821162041}
   - component: {fileID: 2020498553821162036}
-  - component: {fileID: 4802083575392722777}
+  - component: {fileID: 1664894658}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -289,13 +289,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be7036fa379272a438754a9725661898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 8
-  jumpStrength: 13
-  groundTransform: {fileID: 2020498554094762294}
-  groundLayer:
+  _playerSpeed: 10
+  _jumpStrength: 15
+  _groundTransform: {fileID: 2020498554094762294}
+  _groundLayer:
     serializedVersion: 2
     m_Bits: 1024
-  LandParticle: {fileID: 5368849825009224131, guid: 87d042f9e6ea78541bde6388effc7133, type: 3}
+  _landParticle: {fileID: 5368849825009224131, guid: 87d042f9e6ea78541bde6388effc7133, type: 3}
 --- !u!114 &2020498553821162036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,7 +310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsDead: 0
   _playerHealth: 10
---- !u!114 &4802083575392722777
+--- !u!114 &1664894658
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -319,13 +319,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2020498553821162033}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dece72e60250d9d45ac449f7652b57fa, type: 3}
+  m_Script: {fileID: 11500000, guid: c5f651ce3420eb449b3e474f56a81e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 1385549284409674, guid: 486f42fcb063b4b4fa79b395c40825eb, type: 3}
-  shotPoint: {fileID: 2020498554397033131}
-  startTimeBtwShots: 0.5
-  right: 0
+  Projectile: {fileID: 1385549284409674, guid: 486f42fcb063b4b4fa79b395c40825eb, type: 3}
+  ShootPoint: {fileID: 2020498554397033131}
+  _startTimeBetweenShots: 0.5
 --- !u!1 &2020498553850085528
 GameObject:
   m_ObjectHideFlags: 0
