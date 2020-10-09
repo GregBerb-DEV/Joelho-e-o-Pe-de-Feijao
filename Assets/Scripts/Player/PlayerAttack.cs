@@ -15,10 +15,8 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        if (_playerInput.CheckForAttackButton())
-        {
+        if (_playerInput.CheckForKickButton())
             Attack();
-        }
     }
 
     void Attack()
