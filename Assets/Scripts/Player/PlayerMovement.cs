@@ -5,48 +5,44 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
-    private float playerSpeed = 10;
+    private float _playerSpeed = 10;
     [SerializeField]
-    private float jumpStrength = 50;
+    private float _jumpStrength = 50;
     [SerializeField]
-    private Transform groundTransform;
+    private Transform _groundTransform;
     [SerializeField]
-    private LayerMask groundLayer;
+    private LayerMask _groundLayer;
     [SerializeField]
-    private GameObject LandParticle;
-
-    //dustEffect
-
-    private float horizontalMovement;
-    private bool isPlayerOnGround;
-    private bool isJumpButton;
-    private bool extraJump;
-    private bool land;
-
+    private GameObject _landParticle;
+    private float _horizontalMovement;
+    private bool _isPlayerOnGround;
+    private bool isJumpButtonPressed;
+    private bool _hasExtraJump;
+    private bool _willLand;
     private Rigidbody2D _rigidbody2D;
     private PlayerAnimation _playerAnimation;
     private PlayerInput _playerInput;
     private PlayerSpriteHandler _playerSpriteHandler;
     private PlayerAttack _playerAttack;
-    private Shot _shot;
+    private PlayerShoot _shot;
 
     void Start()
     {
-        extraJump = true;
+        _hasExtraJump = true;
         _playerAnimation = GetComponent<PlayerAnimation>();
         _playerInput = GetComponent<PlayerInput>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _playerSpriteHandler = GetComponent<PlayerSpriteHandler>();
         _playerAttack = GetComponent<PlayerAttack>();
-        _shot = GetComponent<Shot>();
+        _shot = GetComponent<PlayerShoot>();
     }
 
     void Update()
     {
-        horizontalMovement = _playerInput.GetHorizontalMovement();
-        isJumpButton = _playerInput.GetJumpButton();
+        _horizontalMovement = _playerInput.GetHorizontalMovement();
+        isJumpButtonPressed = _playerInput.GetJumpButton();
         PlayerJump();
-        _playerSpriteHandler.TurnPlayer(horizontalMovement);
+        _playerSpriteHandler.TurnPlayer(_horizontalMovement);
 
         SetIfIsOnGround();
         GetExtraJump();
@@ -55,51 +51,59 @@ public class PlayerMovement : MonoBehaviour
 
     void PlayerMove()
     {
-        float horizontalSpeed = horizontalMovement * playerSpeed;
+        float horizontalSpeed = _horizontalMovement * _playerSpeed;
         _rigidbody2D.velocity = new Vector2(horizontalSpeed, _rigidbody2D.velocity.y);
-        _playerAnimation.CheckForRunning(horizontalMovement);
+        _playerAnimation.SetRunning(_horizontalMovement);
     }
 
     void PlayerJump()
     {
-        if ((isJumpButton && isPlayerOnGround)){
-            _rigidbody2D.velocity = Vector2.up * jumpStrength;
-            if(LandParticle)
-                Instantiate(LandParticle, groundTransform.position, Quaternion.identity);
-        } else if(isJumpButton && extraJump){
+        if ((isJumpButtonPressed && _isPlayerOnGround))
+        {
+            _rigidbody2D.velocity = Vector2.up * _jumpStrength;
+            if (_landParticle)
+                Instantiate(_landParticle, _groundTransform.position, Quaternion.identity);
+        }
+        else if (isJumpButtonPressed && _hasExtraJump)
+        {
             _playerAnimation.SetDoubleJumping(true);
-            _rigidbody2D.velocity = Vector2.up * jumpStrength;
+            _rigidbody2D.velocity = Vector2.up * _jumpStrength;
             _shot.ShotDoubleJump();
-            extraJump = false;
-            
+            _hasExtraJump = false;
+
         }
     }
 
-    void GetExtraJump(){
-        if(isPlayerOnGround)
-            extraJump = true;
+    void GetExtraJump()
+    {
+        if (_isPlayerOnGround)
+            _hasExtraJump = true;
     }
 
-    void SetIfIsOnGround(){
-        isPlayerOnGround = Physics2D.Linecast(transform.position, groundTransform.position, groundLayer);
-        _playerAnimation.SetOnGroundBool(isPlayerOnGround);
+    void SetIfIsOnGround()
+    {
+        _isPlayerOnGround = Physics2D.Linecast(transform.position, _groundTransform.position, _groundLayer);
+        _playerAnimation.SetOnGround(_isPlayerOnGround);
 
-        if(isPlayerOnGround){
+        if (_isPlayerOnGround)
+        {
             _playerAnimation.SetDoubleJumping(false);
-            Land();
-
-        }else{
-            land = true;
-        }  
-    }
-
-    void Land(){
-        if(land){
-            _playerAnimation.SetCamShakeTrigger();
-            if(LandParticle)
-                Instantiate(LandParticle, groundTransform.position, Quaternion.identity);
-            land = false;
+            LandPlayer();
+        }
+        else
+        {
+            _willLand = true;
         }
     }
 
+    void LandPlayer()
+    {
+        if (_willLand)
+        {
+            Camera.main.GetComponent<CameraShake>().Shake();
+            if (_landParticle)
+                Instantiate(_landParticle, _groundTransform.position, Quaternion.identity);
+            _willLand = false;
+        }
+    }
 }

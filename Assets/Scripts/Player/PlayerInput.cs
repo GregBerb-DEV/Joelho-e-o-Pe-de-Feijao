@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    private const string ATTACK_BUTTON = "Fire1";
+    private const string ATTACK_BUTTON = "Fire2";
     private const string HORIZONTAL_AXIS = "Horizontal";
     private const string VERTICAL_AXIS = "Vertical";
     private const string JUMP_BUTTON = "Jump";
@@ -21,13 +21,22 @@ public class PlayerInput : MonoBehaviour
 
     public bool GetJumpButton()
     {
-        if(Input.GetButtonDown(JUMP_BUTTON)){
+        if (Input.GetButtonDown(JUMP_BUTTON))
+        {
             return Input.GetButtonDown(JUMP_BUTTON);
-
-        }else if(Input.GetKeyDown(KeyCode.UpArrow)){
+        }
+        else if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
             return Input.GetKeyDown(KeyCode.UpArrow);
-        }else {
+        }
+        else
+        {
             return false;
         }
+    }
+
+    public bool GetShootButton()
+    {
+        return Input.GetButtonDown("");
     }
 }
