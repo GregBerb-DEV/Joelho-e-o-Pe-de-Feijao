@@ -62,13 +62,8 @@ public class EnemyMoveAI : MonoBehaviour
     {
         if ((_nodes.Length != 0) && (_isMoving))
         {
-            transform.position = Vector3.MoveTowards(_enemyGameObject.transform.position,
-                                                       _nodes[_currentNodeIndex].transform.position,
-                                                       _enemySpeed
-                                                    * Time.deltaTime);
-
-            //Setar animação pra correr
-            CheckIfIsOnNode(); // nome horrivel
+            transform.position = Vector3.MoveTowards(_enemyGameObject.transform.position, _nodes[_currentNodeIndex].transform.position, _enemySpeed * Time.deltaTime);
+            CheckIfIsOnNode();
             CheckIfLoop();
         }
     }
