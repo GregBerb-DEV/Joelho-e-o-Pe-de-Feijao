@@ -84,6 +84,7 @@ GameObject:
   - component: {fileID: 2020498553821162041}
   - component: {fileID: 2020498553821162036}
   - component: {fileID: 1664894658}
+  - component: {fileID: 4515865553162698124}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -292,10 +293,12 @@ MonoBehaviour:
   _playerSpeed: 10
   _jumpStrength: 15
   _groundTransform: {fileID: 2020498554094762294}
-  _groundLayer:
+  GroundLayer:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 0
   _landParticle: {fileID: 5368849825009224131, guid: 87d042f9e6ea78541bde6388effc7133, type: 3}
+  HorizontalMovement: 0
+  IsPlayerOnGround: 0
 --- !u!114 &2020498553821162036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,6 +328,24 @@ MonoBehaviour:
   Projectile: {fileID: 1385549284409674, guid: 486f42fcb063b4b4fa79b395c40825eb, type: 3}
   ShootPoint: {fileID: 2020498554397033131}
   _startTimeBetweenShots: 0.5
+--- !u!114 &4515865553162698124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020498553821162033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e55806026f7d9474eb1de8612aee5d7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wallTransform: {fileID: 0}
+  _wallSidingSpeed: 1
+  checkRadius: 0.2
+  yWallForce: 5
+  wallJumpTime: 0.5
+  xWallForce: 10
 --- !u!1 &2020498553850085528
 GameObject:
   m_ObjectHideFlags: 0

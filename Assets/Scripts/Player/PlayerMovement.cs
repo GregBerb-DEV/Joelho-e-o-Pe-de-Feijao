@@ -11,11 +11,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private Transform _groundTransform = default;
     [SerializeField]
-    private LayerMask _groundLayer = default;
+    public LayerMask GroundLayer = default;
     [SerializeField]
     private GameObject _landParticle = default;
-    private float _horizontalMovement;
-    private bool _isPlayerOnGround;
+    public float HorizontalMovement;
+    public bool IsPlayerOnGround;
     private bool isJumpButtonPressed;
     private bool _hasExtraJump;
     private bool _willLand;
@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     private PlayerSpriteHandler _playerSpriteHandler;
     private PlayerAttack _playerAttack;
     private PlayerShoot _shot;
+    private PlayerWallMovement _playerWallMovement;
+
 
     void Start()
     {
@@ -35,30 +37,32 @@ public class PlayerMovement : MonoBehaviour
         _playerSpriteHandler = GetComponent<PlayerSpriteHandler>();
         _playerAttack = GetComponent<PlayerAttack>();
         _shot = GetComponent<PlayerShoot>();
+        _playerWallMovement = GetComponent<PlayerWallMovement>();
     }
 
     void Update()
     {
-        _horizontalMovement = _playerInput.GetHorizontalMovement();
+        HorizontalMovement = _playerInput.GetHorizontalMovement();
         isJumpButtonPressed = _playerInput.CheckForJumpButton();
         PlayerJump();
-        _playerSpriteHandler.TurnPlayer(_horizontalMovement);
+        _playerSpriteHandler.TurnPlayer(HorizontalMovement);
 
         SetIfIsOnGround();
+        _playerWallMovement.SetIfIsOnWall();
         GetExtraJump();
         PlayerMove();
     }
 
     void PlayerMove()
     {
-        float horizontalSpeed = _horizontalMovement * _playerSpeed;
+        float horizontalSpeed = HorizontalMovement * _playerSpeed;
         _rigidbody2D.velocity = new Vector2(horizontalSpeed, _rigidbody2D.velocity.y);
-        _playerAnimation.SetRunning(_horizontalMovement);
+        _playerAnimation.SetRunning(HorizontalMovement);
     }
 
     void PlayerJump()
     {
-        if ((isJumpButtonPressed && _isPlayerOnGround))
+        if ((isJumpButtonPressed && IsPlayerOnGround))
         {
             _rigidbody2D.velocity = Vector2.up * _jumpStrength;
             if (_landParticle)
@@ -75,16 +79,16 @@ public class PlayerMovement : MonoBehaviour
 
     void GetExtraJump()
     {
-        if (_isPlayerOnGround)
+        if (IsPlayerOnGround)
             _hasExtraJump = true;
     }
 
     void SetIfIsOnGround()
     {
-        _isPlayerOnGround = Physics2D.Linecast(transform.position, _groundTransform.position, _groundLayer);
-        _playerAnimation.SetOnGround(_isPlayerOnGround);
+        IsPlayerOnGround = Physics2D.Linecast(transform.position, _groundTransform.position, GroundLayer);
+        _playerAnimation.SetOnGround(IsPlayerOnGround);
 
-        if (_isPlayerOnGround)
+        if (IsPlayerOnGround)
         {
             _playerAnimation.SetDoubleJumping(false);
             LandPlayer();

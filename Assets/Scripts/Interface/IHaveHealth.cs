@@ -6,6 +6,3 @@ public interface IHaveHealth{
     void TakeDamage(int damageTaken);
     void Kill();
 }
-
-
-//greg spot -->  <--

@@ -23,7 +23,7 @@ public class OneWayPlatform : MonoBehaviour
             waitTime = holdTime;                         
         }
 
-        if(Input.GetKey(KeyCode.DownArrow)){
+        if(Input.GetAxis("Vertical") < 0){
             if(waitTime <= 0){
                 effector.rotationalOffset = 180f;
                 waitTime = holdTime;
