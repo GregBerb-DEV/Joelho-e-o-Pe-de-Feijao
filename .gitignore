@@ -69,6 +69,10 @@ crashlytics-build.properties
 InitTestScene*.unity.meta
 InitTestScene*.unity
 
+# TextMesh Pro
+*.cginc
+*.shader
+
 
 ### VisualStudioCode ###
 .vscode/*
