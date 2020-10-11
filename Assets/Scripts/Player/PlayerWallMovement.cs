@@ -17,6 +17,7 @@ public class PlayerWallMovement : MonoBehaviour
     private float wallJumpTime;
     [SerializeField]
     private float xWallForce;
+    private float xNumero;
     private bool _isPlayerWallSliding;
     private bool _wallJumping;
     private bool _isPlayerOnWall;
@@ -56,14 +57,15 @@ public class PlayerWallMovement : MonoBehaviour
         if (_isPlayerWallSliding && _playerInput.CheckForJumpButton())
         {
             _wallJumping = true;
+            xNumero = xWallForce * -(_playerMovement.HorizontalMovement);
             Invoke("SetWallJumpingToFalse", wallJumpTime);
         }
 
         if (_wallJumping)
         {
-            float numero = xWallForce * -(_playerMovement.HorizontalMovement);
-            Debug.Log(_playerMovement.HorizontalMovement + "entrei " + numero);
-            _rigidbody2D.AddForce(new Vector2(numero, yWallForce));
+            
+            Debug.Log(_playerMovement.HorizontalMovement + "entrei " + xNumero);
+            _rigidbody2D.AddForce(new Vector2(xNumero, yWallForce));
 
         }
     }
@@ -71,6 +73,7 @@ public class PlayerWallMovement : MonoBehaviour
     void SetWallJumpingToFalse()
     {
         _wallJumping = false;
+
     }
 
 }

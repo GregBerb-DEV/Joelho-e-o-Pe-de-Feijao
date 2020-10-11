@@ -3629,6 +3629,18 @@ PrefabInstance:
       propertyPath: _wallTransform
       value: 
       objectReference: {fileID: 602562721}
+    - target: {fileID: 4515865553162698124, guid: 17475d5a3b8a36544b7b0403c449d055, type: 3}
+      propertyPath: yWallForce
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515865553162698124, guid: 17475d5a3b8a36544b7b0403c449d055, type: 3}
+      propertyPath: xWallForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515865553162698124, guid: 17475d5a3b8a36544b7b0403c449d055, type: 3}
+      propertyPath: wallJumpTime
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17475d5a3b8a36544b7b0403c449d055, type: 3}
 --- !u!1001 &3668348581095889589
