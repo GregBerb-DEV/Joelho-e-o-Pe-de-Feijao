@@ -14,7 +14,7 @@ public class PlayerInput : MonoBehaviour
 
     public float GetHorizontalMovement()
     {
-        return Input.GetAxisRaw(HORIZONTAL_AXIS);
+        return Input.GetAxis(HORIZONTAL_AXIS);
     }
 
     public bool CheckForKickButton()
