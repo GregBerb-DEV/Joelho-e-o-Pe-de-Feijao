@@ -6,7 +6,7 @@ public class ScoreTracker : MonoBehaviour
 {
     //Singleton
     //Coisas de que só queremos 1
-    public int Score = 0;
+    public int TotalScore = 0;
     public static ScoreTracker Instance;
     void Awake()
     {
