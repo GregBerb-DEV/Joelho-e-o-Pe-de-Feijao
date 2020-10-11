@@ -21,6 +21,7 @@ public class PlayerInput : MonoBehaviour
     {
         return Input.GetButtonDown(KICK_BUTTON);
     }
+
     public bool CheckForJumpButton()
     {
         return Input.GetButtonDown(JUMP_BUTTON);

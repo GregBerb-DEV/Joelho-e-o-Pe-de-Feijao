@@ -16,12 +16,12 @@ public class PlayerWallMovement : MonoBehaviour
     [SerializeField]
     private float wallJumpTime;
     [SerializeField]
-    private float xWallForce;
-    private float xNumero;
+    private float _xWallForce;
+    private float _xNumeroCalculated;
     private bool _isPlayerWallSliding;
-    private bool _wallJumping;
+    private bool _isPlayerWallJumping;
     private bool _isPlayerOnWall;
-    private PlayerMovement _playerMovement;
+    private PlayerMovement _playerMovement = default;
     private PlayerInput _playerInput = default;
 
 
@@ -33,13 +33,19 @@ public class PlayerWallMovement : MonoBehaviour
         _playerInput = GetComponent<PlayerInput>();
     }
 
-    // Update is called once per frame
 
     public void SetIfIsOnWall()
     {
 
         _isPlayerOnWall = Physics2D.OverlapCircle(_wallTransform.position, checkRadius, _playerMovement.GroundLayer);
 
+        SetPlayerToSliding();
+
+        SetPlayerToWallJump();
+    }
+
+    private void SetPlayerToSliding()
+    {
         if (_isPlayerOnWall && !(_playerMovement.IsPlayerOnGround) && _playerMovement.HorizontalMovement != 0)
         {
             _isPlayerWallSliding = true;
@@ -53,26 +59,27 @@ public class PlayerWallMovement : MonoBehaviour
         {
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, Mathf.Clamp(_rigidbody2D.velocity.y, -_wallSidingSpeed, float.MaxValue));
         }
+    }
 
+    private void SetPlayerToWallJump()
+    {
         if (_isPlayerWallSliding && _playerInput.CheckForJumpButton())
         {
-            _wallJumping = true;
-            xNumero = xWallForce * -(_playerMovement.HorizontalMovement);
+            _isPlayerWallJumping = true;
+            _xNumeroCalculated = _xWallForce * -(_playerMovement.HorizontalMovement);
             Invoke("SetWallJumpingToFalse", wallJumpTime);
         }
 
-        if (_wallJumping)
+        if (_isPlayerWallJumping)
         {
-            
-            Debug.Log(_playerMovement.HorizontalMovement + "entrei " + xNumero);
-            _rigidbody2D.AddForce(new Vector2(xNumero, yWallForce));
-
+            _rigidbody2D.AddForce(new Vector2(_xNumeroCalculated, yWallForce));
         }
     }
 
+
     void SetWallJumpingToFalse()
     {
-        _wallJumping = false;
+        _isPlayerWallJumping = false;
 
     }
 

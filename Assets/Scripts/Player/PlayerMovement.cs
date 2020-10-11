@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+#region variaveis
     [SerializeField]
     private float _playerSpeed = 10;
     [SerializeField]
@@ -27,9 +28,11 @@ public class PlayerMovement : MonoBehaviour
     private PlayerShoot _shot;
     private PlayerWallMovement _playerWallMovement;
 
+#endregion variaveis
 
     void Start()
     {
+        #region instanciando
         _hasExtraJump = true;
         _playerAnimation = GetComponent<PlayerAnimation>();
         _playerInput = GetComponent<PlayerInput>();
@@ -38,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
         _playerAttack = GetComponent<PlayerAttack>();
         _shot = GetComponent<PlayerShoot>();
         _playerWallMovement = GetComponent<PlayerWallMovement>();
+        #endregion instanciando
     }
 
     void Update()

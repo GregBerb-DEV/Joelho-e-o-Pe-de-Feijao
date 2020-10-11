@@ -19,6 +19,8 @@ public class PlayerAnimation : MonoBehaviour
         _animator = gameObject.GetComponent<Animator>();
     }
 
+#region bools
+
     public void PlayAttackAnimation()
     {
         _animator.SetBool(ATTACK_BOOL, true);
@@ -29,18 +31,22 @@ public class PlayerAnimation : MonoBehaviour
         _animator.SetBool(ON_GROUND_BOOL, isGrounded);
     }
 
+    public void SetDoubleJumping(bool isJumping)
+    {
+        _animator.SetBool(DOUBLE_JUMPING_BOOL, isJumping);
+    }
+
     public void SetRunning(float movementDirection)
     {
         bool isRunning = movementDirection != 0;
         _animator.SetBool(RUNNING_BOOL, isRunning);
     }
 
-    public void SetDoubleJumping(bool isJumping)
-    {
-        _animator.SetBool(DOUBLE_JUMPING_BOOL, isJumping);
-    }
+#endregion bools
 
-    public void PlayDeathAnimation()
+#region triggers
+
+    public void SetDeathTrigger()
     {
         _animator.SetTrigger(IS_DEAD_TRIGGER);
     }
@@ -55,3 +61,6 @@ public class PlayerAnimation : MonoBehaviour
         _animator.SetTrigger(CAM_SHAKE_TRIGGER);
     }
 }
+
+#endregion triggers
+

@@ -34,7 +34,7 @@ public class PlayerHealth : MonoBehaviour, IHaveHealth
 
     IEnumerator PlayerDeath()
     {
-        _playerAnimation.PlayDeathAnimation();
+        _playerAnimation.SetDeathTrigger();
         yield return new WaitForSeconds(0.8f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
