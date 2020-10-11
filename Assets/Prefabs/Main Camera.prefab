@@ -44,8 +44,8 @@ Camera:
   m_GameObject: {fileID: 6261450502961373286}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.654902, g: 1, b: 0.9294118, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -62,7 +62,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.44
+  orthographic size: 2.7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -99,10 +99,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  xMax: 23
-  xMin: -9
-  yMax: 0.5
-  yMin: 0.5
+  xMax: 1000
+  xMin: -1000
+  yMax: 1000
+  yMin: -1000
 --- !u!95 &6261450502961373309
 Animator:
   serializedVersion: 3
