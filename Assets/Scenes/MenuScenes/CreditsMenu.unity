@@ -348,17 +348,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Outras Fontes
+  m_text: Agradecimentos
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: fc7009c885bb8ce409cad93a1f21e130, type: 2}
-  m_sharedMaterial: {fileID: 8737591779595694125, guid: fc7009c885bb8ce409cad93a1f21e130, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7e218bc3078f7254e9a8304ad1464833, type: 2}
+  m_sharedMaterial: {fileID: 7847768440942781965, guid: 7e218bc3078f7254e9a8304ad1464833, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4281684265
+  m_fontColor: {r: 0.16078432, g: 0.31764707, b: 0.20784314, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -370,12 +370,12 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 2426
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.8
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -485,15 +485,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Desenvolvedores
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: fc7009c885bb8ce409cad93a1f21e130, type: 2}
-  m_sharedMaterial: {fileID: 8737591779595694125, guid: fc7009c885bb8ce409cad93a1f21e130, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7e218bc3078f7254e9a8304ad1464833, type: 2}
+  m_sharedMaterial: {fileID: 7847768440942781965, guid: 7e218bc3078f7254e9a8304ad1464833, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4281684265
+  m_fontColor: {r: 0.16078432, g: 0.31764707, b: 0.20784314, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -505,12 +505,12 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 2426
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.95
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -619,15 +619,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Bernardo Pires Mesko\nGr\xE9gori Sabel"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: fc7009c885bb8ce409cad93a1f21e130, type: 2}
-  m_sharedMaterial: {fileID: 8737591779595694125, guid: fc7009c885bb8ce409cad93a1f21e130, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7e218bc3078f7254e9a8304ad1464833, type: 2}
+  m_sharedMaterial: {fileID: 7847768440942781965, guid: 7e218bc3078f7254e9a8304ad1464833, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4282137425
+  m_fontColor: {r: 0.31764707, g: 0.23137255, b: 0.23529412, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -639,12 +639,12 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 2194
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 53.15
+  m_fontSize: 54.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -730,7 +730,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.745, g: 0.6981515, b: 0.411985, a: 0}
+  m_BackGroundColor: {r: 0.8627451, g: 0.8784314, b: 0.8509804, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -836,15 +836,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Cr\xE9ditos"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: fc7009c885bb8ce409cad93a1f21e130, type: 2}
-  m_sharedMaterial: {fileID: 8737591779595694125, guid: fc7009c885bb8ce409cad93a1f21e130, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7e218bc3078f7254e9a8304ad1464833, type: 2}
+  m_sharedMaterial: {fileID: 7847768440942781965, guid: 7e218bc3078f7254e9a8304ad1464833, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4281155598
+  m_fontColor: {r: 0.05490196, g: 0.2509804, b: 0.1764706, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -861,7 +861,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 125.2
+  m_fontSize: 97.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -970,15 +970,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Voltar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: fc7009c885bb8ce409cad93a1f21e130, type: 2}
-  m_sharedMaterial: {fileID: 8737591779595694125, guid: fc7009c885bb8ce409cad93a1f21e130, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7e218bc3078f7254e9a8304ad1464833, type: 2}
+  m_sharedMaterial: {fileID: 7847768440942781965, guid: 7e218bc3078f7254e9a8304ad1464833, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4281155598
+  m_fontColor: {r: 0.05490196, g: 0.2509804, b: 0.1764706, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1057,6 +1057,7 @@ GameObject:
   - component: {fileID: 1965488364}
   - component: {fileID: 1965488363}
   - component: {fileID: 1965488362}
+  - component: {fileID: 1965488365}
   m_Layer: 5
   m_Name: ButtonBack
   m_TagString: Untagged
@@ -1126,7 +1127,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1965488363}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1965488365}
+        m_TargetAssemblyTypeName: LoadSceneButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1965488363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1140,7 +1153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5019608, g: 0.69411767, b: 0.57254905, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1165,3 +1178,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965488360}
   m_CullTransparentMesh: 0
+--- !u!114 &1965488365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965488360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cef528d6a2a09894abf64bb6a9910a7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneToLoad: MainMenu
