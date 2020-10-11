@@ -19,8 +19,8 @@ public class PlayerWallMovement : MonoBehaviour
     private float _xWallForce;
     private float _xNumeroCalculated;
     private bool _isPlayerWallSliding;
-    private bool _isPlayerWallJumping;
-    private bool _isPlayerOnWall;
+    public bool _isPlayerWallJumping;
+    public bool _isPlayerOnWall;
     private PlayerMovement _playerMovement = default;
     private PlayerInput _playerInput = default;
 
@@ -72,7 +72,8 @@ public class PlayerWallMovement : MonoBehaviour
 
         if (_isPlayerWallJumping)
         {
-            _rigidbody2D.AddForce(new Vector2(_xNumeroCalculated, yWallForce));
+            //_rigidbody2D.AddForce(new Vector2(_xNumeroCalculated, yWallForce));
+            _rigidbody2D.velocity = new Vector2(_xNumeroCalculated, yWallForce);
         }
     }
 

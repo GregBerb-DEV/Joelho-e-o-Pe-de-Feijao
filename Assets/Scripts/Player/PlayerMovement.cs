@@ -17,9 +17,9 @@ public class PlayerMovement : MonoBehaviour
     private GameObject _landParticle = default;
     public float HorizontalMovement;
     public bool IsPlayerOnGround;
-    private bool isJumpButtonPressed;
-    private bool _hasExtraJump;
-    private bool _willLand;
+    private bool IsJumpButtonPressed;
+    private bool HasExtraJump;
+    private bool WillLand;
     private Rigidbody2D _rigidbody2D;
     private PlayerAnimation _playerAnimation;
     private PlayerInput _playerInput;
@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         #region instanciando
-        _hasExtraJump = true;
+        HasExtraJump = true;
         _playerAnimation = GetComponent<PlayerAnimation>();
         _playerInput = GetComponent<PlayerInput>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
@@ -47,44 +47,48 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         HorizontalMovement = _playerInput.GetHorizontalMovement();
-        isJumpButtonPressed = _playerInput.CheckForJumpButton();
-        PlayerJump();
+
         _playerSpriteHandler.TurnPlayer(HorizontalMovement);
 
         SetIfIsOnGround();
         _playerWallMovement.SetIfIsOnWall();
         GetExtraJump();
         PlayerMove();
+
+        IsJumpButtonPressed = _playerInput.CheckForJumpButton();
+        PlayerJump();
     }
 
     void PlayerMove()
     {
-        float horizontalSpeed = HorizontalMovement * _playerSpeed;
-        _rigidbody2D.velocity = new Vector2(horizontalSpeed, _rigidbody2D.velocity.y);
-        _playerAnimation.SetRunning(HorizontalMovement);
+        if(!_playerWallMovement._isPlayerWallJumping){
+            float horizontalSpeed = HorizontalMovement * _playerSpeed;
+            _rigidbody2D.velocity = new Vector2(horizontalSpeed, _rigidbody2D.velocity.y);
+            _playerAnimation.SetRunning(HorizontalMovement);
+        }
     }
 
     void PlayerJump()
     {
-        if ((isJumpButtonPressed && IsPlayerOnGround))
+        if ((IsJumpButtonPressed && IsPlayerOnGround))
         {
             _rigidbody2D.velocity = Vector2.up * _jumpStrength;
             if (_landParticle)
                 Instantiate(_landParticle, _groundTransform.position, Quaternion.identity);
         }
-        else if (isJumpButtonPressed && _hasExtraJump)
+        else if (IsJumpButtonPressed && HasExtraJump && !_playerWallMovement._isPlayerWallJumping)
         {
             _playerAnimation.SetDoubleJumping(true);
             _rigidbody2D.velocity = Vector2.up * _jumpStrength;
             _shot.ShotDoubleJump();
-            _hasExtraJump = false;
+            HasExtraJump = false;
         }
     }
 
     void GetExtraJump()
     {
-        if (IsPlayerOnGround)
-            _hasExtraJump = true;
+        if (IsPlayerOnGround )
+            HasExtraJump = true;
     }
 
     void SetIfIsOnGround()
@@ -99,18 +103,18 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            _willLand = true;
+            WillLand = true;
         }
     }
 
     void LandPlayer()
     {
-        if (_willLand)
+        if (WillLand)
         {
             Camera.main.GetComponent<CameraShake>().Shake();
             if (_landParticle)
                 Instantiate(_landParticle, _groundTransform.position, Quaternion.identity);
-            _willLand = false;
+            WillLand = false;
         }
     }
 }
