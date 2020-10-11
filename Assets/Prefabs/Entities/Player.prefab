@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &602562720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 602562721}
+  m_Layer: 0
+  m_Name: wallCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &602562721
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602562720}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.02, y: 0.015, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2020498553821162034}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2020498553578645058
 GameObject:
   m_ObjectHideFlags: 0
@@ -85,6 +115,7 @@ GameObject:
   - component: {fileID: 2020498553821162036}
   - component: {fileID: 1664894658}
   - component: {fileID: 4515865553162698124}
+  - component: {fileID: 1664894672}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -107,6 +138,7 @@ Transform:
   - {fileID: 2020498553578645059}
   - {fileID: 2020498553850085529}
   - {fileID: 2020498554397033131}
+  - {fileID: 602562721}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -170,7 +202,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 2020498553821162033}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: e4dd779eb13f00a44b64a100489a4b2e, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -295,7 +327,7 @@ MonoBehaviour:
   _groundTransform: {fileID: 2020498554094762294}
   GroundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   _landParticle: {fileID: 5368849825009224131, guid: 87d042f9e6ea78541bde6388effc7133, type: 3}
   HorizontalMovement: 0
   IsPlayerOnGround: 0
@@ -340,12 +372,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e55806026f7d9474eb1de8612aee5d7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wallTransform: {fileID: 0}
+  _wallTransform: {fileID: 602562721}
   _wallSidingSpeed: 1
   checkRadius: 0.2
-  yWallForce: 5
-  wallJumpTime: 0.5
+  yWallForce: 0.1
+  wallJumpTime: 0.3
   xWallForce: 10
+--- !u!114 &1664894672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020498553821162033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3029196b9d66e54dbeba8cc714d72ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2020498553850085528
 GameObject:
   m_ObjectHideFlags: 0
