@@ -21,6 +21,7 @@ public class PlayerWallMovement : MonoBehaviour
     private bool _wallJumping;
     private bool _isPlayerOnWall;
     private PlayerMovement _playerMovement;
+    private PlayerInput _playerInput = default;
 
 
     // Start is called before the first frame update
@@ -28,39 +29,47 @@ public class PlayerWallMovement : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _playerMovement = GetComponent<PlayerMovement>();
-
+        _playerInput = GetComponent<PlayerInput>();
     }
 
     // Update is called once per frame
 
-    public void SetIfIsOnWall(){
+    public void SetIfIsOnWall()
+    {
 
         _isPlayerOnWall = Physics2D.OverlapCircle(_wallTransform.position, checkRadius, _playerMovement.GroundLayer);
 
-        if(_isPlayerOnWall && !(_playerMovement.IsPlayerOnGround) && _playerMovement.HorizontalMovement != 0){
+        if (_isPlayerOnWall && !(_playerMovement.IsPlayerOnGround) && _playerMovement.HorizontalMovement != 0)
+        {
             _isPlayerWallSliding = true;
-        }else{
+        }
+        else
+        {
             _isPlayerWallSliding = false;
         }
 
-        if(_isPlayerWallSliding){
+        if (_isPlayerWallSliding)
+        {
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, Mathf.Clamp(_rigidbody2D.velocity.y, -_wallSidingSpeed, float.MaxValue));
         }
 
-        if(_isPlayerWallSliding && Input.GetKeyDown("w")){
+        if (_isPlayerWallSliding && _playerInput.CheckForJumpButton())
+        {
             _wallJumping = true;
             Invoke("SetWallJumpingToFalse", wallJumpTime);
         }
-        
-        if(_wallJumping){
+
+        if (_wallJumping)
+        {
             float numero = xWallForce * -(_playerMovement.HorizontalMovement);
             Debug.Log(_playerMovement.HorizontalMovement + "entrei " + numero);
-            _rigidbody2D.velocity = new Vector2(numero, yWallForce);
+            _rigidbody2D.AddForce(new Vector2(numero, yWallForce));
 
         }
     }
-    
-    void SetWallJumpingToFalse(){
+
+    void SetWallJumpingToFalse()
+    {
         _wallJumping = false;
     }
 
