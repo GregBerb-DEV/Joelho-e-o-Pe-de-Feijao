@@ -237,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2020498553821162038, guid: 17475d5a3b8a36544b7b0403c449d055, type: 3}
       propertyPath: m_LinearDrag
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2020498553821162038, guid: 17475d5a3b8a36544b7b0403c449d055, type: 3}
       propertyPath: m_UseAutoMass
@@ -6925,13 +6925,29 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1634838871}
+    - target: {fileID: 6261450502961373282, guid: 7ed35f494260be54a822ff8a1ac56832, type: 3}
+      propertyPath: xMin
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261450502961373282, guid: 7ed35f494260be54a822ff8a1ac56832, type: 3}
+      propertyPath: yMin
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261450502961373282, guid: 7ed35f494260be54a822ff8a1ac56832, type: 3}
+      propertyPath: xMax
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261450502961373282, guid: 7ed35f494260be54a822ff8a1ac56832, type: 3}
+      propertyPath: yMax
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 6261450502961373283, guid: 7ed35f494260be54a822ff8a1ac56832, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.42
       objectReference: {fileID: 0}
     - target: {fileID: 6261450502961373283, guid: 7ed35f494260be54a822ff8a1ac56832, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.37
+      value: -5.26
       objectReference: {fileID: 0}
     - target: {fileID: 6261450502961373283, guid: 7ed35f494260be54a822ff8a1ac56832, type: 3}
       propertyPath: m_LocalPosition.z

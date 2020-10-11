@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 4515865553162698124}
   - component: {fileID: 1664894672}
   m_Layer: 0
-  m_Name: Player 1
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -220,8 +220,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 0.089799695
+  m_UseAutoMass: 0
+  m_Mass: 5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -322,8 +322,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be7036fa379272a438754a9725661898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerSpeed: 10
-  _jumpStrength: 15
+  _playerSpeed: 7
+  _jumpStrength: 13
   _groundTransform: {fileID: 2020498554094762294}
   GroundLayer:
     serializedVersion: 2
@@ -377,7 +377,7 @@ MonoBehaviour:
   checkRadius: 0.2
   yWallForce: 0.1
   wallJumpTime: 0.3
-  xWallForce: 10
+  _xWallForce: 0
 --- !u!114 &1664894672
 MonoBehaviour:
   m_ObjectHideFlags: 0
