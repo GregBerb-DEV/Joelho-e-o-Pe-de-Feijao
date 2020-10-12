@@ -33,11 +33,15 @@ public class PlayerWallMovement : MonoBehaviour
         _playerInput = GetComponent<PlayerInput>();
     }
 
+    void Update()
+    {
+        SetIfIsOnWall();
+    }
 
-    public void SetIfIsOnWall()
+    private void SetIfIsOnWall()
     {
 
-        _isPlayerOnWall = Physics2D.OverlapCircle(_wallTransform.position, checkRadius, _playerMovement.GroundLayer);
+        _isPlayerOnWall = Physics2D.OverlapCircle(_wallTransform.position, checkRadius, _playerMovement._groundLayer);
 
         SetPlayerToSliding();
 
@@ -46,7 +50,7 @@ public class PlayerWallMovement : MonoBehaviour
 
     private void SetPlayerToSliding()
     {
-        if (_isPlayerOnWall && !(_playerMovement.IsPlayerOnGround) && _playerMovement.HorizontalMovement != 0)
+        if (_isPlayerOnWall && !(_playerMovement.IsGrounded) && _playerMovement.HorizontalMovement != 0)
         {
             _isPlayerWallSliding = true;
         }

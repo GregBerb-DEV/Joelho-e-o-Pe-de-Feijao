@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class CameraShake : MonoBehaviour
 {
-    private Animator _animator;
+    private static Animator _animator;
 
     void Start()
     {
         _animator = GetComponent<Animator>();
     }
 
-    public void Shake()
+    public static void Shake()
     {
         _animator.SetTrigger("CamShake");
     }
 }
-//Singleton

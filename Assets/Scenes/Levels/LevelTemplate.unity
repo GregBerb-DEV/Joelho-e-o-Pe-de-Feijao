@@ -1208,6 +1208,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &570119756 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5874959990354958250, guid: 164948862b9715b448bae9492278b7be, type: 3}
+  m_PrefabInstance: {fileID: 1916205314}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &580019387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13467,6 +13472,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5874959990058124461, guid: 164948862b9715b448bae9492278b7be, type: 3}
   m_PrefabInstance: {fileID: 1916205314}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1680829485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680829484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b167069640fa7f049a93d4609207668c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jumpStrength: 15
+  _groundTransform: {fileID: 570119756}
+  _landParticle: {fileID: 5368849825009224131, guid: 87d042f9e6ea78541bde6388effc7133, type: 3}
+  rememberGroundedFor: 0.1
+  checkGroundedRadius: 1
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  IsGrounded: 0
 --- !u!114 &1680829500
 MonoBehaviour:
   m_ObjectHideFlags: 0
