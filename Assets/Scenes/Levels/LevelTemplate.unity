@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 940b632a095681b498cab9bd0f4071e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 0
+  TotalScore: 0
 --- !u!4 &40295800
 Transform:
   m_ObjectHideFlags: 0
@@ -13479,6 +13479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3777db6805c8e24ca70177ed88ac276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentScore: 0
 --- !u!1001 &1700292548
 PrefabInstance:
   m_ObjectHideFlags: 0
