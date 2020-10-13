@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private float _playerSpeed = 10;
 
     public LayerMask _groundLayer = default;
-    public float HorizontalMovement;
+    public float horizontalMovement;
     public bool IsGrounded;
 
     private Rigidbody2D _rigidbody2D;
@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
     private PlayerInput _playerInput;
     private PlayerSpriteHandler _playerSpriteHandler;
     private PlayerWallMovement _playerWallMovement;
-
     #endregion
 
     void Start()
@@ -33,18 +32,17 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        HorizontalMovement = _playerInput.GetHorizontalMovement();
-        _playerSpriteHandler.TurnPlayer(HorizontalMovement);
-        PlayerMove();
+        horizontalMovement = _playerInput.GetHorizontalMovement();
+        _playerSpriteHandler.TurnPlayer(horizontalMovement);
+        Move();
     }
 
-    void PlayerMove()
+    void Move()
     {
-        if (!_playerWallMovement._isPlayerWallJumping)
-        {
-            float horizontalSpeed = HorizontalMovement * _playerSpeed;
-            _rigidbody2D.velocity = new Vector2(horizontalSpeed, _rigidbody2D.velocity.y);
-            _playerAnimation.SetRunning(HorizontalMovement);
-        }
+        if (_playerWallMovement._isWallJumping)
+            return;
+        float horizontalSpeed = horizontalMovement * _playerSpeed;
+        _rigidbody2D.velocity = new Vector2(horizontalSpeed, _rigidbody2D.velocity.y);
+        _playerAnimation.SetRunning(horizontalMovement);
     }
 }

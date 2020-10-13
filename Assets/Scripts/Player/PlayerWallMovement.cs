@@ -4,88 +4,68 @@ using UnityEngine;
 
 public class PlayerWallMovement : MonoBehaviour
 {
-    private Rigidbody2D _rigidbody2D;
     [SerializeField]
     private Transform _wallTransform;
     [SerializeField]
-    private float _wallSidingSpeed = 5f;
+    private float _wallSlideSpeed = 5f;
     [SerializeField]
-    private float checkRadius;
+    private float checkRadius = 0.5f;
     [SerializeField]
     private float yWallForce;
     [SerializeField]
-    private float wallJumpTime;
+    private float wallJumpTime = 0.1f;
     [SerializeField]
     private float _xWallForce;
-    private float _xNumeroCalculated;
+
+    public bool _isWallJumping;
+    public bool _isPlayerColliding;
+
+    private Rigidbody2D _rigidbody2D;
+    private Collider2D _collider2D;
+    private float _calculatedXForce;
     private bool _isPlayerWallSliding;
-    public bool _isPlayerWallJumping;
-    public bool _isPlayerOnWall;
+    private PlayerJump _playerJump = default;
     private PlayerMovement _playerMovement = default;
     private PlayerInput _playerInput = default;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _playerMovement = GetComponent<PlayerMovement>();
+        _playerJump = GetComponent<PlayerJump>();
         _playerInput = GetComponent<PlayerInput>();
+        _collider2D = GetComponent<Collider2D>();
+        _playerMovement = GetComponent<PlayerMovement>();
     }
 
     void Update()
     {
-        SetIfIsOnWall();
+        _isPlayerColliding = Physics2D.OverlapCircle(_wallTransform.position, checkRadius, _playerJump._groundLayer);
+        SlideOnWall();
+        WallJump();
     }
 
-    private void SetIfIsOnWall()
+    private void SlideOnWall()
     {
-
-        _isPlayerOnWall = Physics2D.OverlapCircle(_wallTransform.position, checkRadius, _playerMovement._groundLayer);
-
-        SetPlayerToSliding();
-
-        SetPlayerToWallJump();
-    }
-
-    private void SetPlayerToSliding()
-    {
-        if (_isPlayerOnWall && !(_playerMovement.IsGrounded) && _playerMovement.HorizontalMovement != 0)
-        {
-            _isPlayerWallSliding = true;
-        }
-        else
-        {
-            _isPlayerWallSliding = false;
-        }
-
+        _isPlayerWallSliding = (_isPlayerColliding && !(_playerJump.IsGrounded) && _playerMovement.horizontalMovement != 0);
         if (_isPlayerWallSliding)
-        {
-            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, Mathf.Clamp(_rigidbody2D.velocity.y, -_wallSidingSpeed, float.MaxValue));
-        }
+            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, Mathf.Clamp(_rigidbody2D.velocity.y, -_wallSlideSpeed, float.MaxValue));
     }
 
-    private void SetPlayerToWallJump()
+    private void WallJump()
     {
         if (_isPlayerWallSliding && _playerInput.CheckForJumpButton())
         {
-            _isPlayerWallJumping = true;
-            _xNumeroCalculated = _xWallForce * -(_playerMovement.HorizontalMovement);
+            _isWallJumping = true;
+            _calculatedXForce = _xWallForce * -(_playerMovement.horizontalMovement);
             Invoke("SetWallJumpingToFalse", wallJumpTime);
         }
 
-        if (_isPlayerWallJumping)
-        {
-            //_rigidbody2D.AddForce(new Vector2(_xNumeroCalculated, yWallForce));
-            _rigidbody2D.velocity = new Vector2(_xNumeroCalculated, yWallForce);
-        }
+        if (_isWallJumping)
+            _rigidbody2D.velocity = new Vector2(_calculatedXForce, yWallForce);
     }
-
 
     void SetWallJumpingToFalse()
     {
-        _isPlayerWallJumping = false;
-
+        _isWallJumping = false;
     }
-
 }

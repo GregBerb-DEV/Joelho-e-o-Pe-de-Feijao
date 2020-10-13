@@ -54,7 +54,7 @@ public class PlayerShoot : MonoBehaviour
         }
     }
 
-    public void ShotDoubleJump()
+    public void DoubleJumpShoot()
     {
         Instantiate(Projectile, ShootPoint.position, Quaternion.Euler(0, 0, 135));
     }

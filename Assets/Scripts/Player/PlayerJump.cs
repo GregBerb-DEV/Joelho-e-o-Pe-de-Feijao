@@ -61,11 +61,11 @@ public class PlayerJump : MonoBehaviour
             if (_landParticle)
                 Instantiate(_landParticle, _groundTransform.position, Quaternion.identity);
         }
-        else if (_isJumpButtonPressed && _hasExtraJump && !_playerWallMovement._isPlayerWallJumping)
+        else if (_isJumpButtonPressed && _hasExtraJump && !_playerWallMovement._isWallJumping)
         {
             _playerAnimation.SetDoubleJumping(true);
             _rigidbody2D.velocity = Vector2.up * _jumpStrength;
-            _playerShoot.ShotDoubleJump();
+            _playerShoot.DoubleJumpShoot();
             _hasExtraJump = false;
         }
     }
@@ -78,20 +78,18 @@ public class PlayerJump : MonoBehaviour
 
     void SetIfIsOnGround()
     {
-        Collider2D colliders = Physics2D.OverlapCircle(transform.position, checkGroundedRadius, _groundLayer);
-
-        if (colliders != null)
+        RaycastHit2D colliders = Physics2D.Linecast(transform.position, _groundTransform.position, _groundLayer); ;
+        if (colliders)
         {
             IsGrounded = true;
         }
         else
         {
             if (IsGrounded)
-            {
                 _lastTimeGrounded = Time.time;
-            }
             IsGrounded = false;
         }
+
         _playerAnimation.SetOnGround(IsGrounded);
 
         if (IsGrounded)

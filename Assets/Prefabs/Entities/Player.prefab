@@ -106,7 +106,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5585110330072436284}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 0.015, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5874959990058124462}
@@ -228,6 +228,8 @@ GameObject:
   - component: {fileID: 5585110331149199454}
   - component: {fileID: 8298409573296902928}
   - component: {fileID: 5585110331149199436}
+  - component: {fileID: 1680829485}
+  - component: {fileID: 1680829500}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -319,7 +321,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0066930456, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.20322578, y: 0.24}
   m_Direction: 0
 --- !u!50 &5874959990058124458
@@ -436,14 +438,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerSpeed: 7
-  _jumpStrength: 13
-  _groundTransform: {fileID: 5874959990354958250}
-  GroundLayer:
+  _groundLayer:
     serializedVersion: 2
-    m_Bits: 1024
-  _landParticle: {fileID: 5368849825009224131, guid: 87d042f9e6ea78541bde6388effc7133, type: 3}
-  HorizontalMovement: 0
-  IsPlayerOnGround: 1
+    m_Bits: 0
+  horizontalMovement: 0
+  IsGrounded: 0
 --- !u!114 &5874959990058124456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,13 +485,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wallTransform: {fileID: 5585110330072436285}
-  _wallSidingSpeed: 1
+  _wallSlideSpeed: 1
   checkRadius: 0.15
-  yWallForce: 5
-  wallJumpTime: 0.3
-  _xWallForce: 10
-  _isPlayerWallJumping: 0
-  _isPlayerOnWall: 0
+  yWallForce: 6
+  wallJumpTime: 0.2
+  _xWallForce: 11
+  _isWallJumping: 0
+  _isPlayerColliding: 0
 --- !u!114 &5585110331149199436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -505,6 +504,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3029196b9d66e54dbeba8cc714d72ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1680829485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5874959990058124461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b167069640fa7f049a93d4609207668c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jumpStrength: 15
+  _groundTransform: {fileID: 5874959990354958250}
+  _landParticle: {fileID: 5368849825009224131, guid: 87d042f9e6ea78541bde6388effc7133, type: 3}
+  rememberGroundedFor: 0.1
+  checkGroundedRadius: 1
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  IsGrounded: 0
+--- !u!114 &1680829500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5874959990058124461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3777db6805c8e24ca70177ed88ac276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentScore: 0
 --- !u!1 &5874959990104763908
 GameObject:
   m_ObjectHideFlags: 0
