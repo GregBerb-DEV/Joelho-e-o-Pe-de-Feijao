@@ -10,7 +10,7 @@ public class CollectableItem : MonoBehaviour
     {
         if (other.GetComponent<PlayerScore>() != null)
         {
-            other.GetComponent<PlayerScore>().PickUpItem(_score);
+            other.GetComponent<PlayerScore>().IncreaseScore(_score);
             Destroy(gameObject);
         }
     }

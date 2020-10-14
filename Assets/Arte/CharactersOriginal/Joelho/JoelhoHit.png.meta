@@ -1,25 +1,28 @@
 fileFormatVersion: 2
-guid: a01ae15697b25554e913350f4460beff
+guid: 113ca8ff4c363234184735ca6d092ac6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6252145830138221253
-    second: JoelhoDoubleJump_0
+      213: 1070266544306850538
+    second: JoelhoHit_0
   - first:
-      213: -2539684880584019466
-    second: JoelhoDoubleJump_1
+      213: -3265755067106692123
+    second: JoelhoHit_1
   - first:
-      213: -7316703732907284833
-    second: JoelhoDoubleJump_2
+      213: -4760834268712330315
+    second: JoelhoHit_2
   - first:
-      213: -109324432134845379
-    second: JoelhoDoubleJump_3
+      213: -5989971310180871240
+    second: JoelhoHit_3
   - first:
-      213: -1025814786982607567
-    second: JoelhoDoubleJump_4
+      213: -4884399528549300461
+    second: JoelhoHit_4
   - first:
-      213: -4259957017103919102
-    second: JoelhoDoubleJump_5
+      213: -1099023811976932982
+    second: JoelhoHit_5
+  - first:
+      213: 7021545394373365106
+    second: JoelhoHit_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -83,8 +86,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,8 +98,8 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,8 +110,8 @@ TextureImporter:
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -119,7 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JoelhoDoubleJump_0
+      name: JoelhoHit_0
       rect:
         serializedVersion: 2
         x: 0
@@ -133,14 +136,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3deba62e7aeb39a0800000000000000
-      internalID: -6252145830138221253
+      spriteID: aea056460c95ade00800000000000000
+      internalID: 1070266544306850538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JoelhoDoubleJump_1
+      name: JoelhoHit_1
       rect:
         serializedVersion: 2
         x: 32
@@ -154,14 +157,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f1fb539e0a31ccd0800000000000000
-      internalID: -2539684880584019466
+      spriteID: 5e37ca5b115bda2d0800000000000000
+      internalID: -3265755067106692123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JoelhoDoubleJump_2
+      name: JoelhoHit_2
       rect:
         serializedVersion: 2
         x: 64
@@ -175,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f96694178b8d57a90800000000000000
-      internalID: -7316703732907284833
+      spriteID: 5bb15e2e47e1eedb0800000000000000
+      internalID: -4760834268712330315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JoelhoDoubleJump_3
+      name: JoelhoHit_3
       rect:
         serializedVersion: 2
         x: 96
@@ -196,14 +199,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3cc459120a9b7ef0800000000000000
-      internalID: -109324432134845379
+      spriteID: 8b353e164d85fdca0800000000000000
+      internalID: -5989971310180871240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JoelhoDoubleJump_4
+      name: JoelhoHit_4
       rect:
         serializedVersion: 2
         x: 128
@@ -217,14 +220,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1350f80e2e293c1f0800000000000000
-      internalID: -1025814786982607567
+      spriteID: 317cbb7e180273cb0800000000000000
+      internalID: -4884399528549300461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JoelhoDoubleJump_5
+      name: JoelhoHit_5
       rect:
         serializedVersion: 2
         x: 160
@@ -238,8 +241,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2089615c9a791e4c0800000000000000
-      internalID: -4259957017103919102
+      spriteID: a815b677aab7fb0f0800000000000000
+      internalID: -1099023811976932982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JoelhoHit_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d87ed955a817160800000000000000
+      internalID: 7021545394373365106
       vertices: []
       indices: 
       edges: []

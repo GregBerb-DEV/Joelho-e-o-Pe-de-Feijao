@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public static AudioClip playerPunchSound;
-    public static AudioClip playerDamageSound;
-    public static AudioClip playerJumpSound;
+    // public static AudioClip playerPunchSound;
+    // public static AudioClip playerDamageSound;
+    // public static AudioClip playerJumpSound;
 
-    static AudioSource audioSrc;
+    // static AudioSource audioSrc;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        playerPunchSound = SFX.load<>
+        //playerPunchSound = SFX.load<>
         //https://www.youtube.com/watch?v=8pFlnyfRfRc
         //greg desistiu e foi
+        //putz
     }
 
     // Update is called once per frame

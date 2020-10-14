@@ -1,43 +1,28 @@
 fileFormatVersion: 2
-guid: 641e16871e9ab4d48bdeb0056fa462df
+guid: e11af09233aabe04bb471f94f488b502
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -523671021743979066
-    second: JoelhoRun_0
+      213: -7991925646265529730
+    second: JoelhoPunch_0
   - first:
-      213: 1524075237870858223
-    second: JoelhoRun_1
+      213: 3391937945022454109
+    second: JoelhoPunch_1
   - first:
-      213: 8403995668718571290
-    second: JoelhoRun_2
+      213: 1968164388451256874
+    second: JoelhoPunch_2
   - first:
-      213: 5907553071315679295
-    second: JoelhoRun_3
+      213: -858861136736310245
+    second: JoelhoPunch_3
   - first:
-      213: -6582076419120479416
-    second: JoelhoRun_4
+      213: -8403832731937187802
+    second: JoelhoPunch_4
   - first:
-      213: 8488683388808995121
-    second: JoelhoRun_5
+      213: -7424688791347311797
+    second: JoelhoPunch_5
   - first:
-      213: 2852396904981276976
-    second: JoelhoRun_6
-  - first:
-      213: 7135794164277700476
-    second: JoelhoRun_7
-  - first:
-      213: 2613582622684095074
-    second: JoelhoRun_8
-  - first:
-      213: 658901200179641658
-    second: JoelhoRun_9
-  - first:
-      213: 5529806710927489227
-    second: JoelhoRun_10
-  - first:
-      213: -5719005391027615241
-    second: JoelhoRun_11
+      213: 8808608288117210361
+    second: JoelhoPunch_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,8 +86,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,8 +98,8 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,8 +110,8 @@ TextureImporter:
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -137,7 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JoelhoRun_0
+      name: JoelhoPunch_0
       rect:
         serializedVersion: 2
         x: 0
@@ -151,14 +136,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c5c8c1fafb8bb8f0800000000000000
-      internalID: -523671021743979066
+      spriteID: e7a420fb7f9f61190800000000000000
+      internalID: -7991925646265529730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JoelhoRun_1
+      name: JoelhoPunch_1
       rect:
         serializedVersion: 2
         x: 32
@@ -172,14 +157,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fefe24c9a5a962510800000000000000
-      internalID: 1524075237870858223
+      spriteID: d595b39f695921f20800000000000000
+      internalID: 3391937945022454109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JoelhoRun_2
+      name: JoelhoPunch_2
       rect:
         serializedVersion: 2
         x: 64
@@ -193,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1f44efc88df0a470800000000000000
-      internalID: 8403995668718571290
+      spriteID: a2a06316513505b10800000000000000
+      internalID: 1968164388451256874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JoelhoRun_3
+      name: JoelhoPunch_3
       rect:
         serializedVersion: 2
         x: 96
@@ -214,14 +199,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f38f9830838dbf150800000000000000
-      internalID: 5907553071315679295
+      spriteID: b1ca179b856b414f0800000000000000
+      internalID: -858861136736310245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JoelhoRun_4
+      name: JoelhoPunch_4
       rect:
         serializedVersion: 2
         x: 128
@@ -235,14 +220,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84349d1ce54c7a4a0800000000000000
-      internalID: -6582076419120479416
+      spriteID: 628551dd7a69f5b80800000000000000
+      internalID: -8403832731937187802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JoelhoRun_5
+      name: JoelhoPunch_5
       rect:
         serializedVersion: 2
         x: 160
@@ -256,14 +241,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13128b0319cddc570800000000000000
-      internalID: 8488683388808995121
+      spriteID: b4b4be7c1e436f890800000000000000
+      internalID: -7424688791347311797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JoelhoRun_6
+      name: JoelhoPunch_6
       rect:
         serializedVersion: 2
         x: 192
@@ -277,113 +262,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03925d75fdfb59720800000000000000
-      internalID: 2852396904981276976
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JoelhoRun_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c77e3104cfe670360800000000000000
-      internalID: 7135794164277700476
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JoelhoRun_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26228384c8f454420800000000000000
-      internalID: 2613582622684095074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JoelhoRun_9
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3d39ca8623e42900800000000000000
-      internalID: 658901200179641658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JoelhoRun_10
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc87769c7e1ddbc40800000000000000
-      internalID: 5529806710927489227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JoelhoRun_11
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f9414fb5e202a0b0800000000000000
-      internalID: -5719005391027615241
+      spriteID: 9fcb9ca61967e3a70800000000000000
+      internalID: 8808608288117210361
       vertices: []
       indices: 
       edges: []
