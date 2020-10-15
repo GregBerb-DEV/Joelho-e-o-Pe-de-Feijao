@@ -6,9 +6,13 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(PlayerScore))]
 public class PlayerWinGame : MonoBehaviour
 {
+    [SerializeField]
+    private string _nextLevelName;
+
     public void Win()
     {
         Debug.Log("Venceu!");
         GetComponent<PlayerScore>().DumpScore();
+        SceneManager.LoadScene(_nextLevelName);
     }
 }
