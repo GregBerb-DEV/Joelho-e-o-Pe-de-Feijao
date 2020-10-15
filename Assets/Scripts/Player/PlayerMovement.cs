@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     private PlayerInput _playerInput;
     private PlayerSpriteHandler _playerSpriteHandler;
     private PlayerWallMovement _playerWallMovement;
+    private PlayerHealth _playerHealth;
     #endregion
 
     void Start()
@@ -27,11 +28,15 @@ public class PlayerMovement : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _playerSpriteHandler = GetComponent<PlayerSpriteHandler>();
         _playerWallMovement = GetComponent<PlayerWallMovement>();
+        _playerHealth = GetComponent<PlayerHealth>();
         #endregion instanciando
     }
 
     void Update()
     {
+        if (_playerHealth.IsDead)
+            return;
+
         horizontalMovement = _playerInput.GetHorizontalMovement();
         _playerSpriteHandler.TurnPlayer(horizontalMovement);
         Move();

@@ -24,12 +24,13 @@ public class PlayerJump : MonoBehaviour
     private float _lastTimeGrounded;
 
     private Rigidbody2D _rigidbody2D;
-    private PlayerAnimation _playerAnimation;
-    private PlayerInput _playerInput;
-    private PlayerSpriteHandler _playerSpriteHandler;
-    private PlayerAttack _playerAttack;
-    private PlayerShoot _playerShoot;
-    private PlayerWallMovement _playerWallMovement;
+    private PlayerAnimation _playerAnimation = default;
+    private PlayerInput _playerInput = default;
+    private PlayerSpriteHandler _playerSpriteHandler = default;
+    private PlayerAttack _playerAttack = default;
+    private PlayerShoot _playerShoot = default;
+    private PlayerWallMovement _playerWallMovement = default;
+    private PlayerHealth _playerHealth = default;
     #endregion
 
     void Start()
@@ -43,10 +44,13 @@ public class PlayerJump : MonoBehaviour
         _playerAttack = GetComponent<PlayerAttack>();
         _playerShoot = GetComponent<PlayerShoot>();
         _playerWallMovement = GetComponent<PlayerWallMovement>();
+        _playerHealth = GetComponent<PlayerHealth>();
         #endregion
     }
     void Update()
     {
+        if (_playerHealth.IsDead)
+            return;
         SetIfIsOnGround();
         GetExtraJump();
         _isJumpButtonPressed = _playerInput.CheckForJumpButton();
