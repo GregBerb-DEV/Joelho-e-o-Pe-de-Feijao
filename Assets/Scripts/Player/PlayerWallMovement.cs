@@ -28,6 +28,7 @@ public class PlayerWallMovement : MonoBehaviour
     private PlayerMovement _playerMovement = default;
     private PlayerInput _playerInput = default;
     private PlayerHealth _playerHealth = default;
+    private PlayerAnimation _playerAnimation = default;
 
     void Start()
     {
@@ -37,6 +38,7 @@ public class PlayerWallMovement : MonoBehaviour
         _collider2D = GetComponent<Collider2D>();
         _playerMovement = GetComponent<PlayerMovement>();
         _playerHealth = GetComponent<PlayerHealth>();
+        _playerAnimation = GetComponent<PlayerAnimation>();
     }
 
     void Update()
@@ -46,6 +48,7 @@ public class PlayerWallMovement : MonoBehaviour
         _isPlayerColliding = Physics2D.OverlapCircle(_wallTransform.position, checkRadius, _playerJump._groundLayer);
         SlideOnWall();
         WallJump();
+        _playerAnimation.SetOnWall(_isPlayerWallSliding);
     }
 
     private void SlideOnWall()

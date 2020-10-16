@@ -53,4 +53,12 @@ public class PlayerHealth : MonoBehaviour, IHaveHealth
         yield return new WaitForSeconds(0.8f);
         _gameOverCanvasGroup.SetActive(true);
     }
+
+    public void IncreaseHealth(int healthAmount)
+    {
+        _currentHealth += healthAmount;
+        if (_currentHealth >= _maxHealth)
+            _currentHealth = _maxHealth;
+        _healthDisplay.SetText($"HP: {_currentHealth}");
+    }
 }

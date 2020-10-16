@@ -321,8 +321,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.20322578, y: 0.24}
+  m_Offset: {x: 0, y: -0.05}
+  m_Size: {x: 0.4, y: 0.3}
   m_Direction: 0
 --- !u!50 &5874959990058124458
 Rigidbody2D:
@@ -455,8 +455,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24aa4ab8bfa572f4b86e4f4fa4fb4ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _maxHealth: 10
+  _healthDisplay: {fileID: 0}
+  _gameOverCanvasGroup: {fileID: 0}
   IsDead: 0
-  _playerHealth: 5
 --- !u!114 &5585110331149199454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,7 +489,7 @@ MonoBehaviour:
   _wallTransform: {fileID: 5585110330072436285}
   _wallSlideSpeed: 1
   checkRadius: 0.15
-  yWallForce: 6
+  yWallForce: 3
   wallJumpTime: 0.2
   _xWallForce: 11
   _isWallJumping: 0
@@ -504,6 +506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3029196b9d66e54dbeba8cc714d72ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _nextLevelName: 
 --- !u!114 &1680829485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,7 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3777db6805c8e24ca70177ed88ac276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentScore: 0
+  _scoreDisplay: {fileID: 0}
 --- !u!1 &5874959990104763908
 GameObject:
   m_ObjectHideFlags: 0
@@ -5374,7 +5377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5874959990354958249}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00043605766, y: -0.226, z: -0.2763579}
+  m_LocalPosition: {x: 0, y: -0.374, z: -0.2763579}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 1}
   m_Children: []
   m_Father: {fileID: 5874959990058124462}

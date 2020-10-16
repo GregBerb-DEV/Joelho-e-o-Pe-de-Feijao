@@ -8,6 +8,7 @@ public class PlayerAnimation : MonoBehaviour
     private const string ATTACK_BOOL = "Attack";
     private const string ON_GROUND_BOOL = "OnGround";
     private const string RUNNING_BOOL = "Running";
+    private const string ON_WALL_BOOL = "IsOnWall";
     private const string DOUBLE_JUMPING_BOOL = "DoubleJump";
     private const string IS_DEAD_TRIGGER = "IsDead";
     private const string TAKE_DAMAGE_TRIGGER = "TakeDamage";
@@ -19,7 +20,7 @@ public class PlayerAnimation : MonoBehaviour
         _animator = gameObject.GetComponent<Animator>();
     }
 
-#region bools
+    #region bools
 
     public void PlayAttackAnimation()
     {
@@ -42,9 +43,14 @@ public class PlayerAnimation : MonoBehaviour
         _animator.SetBool(RUNNING_BOOL, isRunning);
     }
 
-#endregion bools
+    public void SetOnWall(bool isOnWall)
+    {
+        _animator.SetBool(ON_WALL_BOOL, isOnWall);
+    }
 
-#region triggers
+    #endregion bools
+
+    #region triggers
 
     public void SetDeathTrigger()
     {
