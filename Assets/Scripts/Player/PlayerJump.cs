@@ -64,7 +64,7 @@ public class PlayerJump : MonoBehaviour
             _rigidbody2D.velocity = Vector2.up * _jumpStrength;
             if (_landParticle)
                 Instantiate(_landParticle, _groundTransform.position, Quaternion.identity);
-            //SoundManager.PlaySound("jump");
+            SoundManager.PlaySound("jump");
         }
         else if (_isJumpButtonPressed && _hasExtraJump && !_playerWallMovement._isWallJumping)
         {
