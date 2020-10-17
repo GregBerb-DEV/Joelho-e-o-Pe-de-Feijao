@@ -16,6 +16,7 @@ public class SoundManager : MonoBehaviour
     public static AudioClip playerWalkingSound;
     public static AudioClip playerStepSound;
     public static AudioClip playerWallSlidingSound;
+    public static AudioClip playerJumpSound;
     static AudioSource audioSrc;
 
 
@@ -32,6 +33,7 @@ public class SoundManager : MonoBehaviour
         playerWalkingSound = Resources.Load<AudioClip>("walking");
         playerStepSound = Resources.Load<AudioClip>("step");
         playerWallSlidingSound = Resources.Load<AudioClip>("wallsliding");
+        playerJumpSound = Resources.Load<AudioClip>("jump");
 
         audioSrc = GetComponent<AudioSource>();
     }
@@ -39,11 +41,13 @@ public class SoundManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    
-    public static void PlaySound(string clip){
-        switch (clip) {
+
+    public static void PlaySound(string clip)
+    {
+        switch (clip)
+        {
             case "kick":
                 audioSrc.PlayOneShot(playerKickSound, 2);
                 break;
@@ -55,6 +59,9 @@ public class SoundManager : MonoBehaviour
                 break;
             case "damage":
                 audioSrc.PlayOneShot(playerDamageSound);
+                break;
+            case "jump":
+                audioSrc.PlayOneShot(playerJumpSound);
                 break;
             case "extraJump":
                 audioSrc.PlayOneShot(playerExtraJumpSound);
@@ -74,6 +81,6 @@ public class SoundManager : MonoBehaviour
             case "wallSliding":
                 audioSrc.PlayOneShot(playerWallSlidingSound, 0.2f);
                 break;
-        }    
+        }
     }
 }

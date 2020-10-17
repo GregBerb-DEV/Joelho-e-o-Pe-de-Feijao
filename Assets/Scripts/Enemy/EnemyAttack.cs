@@ -31,9 +31,9 @@ public class EnemyAttack : MonoBehaviour
             {
                 PlayerHealth playerHealth = outro.gameObject.GetComponent<PlayerHealth>();
                 playerHealth.TakeDamage(_forca);
+                StartCoroutine(WaitAttack());
             }
 
-            StartCoroutine(WaitAttack());
         }
     }
 
