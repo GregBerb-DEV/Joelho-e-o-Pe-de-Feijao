@@ -1,193 +1,193 @@
 fileFormatVersion: 2
-guid: 5dddbc99bfddd5848ad8d92d8762169c
+guid: cffe2568678f5d642a1d54de6dcad7e4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7115557176935550351
-    second: TilemapFase_0
+      213: -626004259157490141
+    second: TILEMAPV2_0
   - first:
-      213: 3044277746192399367
-    second: TilemapFase_1
+      213: -7016826827304757757
+    second: TILEMAPV2_1
   - first:
-      213: -8092236327853576474
-    second: TilemapFase_2
+      213: 9081597184981874733
+    second: TILEMAPV2_2
   - first:
-      213: 6578604340160039723
-    second: TilemapFase_3
+      213: 1902732344020513425
+    second: TILEMAPV2_3
   - first:
-      213: 3661658692003754336
-    second: TilemapFase_4
+      213: 8693253955091301533
+    second: TILEMAPV2_4
   - first:
-      213: -2420082077686277208
-    second: TilemapFase_5
+      213: -5876998101333596806
+    second: TILEMAPV2_5
   - first:
-      213: 7859096721725185594
-    second: TilemapFase_6
+      213: -386430998624036238
+    second: TILEMAPV2_6
   - first:
-      213: -5825917304091630716
-    second: TilemapFase_7
+      213: -894499595032063968
+    second: TILEMAPV2_7
   - first:
-      213: -3465711529974398649
-    second: TilemapFase_8
+      213: -3919953972974353008
+    second: TILEMAPV2_8
   - first:
-      213: -7023670966430606817
-    second: TilemapFase_9
+      213: 1854593818230806814
+    second: TILEMAPV2_9
   - first:
-      213: 450202042951606011
-    second: TilemapFase_10
+      213: 426742621358249529
+    second: TILEMAPV2_10
   - first:
-      213: 5795428280994549125
-    second: TilemapFase_11
+      213: -4985721987349380410
+    second: TILEMAPV2_11
   - first:
-      213: -5366959026223870472
-    second: TilemapFase_12
+      213: -4030409798423601937
+    second: TILEMAPV2_12
   - first:
-      213: -4859565513398158924
-    second: TilemapFase_13
+      213: 1239010863341261501
+    second: TILEMAPV2_13
   - first:
-      213: 4450736138046012693
-    second: TilemapFase_14
+      213: 8467719100506591787
+    second: TILEMAPV2_14
   - first:
-      213: 5635675308007901439
-    second: TilemapFase_15
+      213: 4698328595139079578
+    second: TILEMAPV2_15
   - first:
-      213: 7152231561216225610
-    second: TilemapFase_16
+      213: -7080957156219769385
+    second: TILEMAPV2_16
   - first:
-      213: 5357828399339498420
-    second: TilemapFase_17
+      213: 6103192205684045497
+    second: TILEMAPV2_17
   - first:
-      213: 7592059282060979736
-    second: TilemapFase_18
+      213: -5514516275845299433
+    second: TILEMAPV2_18
   - first:
-      213: -7365830711615461321
-    second: TilemapFase_19
+      213: -5508030307479069799
+    second: TILEMAPV2_19
   - first:
-      213: 2008449874756983783
-    second: TilemapFase_20
+      213: -3945858707835394746
+    second: TILEMAPV2_20
   - first:
-      213: 1509427309352407378
-    second: TilemapFase_21
+      213: -2435365369957378996
+    second: TILEMAPV2_21
   - first:
-      213: 1134495732317583851
-    second: TilemapFase_22
+      213: 8895070188051314749
+    second: TILEMAPV2_22
   - first:
-      213: -8311383670047783735
-    second: TilemapFase_23
+      213: 1651911618494036504
+    second: TILEMAPV2_23
   - first:
-      213: 99088834962197824
-    second: TilemapFase_24
+      213: 6622543682346541674
+    second: TILEMAPV2_24
   - first:
-      213: -6757751113420902670
-    second: TilemapFase_25
+      213: 8552618154103042048
+    second: TILEMAPV2_25
   - first:
-      213: -4660318689292610878
-    second: TilemapFase_26
+      213: -5109304572791322148
+    second: TILEMAPV2_26
   - first:
-      213: 5425217811830426814
-    second: TilemapFase_27
+      213: 9122583760876606730
+    second: TILEMAPV2_27
   - first:
-      213: 9135240150960845655
-    second: TilemapFase_28
+      213: 3353086662344018207
+    second: TILEMAPV2_28
   - first:
-      213: -3650917155085685423
-    second: TilemapFase_29
+      213: -6049922158617660092
+    second: TILEMAPV2_29
   - first:
-      213: -263329408274234554
-    second: TilemapFase_30
+      213: 227178559343786010
+    second: TILEMAPV2_30
   - first:
-      213: -6238554105946732830
-    second: TilemapFase_31
+      213: -6432155853599713427
+    second: TILEMAPV2_31
   - first:
-      213: -1253124170019210752
-    second: TilemapFase_32
+      213: -1576041545120093173
+    second: TILEMAPV2_32
   - first:
-      213: -3220885027318970848
-    second: TilemapFase_33
+      213: 4492194434283074499
+    second: TILEMAPV2_33
   - first:
-      213: -2629716618106037926
-    second: TilemapFase_34
+      213: 5009730014303046323
+    second: TILEMAPV2_34
   - first:
-      213: 8228608242228950867
-    second: TilemapFase_35
+      213: 1089933379826051080
+    second: TILEMAPV2_35
   - first:
-      213: 1588405954914967834
-    second: TilemapFase_36
+      213: 6704267412734081027
+    second: TILEMAPV2_36
   - first:
-      213: -2868217301993583271
-    second: TilemapFase_37
+      213: -6056064067111423433
+    second: TILEMAPV2_37
   - first:
-      213: -3113660290646193774
-    second: TilemapFase_38
+      213: 706871981030384305
+    second: TILEMAPV2_38
   - first:
-      213: 4907077552569033862
-    second: TilemapFase_39
+      213: 9117630347660523667
+    second: TILEMAPV2_39
   - first:
-      213: 2994973955368647193
-    second: TilemapFase_40
+      213: 4172499642714499829
+    second: TILEMAPV2_40
   - first:
-      213: -3213460821985391690
-    second: TilemapFase_41
+      213: 7620693436134190647
+    second: TILEMAPV2_41
   - first:
-      213: 5698126613001500707
-    second: TilemapFase_42
+      213: -3189306608790247967
+    second: TILEMAPV2_42
   - first:
-      213: 8948552051438591896
-    second: TilemapFase_43
+      213: 2088109889523399066
+    second: TILEMAPV2_43
   - first:
-      213: -5027007166180316996
-    second: TilemapFase_44
+      213: 6706864093436498205
+    second: TILEMAPV2_44
   - first:
-      213: -8571153288544762448
-    second: TilemapFase_45
+      213: 47244460505783172
+    second: TILEMAPV2_45
   - first:
-      213: 3763014664330274309
-    second: TilemapFase_46
+      213: -2489717313582662690
+    second: TILEMAPV2_46
   - first:
-      213: -5384604065517566099
-    second: TilemapFase_47
+      213: -2496245185920261912
+    second: TILEMAPV2_47
   - first:
-      213: -4410066703842015930
-    second: TilemapFase_48
+      213: -8108859600203039701
+    second: TILEMAPV2_48
   - first:
-      213: 7677194130051715923
-    second: TilemapFase_49
+      213: -6469742583798793896
+    second: TILEMAPV2_49
   - first:
-      213: -6384230047019284620
-    second: TilemapFase_50
+      213: -3372360247569103244
+    second: TILEMAPV2_50
   - first:
-      213: -4539552514762966346
-    second: TilemapFase_51
+      213: -4321530375241266812
+    second: TILEMAPV2_51
   - first:
-      213: -8778300053378114073
-    second: TilemapFase_52
+      213: -5108717087532374910
+    second: TILEMAPV2_52
   - first:
-      213: -3747683852592283819
-    second: TilemapFase_53
+      213: -6894075151248370111
+    second: TILEMAPV2_53
   - first:
-      213: 1471268788215520121
-    second: TilemapFase_54
+      213: 9039349127616712162
+    second: TILEMAPV2_54
   - first:
-      213: -2062248383797903755
-    second: TilemapFase_55
+      213: -5512935607376955377
+    second: TILEMAPV2_55
   - first:
-      213: -1999264421434703907
-    second: TilemapFase_56
+      213: 3328413119578536110
+    second: TILEMAPV2_56
   - first:
-      213: -1898951759029169813
-    second: TilemapFase_57
+      213: 1605443003397531717
+    second: TILEMAPV2_57
   - first:
-      213: -9102544726080127090
-    second: TilemapFase_58
+      213: 3545228074058845802
+    second: TILEMAPV2_58
   - first:
-      213: -6943823811151375871
-    second: TilemapFase_59
+      213: 4763241390314461216
+    second: TILEMAPV2_59
   - first:
-      213: -3098083139284340069
-    second: TilemapFase_60
+      213: -9064308969311634931
+    second: TILEMAPV2_60
   - first:
-      213: -9076743631098482707
-    second: TilemapFase_61
+      213: -6016818749932583634
+    second: TILEMAPV2_61
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -287,7 +287,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TilemapFase_0
+      name: TILEMAPV2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -301,14 +301,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8d89367d898fb260800000000000000
-      internalID: 7115557176935550351
+      spriteID: 3264909617cff47f0800000000000000
+      internalID: -626004259157490141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_1
+      name: TILEMAPV2_1
       rect:
         serializedVersion: 2
         x: 16
@@ -322,14 +322,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70cbc6b1b727f3a20800000000000000
-      internalID: 3044277746192399367
+      spriteID: 30691146d293f9e90800000000000000
+      internalID: -7016826827304757757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_2
+      name: TILEMAPV2_2
       rect:
         serializedVersion: 2
         x: 32
@@ -343,14 +343,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6eea6cf2fe992bf80800000000000000
-      internalID: -8092236327853576474
+      spriteID: d28380cf580580e70800000000000000
+      internalID: 9081597184981874733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_3
+      name: TILEMAPV2_3
       rect:
         serializedVersion: 2
         x: 48
@@ -364,14 +364,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2b051ddac5eb4b50800000000000000
-      internalID: 6578604340160039723
+      spriteID: 1923dfb5cfcd76a10800000000000000
+      internalID: 1902732344020513425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_4
+      name: TILEMAPV2_4
       rect:
         serializedVersion: 2
         x: 64
@@ -385,14 +385,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 061fa991e23d0d230800000000000000
-      internalID: 3661658692003754336
+      spriteID: d940a7fc964a4a870800000000000000
+      internalID: 8693253955091301533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_5
+      name: TILEMAPV2_5
       rect:
         serializedVersion: 2
         x: 80
@@ -406,14 +406,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ab58382c242a6ed0800000000000000
-      internalID: -2420082077686277208
+      spriteID: a75ad505d55b07ea0800000000000000
+      internalID: -5876998101333596806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_6
+      name: TILEMAPV2_6
       rect:
         serializedVersion: 2
         x: 0
@@ -427,14 +427,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3eddd144de111d60800000000000000
-      internalID: 7859096721725185594
+      spriteID: 27a90dcdd0f13aaf0800000000000000
+      internalID: -386430998624036238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_7
+      name: TILEMAPV2_7
       rect:
         serializedVersion: 2
         x: 16
@@ -448,14 +448,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48321d6341f262fa0800000000000000
-      internalID: -5825917304091630716
+      spriteID: 020126a8b591693f0800000000000000
+      internalID: -894499595032063968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_8
+      name: TILEMAPV2_8
       rect:
         serializedVersion: 2
         x: 32
@@ -469,14 +469,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74186e1c9b157efc0800000000000000
-      internalID: -3465711529974398649
+      spriteID: 0958bf061a68999c0800000000000000
+      internalID: -3919953972974353008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_9
+      name: TILEMAPV2_9
       rect:
         serializedVersion: 2
         x: 48
@@ -490,14 +490,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1adda21878e68e90800000000000000
-      internalID: -7023670966430606817
+      spriteID: e19584a6047dcb910800000000000000
+      internalID: 1854593818230806814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_10
+      name: TILEMAPV2_10
       rect:
         serializedVersion: 2
         x: 64
@@ -511,14 +511,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfe194f6f507f3600800000000000000
-      internalID: 450202042951606011
+      spriteID: 936d39437281ce500800000000000000
+      internalID: 426742621358249529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_11
+      name: TILEMAPV2_11
       rect:
         serializedVersion: 2
         x: 80
@@ -532,14 +532,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58dcee9e05f7d6050800000000000000
-      internalID: 5795428280994549125
+      spriteID: 6c28f2b94482fcab0800000000000000
+      internalID: -4985721987349380410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_12
+      name: TILEMAPV2_12
       rect:
         serializedVersion: 2
         x: 96
@@ -553,14 +553,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fd89d5733bb485b0800000000000000
-      internalID: -5366959026223870472
+      spriteID: fec15b174ab1118c0800000000000000
+      internalID: -4030409798423601937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_13
+      name: TILEMAPV2_13
       rect:
         serializedVersion: 2
         x: 112
@@ -574,14 +574,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b9f923a9ea5f8cb0800000000000000
-      internalID: -4859565513398158924
+      spriteID: db25e4ec0d9d13110800000000000000
+      internalID: 1239010863341261501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_14
+      name: TILEMAPV2_14
       rect:
         serializedVersion: 2
         x: 0
@@ -595,14 +595,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51df931cfe034cd30800000000000000
-      internalID: 4450736138046012693
+      spriteID: b225c7378a1638570800000000000000
+      internalID: 8467719100506591787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_15
+      name: TILEMAPV2_15
       rect:
         serializedVersion: 2
         x: 16
@@ -616,14 +616,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff8404365d0f53e40800000000000000
-      internalID: 5635675308007901439
+      spriteID: a9d2357e6f0d33140800000000000000
+      internalID: 4698328595139079578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_16
+      name: TILEMAPV2_16
       rect:
         serializedVersion: 2
         x: 32
@@ -637,14 +637,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4171a5f5b4d14360800000000000000
-      internalID: 7152231561216225610
+      spriteID: 7dda2c1abf26bbd90800000000000000
+      internalID: -7080957156219769385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_17
+      name: TILEMAPV2_17
       rect:
         serializedVersion: 2
         x: 48
@@ -658,14 +658,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bb612eca84da5a40800000000000000
-      internalID: 5357828399339498420
+      spriteID: 9b6fab799f4e2b450800000000000000
+      internalID: 6103192205684045497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_18
+      name: TILEMAPV2_18
       rect:
         serializedVersion: 2
         x: 64
@@ -679,14 +679,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81ea3fc41b96c5960800000000000000
-      internalID: 7592059282060979736
+      spriteID: 713812e0aa08873b0800000000000000
+      internalID: -5514516275845299433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_19
+      name: TILEMAPV2_19
       rect:
         serializedVersion: 2
         x: 80
@@ -700,14 +700,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7386f7e5eff47c990800000000000000
-      internalID: -7365830711615461321
+      spriteID: 99bdf9e3e9b8f83b0800000000000000
+      internalID: -5508030307479069799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_20
+      name: TILEMAPV2_20
       rect:
         serializedVersion: 2
         x: 96
@@ -721,14 +721,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7eb511615827fdb10800000000000000
-      internalID: 2008449874756983783
+      spriteID: 645e699496e7d39c0800000000000000
+      internalID: -3945858707835394746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_21
+      name: TILEMAPV2_21
       rect:
         serializedVersion: 2
         x: 112
@@ -742,14 +742,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 251593cf32092f410800000000000000
-      internalID: 1509427309352407378
+      spriteID: c4417616918d33ed0800000000000000
+      internalID: -2435365369957378996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_22
+      name: TILEMAPV2_22
       rect:
         serializedVersion: 2
         x: 0
@@ -763,14 +763,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be97cf39bd98ebf00800000000000000
-      internalID: 1134495732317583851
+      spriteID: d3837fa3533a17b70800000000000000
+      internalID: 8895070188051314749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_23
+      name: TILEMAPV2_23
       rect:
         serializedVersion: 2
         x: 16
@@ -784,14 +784,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c4c1d2769808ac80800000000000000
-      internalID: -8311383670047783735
+      spriteID: 81a7da46dd4cce610800000000000000
+      internalID: 1651911618494036504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_24
+      name: TILEMAPV2_24
       rect:
         serializedVersion: 2
         x: 32
@@ -805,14 +805,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04d012935c8006100800000000000000
-      internalID: 99088834962197824
+      spriteID: a62e5cf246008eb50800000000000000
+      internalID: 6622543682346541674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_25
+      name: TILEMAPV2_25
       rect:
         serializedVersion: 2
         x: 48
@@ -826,14 +826,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2feeb0c9a25a732a0800000000000000
-      internalID: -6757751113420902670
+      spriteID: 0007edeb5e001b670800000000000000
+      internalID: 8552618154103042048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_26
+      name: TILEMAPV2_26
       rect:
         serializedVersion: 2
         x: 64
@@ -847,14 +847,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c29990f7d8335fb0800000000000000
-      internalID: -4660318689292610878
+      spriteID: cd98e71bf8a1819b0800000000000000
+      internalID: -5109304572791322148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_27
+      name: TILEMAPV2_27
       rect:
         serializedVersion: 2
         x: 80
@@ -868,14 +868,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebc46471bde3a4b40800000000000000
-      internalID: 5425217811830426814
+      spriteID: a051cc4d89de99e70800000000000000
+      internalID: 9122583760876606730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_28
+      name: TILEMAPV2_28
       rect:
         serializedVersion: 2
         x: 96
@@ -889,14 +889,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75338e74484e6ce70800000000000000
-      internalID: 9135240150960845655
+      spriteID: f198d12dd8e888e20800000000000000
+      internalID: 3353086662344018207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_29
+      name: TILEMAPV2_29
       rect:
         serializedVersion: 2
         x: 112
@@ -910,14 +910,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15decbad036555dc0800000000000000
-      internalID: -3650917155085685423
+      spriteID: 44574d0c9db5a0ca0800000000000000
+      internalID: -6049922158617660092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_30
+      name: TILEMAPV2_30
       rect:
         serializedVersion: 2
         x: 0
@@ -931,14 +931,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64386e06c47785cf0800000000000000
-      internalID: -263329408274234554
+      spriteID: a18754232b9172300800000000000000
+      internalID: 227178559343786010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_31
+      name: TILEMAPV2_31
       rect:
         serializedVersion: 2
         x: 16
@@ -952,14 +952,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e68dfa08143c69a0800000000000000
-      internalID: -6238554105946732830
+      spriteID: d675d3684546cb6a0800000000000000
+      internalID: -6432155853599713427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_32
+      name: TILEMAPV2_32
       rect:
         serializedVersion: 2
         x: 32
@@ -973,14 +973,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00a7c8ae4320c9ee0800000000000000
-      internalID: -1253124170019210752
+      spriteID: b0cebdf9096c02ae0800000000000000
+      internalID: -1576041545120093173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_33
+      name: TILEMAPV2_33
       rect:
         serializedVersion: 2
         x: 48
@@ -994,14 +994,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0264744f12e1d43d0800000000000000
-      internalID: -3220885027318970848
+      spriteID: 3c3fd6d890b775e30800000000000000
+      internalID: 4492194434283074499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_34
+      name: TILEMAPV2_34
       rect:
         serializedVersion: 2
         x: 64
@@ -1015,14 +1015,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5919dd2bae518bd0800000000000000
-      internalID: -2629716618106037926
+      spriteID: 3ba4523c7e2268540800000000000000
+      internalID: 5009730014303046323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_35
+      name: TILEMAPV2_35
       rect:
         serializedVersion: 2
         x: 80
@@ -1036,14 +1036,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35778e96993e13270800000000000000
-      internalID: 8228608242228950867
+      spriteID: 8086f5d52a8302f00800000000000000
+      internalID: 1089933379826051080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_36
+      name: TILEMAPV2_36
       rect:
         serializedVersion: 2
         x: 96
@@ -1057,14 +1057,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1162dddcc62b0610800000000000000
-      internalID: 1588405954914967834
+      spriteID: 308fd3fe0b75a0d50800000000000000
+      internalID: 6704267412734081027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_37
+      name: TILEMAPV2_37
       rect:
         serializedVersion: 2
         x: 112
@@ -1078,14 +1078,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95d0b007f8b0238d0800000000000000
-      internalID: -2868217301993583271
+      spriteID: 732f0de31d984fba0800000000000000
+      internalID: -6056064067111423433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_38
+      name: TILEMAPV2_38
       rect:
         serializedVersion: 2
         x: 0
@@ -1099,14 +1099,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2994bc8667e0ac4d0800000000000000
-      internalID: -3113660290646193774
+      spriteID: 1b22ef252505fc900800000000000000
+      internalID: 706871981030384305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_39
+      name: TILEMAPV2_39
       rect:
         serializedVersion: 2
         x: 16
@@ -1120,14 +1120,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 684ab260901791440800000000000000
-      internalID: 4907077552569033862
+      spriteID: 39870a17e74588e70800000000000000
+      internalID: 9117630347660523667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_40
+      name: TILEMAPV2_40
       rect:
         serializedVersion: 2
         x: 32
@@ -1141,14 +1141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91a7b41c1f8409920800000000000000
-      internalID: 2994973955368647193
+      spriteID: 5fa21757152b7e930800000000000000
+      internalID: 4172499642714499829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_41
+      name: TILEMAPV2_41
       rect:
         serializedVersion: 2
         x: 48
@@ -1162,14 +1162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bb0de5786e7763d0800000000000000
-      internalID: -3213460821985391690
+      spriteID: 73eede2dd4422c960800000000000000
+      internalID: 7620693436134190647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_42
+      name: TILEMAPV2_42
       rect:
         serializedVersion: 2
         x: 64
@@ -1183,14 +1183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 328772de6ffc31f40800000000000000
-      internalID: 5698126613001500707
+      spriteID: 1e56047798e4db3d0800000000000000
+      internalID: -3189306608790247967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_43
+      name: TILEMAPV2_43
       rect:
         serializedVersion: 2
         x: 80
@@ -1204,14 +1204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89f1718eda4af2c70800000000000000
-      internalID: 8948552051438591896
+      spriteID: a99b50991e47afc10800000000000000
+      internalID: 2088109889523399066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_44
+      name: TILEMAPV2_44
       rect:
         serializedVersion: 2
         x: 96
@@ -1225,14 +1225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb8aa78dd9b7c3ab0800000000000000
-      internalID: -5027007166180316996
+      spriteID: d11da16cb51931d50800000000000000
+      internalID: 6706864093436498205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_45
+      name: TILEMAPV2_45
       rect:
         serializedVersion: 2
         x: 112
@@ -1246,14 +1246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b54ed8fe752d0980800000000000000
-      internalID: -8571153288544762448
+      spriteID: 48b5d062698d7a000800000000000000
+      internalID: 47244460505783172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_46
+      name: TILEMAPV2_46
       rect:
         serializedVersion: 2
         x: 0
@@ -1267,14 +1267,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 506edff56e9e83430800000000000000
-      internalID: 3763014664330274309
+      spriteID: edbf3cc5b4fb27dd0800000000000000
+      internalID: -2489717313582662690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_47
+      name: TILEMAPV2_47
       rect:
         serializedVersion: 2
         x: 16
@@ -1288,14 +1288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6783ba912b0645b0800000000000000
-      internalID: -5384604065517566099
+      spriteID: 8e0a1f4aa3e8b5dd0800000000000000
+      internalID: -2496245185920261912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_48
+      name: TILEMAPV2_48
       rect:
         serializedVersion: 2
         x: 32
@@ -1309,14 +1309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64508b9c2bb4cc2c0800000000000000
-      internalID: -4410066703842015930
+      spriteID: b2cb16cf72b877f80800000000000000
+      internalID: -8108859600203039701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_49
+      name: TILEMAPV2_49
       rect:
         serializedVersion: 2
         x: 48
@@ -1330,14 +1330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3535271c26fda8a60800000000000000
-      internalID: 7677194130051715923
+      spriteID: 8597470f56bd636a0800000000000000
+      internalID: -6469742583798793896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_50
+      name: TILEMAPV2_50
       rect:
         serializedVersion: 2
         x: 64
@@ -1351,14 +1351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4774a0be898a667a0800000000000000
-      internalID: -6384230047019284620
+      spriteID: 476cefce838f231d0800000000000000
+      internalID: -3372360247569103244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_51
+      name: TILEMAPV2_51
       rect:
         serializedVersion: 2
         x: 80
@@ -1372,14 +1372,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ba72561a054001c0800000000000000
-      internalID: -4539552514762966346
+      spriteID: 4890fa92507d604c0800000000000000
+      internalID: -4321530375241266812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_52
+      name: TILEMAPV2_52
       rect:
         serializedVersion: 2
         x: 96
@@ -1393,14 +1393,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7edda926c963d2680800000000000000
-      internalID: -8778300053378114073
+      spriteID: 2842aa340e03a19b0800000000000000
+      internalID: -5108717087532374910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_53
+      name: TILEMAPV2_53
       rect:
         serializedVersion: 2
         x: 112
@@ -1414,14 +1414,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55ff4c3646d8dfbc0800000000000000
-      internalID: -3747683852592283819
+      spriteID: 1465ef22d235350a0800000000000000
+      internalID: -6894075151248370111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_54
+      name: TILEMAPV2_54
       rect:
         serializedVersion: 2
         x: 0
@@ -1435,14 +1435,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97b94b2fa2ffa6410800000000000000
-      internalID: 1471268788215520121
+      spriteID: 2edc4589328327d70800000000000000
+      internalID: 9039349127616712162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_55
+      name: TILEMAPV2_55
       rect:
         serializedVersion: 2
         x: 16
@@ -1456,14 +1456,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57e3a1d650c6163e0800000000000000
-      internalID: -2062248383797903755
+      spriteID: f08b1bc164e1e73b0800000000000000
+      internalID: -5512935607376955377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_56
+      name: TILEMAPV2_56
       rect:
         serializedVersion: 2
         x: 32
@@ -1477,14 +1477,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddfbe4ce99f2144e0800000000000000
-      internalID: -1999264421434703907
+      spriteID: ea87a3af816e03e20800000000000000
+      internalID: 3328413119578536110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_57
+      name: TILEMAPV2_57
       rect:
         serializedVersion: 2
         x: 48
@@ -1498,14 +1498,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b61967daf6195a5e0800000000000000
-      internalID: -1898951759029169813
+      spriteID: 54865a4d7eda74610800000000000000
+      internalID: 1605443003397531717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_58
+      name: TILEMAPV2_58
       rect:
         serializedVersion: 2
         x: 64
@@ -1519,14 +1519,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8f73e98cc34da180800000000000000
-      internalID: -9102544726080127090
+      spriteID: a6e0502662e233130800000000000000
+      internalID: 3545228074058845802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_59
+      name: TILEMAPV2_59
       rect:
         serializedVersion: 2
         x: 80
@@ -1540,14 +1540,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1025c61a80592af90800000000000000
-      internalID: -6943823811151375871
+      spriteID: 0289129cece6a1240800000000000000
+      internalID: 4763241390314461216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_60
+      name: TILEMAPV2_60
       rect:
         serializedVersion: 2
         x: 96
@@ -1561,14 +1561,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9274569cc56105d0800000000000000
-      internalID: -3098083139284340069
+      spriteID: d0afac5640b153280800000000000000
+      internalID: -9064308969311634931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapFase_61
+      name: TILEMAPV2_61
       rect:
         serializedVersion: 2
         x: 112
@@ -1582,8 +1582,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: defe51712cde80280800000000000000
-      internalID: -9076743631098482707
+      spriteID: e25cb54b937ff7ca0800000000000000
+      internalID: -6016818749932583634
       vertices: []
       indices: 
       edges: []
