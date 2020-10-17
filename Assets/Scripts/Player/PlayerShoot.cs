@@ -46,6 +46,7 @@ public class PlayerShoot : MonoBehaviour
             {
                 Instantiate(Projectile, ShootPoint.position, Quaternion.Euler(0, 0, quaternionZ));
                 _timeBetweenShots = _startTimeBetweenShots;
+                SoundManager.PlaySound("shoot");
             }
         }
         else

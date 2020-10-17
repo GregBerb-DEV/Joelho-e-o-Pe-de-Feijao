@@ -33,6 +33,7 @@ public class PlayerHealth : MonoBehaviour, IHaveHealth
     {
         if (IsDead)
             return;
+        SoundManager.PlaySound("damage");
         _playerAnimation.SetDamageTrigger();
         _currentHealth -= damageTaken;
         _healthDisplay.SetText($"HP: {_currentHealth}");
@@ -52,6 +53,7 @@ public class PlayerHealth : MonoBehaviour, IHaveHealth
         _playerAnimation.SetDeathTrigger();
         yield return new WaitForSeconds(0.8f);
         _gameOverCanvasGroup.SetActive(true);
+        SoundManager.PlaySound("die");
     }
 
     public void IncreaseHealth(int healthAmount)

@@ -13,8 +13,10 @@ public class PlayerKick : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == _enemyTag)
+        if (other.tag == _enemyTag){
            other.GetComponent<IHaveHealth>().TakeDamage(_damageAmount); 
+           SoundManager.PlaySound("kickHit");
+        }
         if (_explosionEffect)
             Instantiate(_explosionEffect, transform.position, transform.rotation);
     }

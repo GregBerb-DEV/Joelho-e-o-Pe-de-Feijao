@@ -22,6 +22,6 @@ public class PlayerAttack : MonoBehaviour
     void Attack()
     {
         _playerAnimation.PlayAttackAnimation();
-        SoundManager.PlaySound("tapa");
+        SoundManager.PlaySound("kick");
     }
 }

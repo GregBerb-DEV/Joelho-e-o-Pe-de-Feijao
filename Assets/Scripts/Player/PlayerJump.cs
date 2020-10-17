@@ -64,6 +64,7 @@ public class PlayerJump : MonoBehaviour
             _rigidbody2D.velocity = Vector2.up * _jumpStrength;
             if (_landParticle)
                 Instantiate(_landParticle, _groundTransform.position, Quaternion.identity);
+            //SoundManager.PlaySound("jump");
         }
         else if (_isJumpButtonPressed && _hasExtraJump && !_playerWallMovement._isWallJumping)
         {
@@ -71,6 +72,7 @@ public class PlayerJump : MonoBehaviour
             _rigidbody2D.velocity = Vector2.up * _jumpStrength;
             _playerShoot.DoubleJumpShoot();
             _hasExtraJump = false;
+            SoundManager.PlaySound("extraJump");
         }
     }
 
@@ -114,6 +116,7 @@ public class PlayerJump : MonoBehaviour
             CameraShake.Shake();
             if (_landParticle)
                 Instantiate(_landParticle, _groundTransform.position, Quaternion.identity);
+                SoundManager.PlaySound("land");
             _willLand = false;
         }
     }

@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask _groundLayer = default;
     public float horizontalMovement;
     public bool IsGrounded;
+    private bool _isPlayingStep = false;
 
     private Rigidbody2D _rigidbody2D;
     private PlayerAnimation _playerAnimation;
@@ -49,5 +50,19 @@ public class PlayerMovement : MonoBehaviour
         float horizontalSpeed = horizontalMovement * _playerSpeed;
         _rigidbody2D.velocity = new Vector2(horizontalSpeed, _rigidbody2D.velocity.y);
         _playerAnimation.SetRunning(horizontalMovement);
+        StartCoroutine(playStep());
+
+        
+    }
+
+    IEnumerator playStep(){
+
+        if(!_isPlayingStep){
+            SoundManager.PlaySound("step");
+            _isPlayingStep = true;
+            yield return new WaitForSeconds(0.41f);
+            _isPlayingStep = false;
+        }
+
     }
 }

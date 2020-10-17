@@ -6,18 +6,32 @@ public class SoundManager : MonoBehaviour
 {
 
 
-    public static AudioClip playerTapa;
-    public static AudioClip playerPulo;
-    public static AudioClip playerDor;
+    public static AudioClip playerKickSound;
+    public static AudioClip playerDieSound;
+    public static AudioClip playerDamageSound;
+    public static AudioClip playerKickHitSound;
+    public static AudioClip playerExtraJumpSound;
+    public static AudioClip playerLandSound;
+    public static AudioClip playerShootSound;
+    public static AudioClip playerWalkingSound;
+    public static AudioClip playerStepSound;
+    public static AudioClip playerWallSlidingSound;
     static AudioSource audioSrc;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        playerTapa = Resources.Load<AudioClip>("tapa");
-        playerPulo = Resources.Load<AudioClip>("pulo");
-        playerDor = Resources.Load<AudioClip>("dor");
+        playerKickSound = Resources.Load<AudioClip>("kick");
+        playerKickHitSound = Resources.Load<AudioClip>("kickHit");
+        playerDamageSound = Resources.Load<AudioClip>("damage");
+        playerDieSound = Resources.Load<AudioClip>("die");
+        playerExtraJumpSound = Resources.Load<AudioClip>("extraJump");
+        playerLandSound = Resources.Load<AudioClip>("land");
+        playerShootSound = Resources.Load<AudioClip>("shoot");
+        playerWalkingSound = Resources.Load<AudioClip>("walking");
+        playerStepSound = Resources.Load<AudioClip>("step");
+        playerWallSlidingSound = Resources.Load<AudioClip>("wallsliding");
 
         audioSrc = GetComponent<AudioSource>();
     }
@@ -30,16 +44,35 @@ public class SoundManager : MonoBehaviour
     
     public static void PlaySound(string clip){
         switch (clip) {
-            case "tapa":
-                audioSrc.PlayOneShot(playerTapa);
+            case "kick":
+                audioSrc.PlayOneShot(playerKickSound, 2);
                 break;
-            case "pulo":
-                audioSrc.PlayOneShot(playerPulo);
-
+            case "kickHit":
+                audioSrc.PlayOneShot(playerKickHitSound);
                 break;
-            case "dor":
-                audioSrc.PlayOneShot(playerDor);
-
+            case "die":
+                audioSrc.PlayOneShot(playerDieSound);
+                break;
+            case "damage":
+                audioSrc.PlayOneShot(playerDamageSound);
+                break;
+            case "extraJump":
+                audioSrc.PlayOneShot(playerExtraJumpSound);
+                break;
+            case "land":
+                audioSrc.PlayOneShot(playerLandSound);
+                break;
+            case "shoot":
+                audioSrc.PlayOneShot(playerShootSound, 10);
+                break;
+            case "walking":
+                audioSrc.PlayOneShot(playerWalkingSound, 10);
+                break;
+            case "step":
+                audioSrc.PlayOneShot(playerStepSound, 10);
+                break;
+            case "wallSliding":
+                audioSrc.PlayOneShot(playerWallSlidingSound, 0.2f);
                 break;
         }    
     }
