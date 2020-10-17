@@ -39,6 +39,7 @@ public class EnemyAttack : MonoBehaviour
 
     IEnumerator WaitAttack()
     {
+        yield return new WaitForSeconds(1f);
         IsAttacking = true;
         _enemyAnimation.EnemyAttack();
         yield return new WaitForSeconds(1f);
