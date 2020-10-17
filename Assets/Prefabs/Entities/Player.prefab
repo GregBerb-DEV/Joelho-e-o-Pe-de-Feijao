@@ -455,7 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24aa4ab8bfa572f4b86e4f4fa4fb4ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 10
+  _maxHealth: 3
   _healthDisplay: {fileID: 0}
   _gameOverCanvasGroup: {fileID: 0}
   IsDead: 0

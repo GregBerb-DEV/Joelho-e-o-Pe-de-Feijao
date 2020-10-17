@@ -4,25 +4,43 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    // public static AudioClip playerPunchSound;
-    // public static AudioClip playerDamageSound;
-    // public static AudioClip playerJumpSound;
 
-    // static AudioSource audioSrc;
+
+    public static AudioClip playerTapa;
+    public static AudioClip playerPulo;
+    public static AudioClip playerDor;
+    static AudioSource audioSrc;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        //playerPunchSound = SFX.load<>
-        //https://www.youtube.com/watch?v=8pFlnyfRfRc
-        //greg desistiu e foi
-        //putz
+        playerTapa = Resources.Load<AudioClip>("tapa");
+        playerPulo = Resources.Load<AudioClip>("pulo");
+        playerDor = Resources.Load<AudioClip>("dor");
+
+        audioSrc = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    
+    public static void PlaySound(string clip){
+        switch (clip) {
+            case "tapa":
+                audioSrc.PlayOneShot(playerTapa);
+                break;
+            case "pulo":
+                audioSrc.PlayOneShot(playerPulo);
+
+                break;
+            case "dor":
+                audioSrc.PlayOneShot(playerDor);
+
+                break;
+        }    
     }
 }

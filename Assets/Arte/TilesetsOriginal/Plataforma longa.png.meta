@@ -1,0 +1,310 @@
+fileFormatVersion: 2
+guid: de063c6426f12094e9440a70a76f8984
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6285803280286696327
+    second: TilemapFase 1_0
+  - first:
+      213: 482283663766881160
+    second: TilemapFase 1_1
+  - first:
+      213: 8343418185244470362
+    second: TilemapFase 1_2
+  - first:
+      213: 5261723099887994737
+    second: TilemapFase 1_3
+  - first:
+      213: 6809849397922442851
+    second: TilemapFase 1_4
+  - first:
+      213: -350707143870061615
+    second: TilemapFase 1_5
+  - first:
+      213: -3086182031015313814
+    second: TilemapFase 1_6
+  - first:
+      213: -2218195181482196898
+    second: TilemapFase 1_7
+  - first:
+      213: -843037134629017168
+    second: TilemapFase 1_8
+  - first:
+      213: 2688515949251415351
+    second: TilemapFase 1_9
+  - first:
+      213: -921512004387170074
+    second: TilemapFase 1_10
+  - first:
+      213: 2415366644168423889
+    second: TilemapFase 1_11
+  - first:
+      213: 4876735109258537148
+    second: TilemapFase 1_12
+  - first:
+      213: 8359600613679465600
+    second: TilemapFase 1_13
+  - first:
+      213: -8083383363596266503
+    second: TilemapFase 1_14
+  - first:
+      213: 8328554702839922938
+    second: TilemapFase 1_15
+  - first:
+      213: -9164232053742872030
+    second: TilemapFase 1_16
+  - first:
+      213: 8354799237002188467
+    second: TilemapFase 1_17
+  - first:
+      213: -7483234974389119310
+    second: TilemapFase 1_18
+  - first:
+      213: -2339662447536391721
+    second: TilemapFase 1_19
+  - first:
+      213: -1674967977592382578
+    second: TilemapFase 1_20
+  - first:
+      213: -4663621874976027055
+    second: TilemapFase 1_21
+  - first:
+      213: 1307217584298981889
+    second: TilemapFase 1_22
+  - first:
+      213: 3652721785342187621
+    second: TilemapFase 1_23
+  - first:
+      213: 5722368823235110061
+    second: TilemapFase 1_24
+  - first:
+      213: -4292241681768202798
+    second: TilemapFase 1_25
+  - first:
+      213: -6492595280705823436
+    second: TilemapFase 1_26
+  - first:
+      213: 3359137241593522218
+    second: TilemapFase 1_27
+  - first:
+      213: 1520374683036464898
+    second: TilemapFase 1_28
+  - first:
+      213: -5259746203888860867
+    second: TilemapFase 1_29
+  - first:
+      213: -5482927673817235981
+    second: TilemapFase 1_30
+  - first:
+      213: -6975755331968679305
+    second: TilemapFase 1_31
+  - first:
+      213: -1547079929086677651
+    second: TilemapFase 1_32
+  - first:
+      213: 6345085847165967729
+    second: TilemapFase 1_33
+  - first:
+      213: 8340769909434577816
+    second: TilemapFase 1_34
+  - first:
+      213: 6347277349349738807
+    second: TilemapFase 1_35
+  - first:
+      213: -8495547778132975025
+    second: TilemapFase 1_36
+  - first:
+      213: 471548697528553605
+    second: TilemapFase 1_37
+  - first:
+      213: -3580865722554976403
+    second: TilemapFase 1_38
+  - first:
+      213: -1216197001976834111
+    second: TilemapFase 1_39
+  - first:
+      213: -4788266675416034226
+    second: TilemapFase 1_40
+  - first:
+      213: 909675064087578921
+    second: TilemapFase 1_41
+  - first:
+      213: -4277169625690114099
+    second: TilemapFase 1_42
+  - first:
+      213: 6981577732890876009
+    second: TilemapFase 1_43
+  - first:
+      213: 5475112449928307034
+    second: TilemapFase 1_44
+  - first:
+      213: 4425214409210823257
+    second: TilemapFase 1_45
+  - first:
+      213: 8706077394104663020
+    second: TilemapFase 1_46
+  - first:
+      213: -49085828719697071
+    second: TilemapFase 1_47
+  - first:
+      213: 2018019443307853853
+    second: TilemapFase 1_48
+  - first:
+      213: 3467499290053642932
+    second: TilemapFase 1_49
+  - first:
+      213: -4697232484034649013
+    second: TilemapFase 1_50
+  - first:
+      213: 4252384174788864984
+    second: TilemapFase 1_51
+  - first:
+      213: -5018745236342436312
+    second: TilemapFase 1_52
+  - first:
+      213: 776996852442161124
+    second: TilemapFase 1_53
+  - first:
+      213: -7417004528720625138
+    second: TilemapFase 1_54
+  - first:
+      213: 2707609638756284456
+    second: Plataforma longa_0
+  - first:
+      213: 3112589044005435256
+    second: Plataforma longa_1
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 48, y: 113, z: 32, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TilemapFase 1_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1778a431845650940800000000000000
+      internalID: 5261723099887994737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
