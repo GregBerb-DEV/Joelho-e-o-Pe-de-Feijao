@@ -64,7 +64,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -101,10 +101,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  xMax: 3.91
-  xMin: -3.94
-  yMax: 28.73
-  yMin: -4.68
+  xMax: 4
+  xMin: -3.9
+  yMax: 32.9
+  yMin: -2.8
 --- !u!95 &6261450502961373309
 Animator:
   serializedVersion: 3
