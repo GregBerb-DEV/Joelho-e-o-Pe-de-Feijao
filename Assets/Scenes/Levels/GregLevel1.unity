@@ -3477,14 +3477,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 3322819226534109709, guid: bbf551a24cb70444c80bf5f99be5fe92, type: 3}
-      propertyPath: m_text
-      value: "N\xEDvel G"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3322819226534109709, guid: bbf551a24cb70444c80bf5f99be5fe92, type: 3}
-      propertyPath: m_fontSize
-      value: 167.1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbf551a24cb70444c80bf5f99be5fe92, type: 3}
 --- !u!114 &551763798 stripped
@@ -16524,10 +16516,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5341124759242348162, guid: 80922d240e1d0824181604f62a962c1b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5341124759754886537, guid: 80922d240e1d0824181604f62a962c1b, type: 3}
       propertyPath: m_Name
       value: GameOverCanvas
