@@ -7,7 +7,7 @@ public class EnemyAttack : MonoBehaviour
 
     public bool IsAttacking = false;
     [SerializeField]
-    private int _forca = 5;
+    private int _forca = 1;
     private EnemyAnimation _enemyAnimation;
 
 
@@ -39,7 +39,7 @@ public class EnemyAttack : MonoBehaviour
 
     IEnumerator WaitAttack()
     {
-        yield return new WaitForSeconds(1f);
+        
         IsAttacking = true;
         _enemyAnimation.EnemyAttack();
         yield return new WaitForSeconds(1f);

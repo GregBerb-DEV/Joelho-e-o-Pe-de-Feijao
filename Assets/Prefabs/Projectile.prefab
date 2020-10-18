@@ -102,7 +102,7 @@ MonoBehaviour:
   distance: 0.5
   WhatIsSolid:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1536
   destroyEffect: {fileID: 5290929973403201724, guid: 7c9e51af05e0fd2499966f1adf72188a, type: 3}
 --- !u!58 &246793517
 CircleCollider2D:
