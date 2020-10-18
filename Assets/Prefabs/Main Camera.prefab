@@ -101,10 +101,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  xMax: 3.7
-  xMin: -3.6
-  yMax: 68
-  yMin: -4.5
+  xMax: 1.4
+  xMin: -2.28
+  yMax: 28.9
+  yMin: -3.63
 --- !u!95 &6261450502961373309
 Animator:
   serializedVersion: 3
@@ -146,7 +146,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 056ee1d4a7ffec4478d00d682c221e16, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1

@@ -339,7 +339,7 @@ Rigidbody2D:
   m_Mass: 5
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 5
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -502,7 +502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3029196b9d66e54dbeba8cc714d72ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nextLevelName: 
+  _nextLevelName: Level3
 --- !u!114 &1680829485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,7 +515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b167069640fa7f049a93d4609207668c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpStrength: 20
+  _jumpStrength: 30
   _groundTransform: {fileID: 5874959990354958250}
   _landParticle: {fileID: 5368849825009224131, guid: 87d042f9e6ea78541bde6388effc7133, type: 3}
   rememberGroundedFor: 0.1
@@ -537,6 +537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scoreDisplay: {fileID: 0}
+  _gameOverScoreDisplay: {fileID: 0}
 --- !u!1 &5874959990104763908
 GameObject:
   m_ObjectHideFlags: 0

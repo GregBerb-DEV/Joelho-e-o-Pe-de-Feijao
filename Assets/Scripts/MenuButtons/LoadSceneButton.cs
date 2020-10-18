@@ -7,8 +7,13 @@ public class LoadSceneButton : MonoBehaviour
 {
     [SerializeField]
     private string _sceneToLoad;
-    public void OnClick()
+    public void LoadScene()
     {
         SceneManager.LoadScene(_sceneToLoad);
+    }
+
+    public void LoadActiveScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
