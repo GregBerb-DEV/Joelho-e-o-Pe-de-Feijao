@@ -70,7 +70,7 @@ public class PlayerJump : MonoBehaviour
         {
             SoundManager.PlaySound("extraJump");
             _playerAnimation.SetDoubleJumping(true);
-            _rigidbody2D.velocity = Vector2.up * _jumpStrength;
+            _rigidbody2D.velocity = Vector2.up * _jumpStrength / 1.3f;
             _playerShoot.DoubleJumpShoot();
             _hasExtraJump = false;
         }
