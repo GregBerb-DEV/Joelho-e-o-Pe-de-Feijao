@@ -63,6 +63,17 @@ public class PlayerMovement : MonoBehaviour
             yield return new WaitForSeconds(0.41f);
             _isPlayingStep = false;
         }
-
     }
+
+    void OnCollisionEnter2D(Collision2D outro){
+        if(outro.gameObject.tag=="PlataformaMovel"){
+            this.transform.parent = outro.transform;
+        }
+    }
+    void OnCollisionExit2D(Collision2D outro){
+        if(outro.gameObject.tag=="PlataformaMovel"){
+            this.transform.parent = null;
+        }
+    }
+
 }

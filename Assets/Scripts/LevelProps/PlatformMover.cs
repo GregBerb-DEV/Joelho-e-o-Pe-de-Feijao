@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class PlatformMover : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject _platformObject;
+
     [SerializeField]
     private GameObject[] _followNodes = default;
 
     [SerializeField]
-    private float _moveSpeed = 5f;
+    private float _moveSpeed = 0.1f;
     [SerializeField]
     private float _waitTime = 1f;
 
