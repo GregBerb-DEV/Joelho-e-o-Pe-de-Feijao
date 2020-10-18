@@ -101,10 +101,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  xMax: 4
-  xMin: -3.9
-  yMax: 32.9
-  yMin: -2.8
+  xMax: 3.7
+  xMin: -3.6
+  yMax: 68
+  yMin: -4.5
 --- !u!95 &6261450502961373309
 Animator:
   serializedVersion: 3
