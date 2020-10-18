@@ -7,10 +7,7 @@ public class PlayerMovement : MonoBehaviour
     #region variaveis
     [SerializeField]
     private float _playerSpeed = 10;
-
-    public LayerMask _groundLayer = default;
     public float horizontalMovement;
-    public bool IsGrounded;
     private bool _isPlayingStep = false;
 
     private Rigidbody2D _rigidbody2D;
@@ -19,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private PlayerSpriteHandler _playerSpriteHandler;
     private PlayerWallMovement _playerWallMovement;
     private PlayerHealth _playerHealth;
+    private PlayerJump _playerJump;
     #endregion
 
     void Start()
@@ -30,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
         _playerSpriteHandler = GetComponent<PlayerSpriteHandler>();
         _playerWallMovement = GetComponent<PlayerWallMovement>();
         _playerHealth = GetComponent<PlayerHealth>();
+        _playerJump = GetComponent<PlayerJump>();
         #endregion instanciando
     }
 
@@ -50,14 +49,15 @@ public class PlayerMovement : MonoBehaviour
         float horizontalSpeed = horizontalMovement * _playerSpeed;
         _rigidbody2D.velocity = new Vector2(horizontalSpeed, _rigidbody2D.velocity.y);
         _playerAnimation.SetRunning(horizontalMovement);
-        StartCoroutine(playStep());
-
-        
+        if (horizontalMovement != 0 && _playerJump.IsGrounded)
+            StartCoroutine(playStep());
     }
 
-    IEnumerator playStep(){
+    IEnumerator playStep()
+    {
 
-        if(!_isPlayingStep){
+        if (!_isPlayingStep)
+        {
             SoundManager.PlaySound("step");
             _isPlayingStep = true;
             yield return new WaitForSeconds(0.41f);

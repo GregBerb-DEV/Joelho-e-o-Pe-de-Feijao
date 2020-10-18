@@ -54,9 +54,9 @@ public class PlayerWallMovement : MonoBehaviour
     private void SlideOnWall()
     {
         _isPlayerWallSliding = (_isPlayerColliding && !(_playerJump.IsGrounded) && _playerMovement.horizontalMovement != 0);
-        if (_isPlayerWallSliding){
+        if (_isPlayerWallSliding)
+        {
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, Mathf.Clamp(_rigidbody2D.velocity.y, -_wallSlideSpeed, float.MaxValue));
-            SoundManager.PlaySound("wallSliding");
         }
     }
 

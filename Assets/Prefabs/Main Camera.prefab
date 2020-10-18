@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 6261450502961373282}
   - component: {fileID: 6261450502961373309}
   - component: {fileID: 6261450502961373308}
-  - component: {fileID: 585269121}
-  - component: {fileID: 585269128}
+  - component: {fileID: 1342785374613254610}
+  - component: {fileID: 3863959962515507768}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -101,10 +101,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  xMax: 3.32
-  xMin: -3.34
-  yMax: 10.01
-  yMin: -1.94
+  xMax: 3.91
+  xMin: -3.94
+  yMax: 28.73
+  yMin: -4.68
 --- !u!95 &6261450502961373309
 Animator:
   serializedVersion: 3
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e4413c458bee76419a7a0d880f07f8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!82 &585269121
+--- !u!82 &1342785374613254610
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -232,7 +232,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &585269128
+--- !u!114 &3863959962515507768
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -96,9 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9487a14280712064892f3660889fe4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
-  speed: 20
-  lifeTime: 0.3
+  damage: 1
+  speed: 25
+  lifeTime: 0.5
   distance: 0.5
   WhatIsSolid:
     serializedVersion: 2

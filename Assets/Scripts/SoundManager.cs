@@ -15,7 +15,6 @@ public class SoundManager : MonoBehaviour
     public static AudioClip playerShootSound;
     public static AudioClip playerWalkingSound;
     public static AudioClip playerStepSound;
-    public static AudioClip playerWallSlidingSound;
     public static AudioClip playerJumpSound;
     static AudioSource audioSrc;
 
@@ -32,16 +31,9 @@ public class SoundManager : MonoBehaviour
         playerShootSound = Resources.Load<AudioClip>("shoot");
         playerWalkingSound = Resources.Load<AudioClip>("walking");
         playerStepSound = Resources.Load<AudioClip>("step");
-        playerWallSlidingSound = Resources.Load<AudioClip>("wallsliding");
         playerJumpSound = Resources.Load<AudioClip>("jump");
 
         audioSrc = GetComponent<AudioSource>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public static void PlaySound(string clip)
@@ -49,7 +41,7 @@ public class SoundManager : MonoBehaviour
         switch (clip)
         {
             case "kick":
-                audioSrc.PlayOneShot(playerKickSound, 2);
+                audioSrc.PlayOneShot(playerKickSound, 5);
                 break;
             case "kickHit":
                 audioSrc.PlayOneShot(playerKickHitSound);
@@ -64,22 +56,19 @@ public class SoundManager : MonoBehaviour
                 audioSrc.PlayOneShot(playerJumpSound);
                 break;
             case "extraJump":
-                audioSrc.PlayOneShot(playerExtraJumpSound);
+                audioSrc.PlayOneShot(playerExtraJumpSound, 10);
                 break;
             case "land":
                 audioSrc.PlayOneShot(playerLandSound);
                 break;
             case "shoot":
-                audioSrc.PlayOneShot(playerShootSound, 10);
+                audioSrc.PlayOneShot(playerShootSound, 2);
                 break;
             case "walking":
                 audioSrc.PlayOneShot(playerWalkingSound, 10);
                 break;
             case "step":
                 audioSrc.PlayOneShot(playerStepSound, 10);
-                break;
-            case "wallSliding":
-                audioSrc.PlayOneShot(playerWallSlidingSound, 0.2f);
                 break;
         }
     }
