@@ -20,13 +20,20 @@ public class EnemyAttack : MonoBehaviour
         _enemyAnimation = GetComponent<EnemyAnimation>();
     }
 
+    void OnTriggerEnter2D(Collider2D other){
+        if(other.tag == "Player")
+            _currentTimeBetweenKicks = _initialTimeBetweenKicks/2f;    
+    }
 
-    void OnTriggerStay2D(Collider2D outro)
+    void OnTriggerStay2D(Collider2D other)
     {
         if (_currentTimeBetweenKicks <= 0)
         {
-            Attack(outro);
-            _currentTimeBetweenKicks = _initialTimeBetweenKicks;
+            if(other.tag == "Player"){
+                Attack(other);
+                _currentTimeBetweenKicks = _initialTimeBetweenKicks;    
+            }
+            
         }
         else
         {
@@ -34,12 +41,12 @@ public class EnemyAttack : MonoBehaviour
         }
     }
 
-    void Attack(Collider2D outro)
+    void Attack(Collider2D other)
     {
-        if (outro.gameObject.GetComponent<PlayerHealth>())
+        if (other.gameObject.GetComponent<PlayerHealth>())
         {
             SoundManager.PlaySound("kickHit");
-            PlayerHealth playerHealth = outro.gameObject.GetComponent<PlayerHealth>();
+            PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
             playerHealth.TakeDamage(_forca);
         }
     }
