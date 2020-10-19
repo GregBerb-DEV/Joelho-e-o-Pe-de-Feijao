@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 3668348581139770597}
   - component: {fileID: 3668348581139770618}
   - component: {fileID: 3668348581139770598}
-  - component: {fileID: 7721836646192919312}
+  - component: {fileID: 5194793988932018861}
   m_Layer: 10
-  m_Name: Plataforminha
+  m_Name: Plataforma
   m_TagString: PlataformaMovel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,12 +75,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 99088834962197824, guid: 5dddbc99bfddd5848ad8d92d8762169c, type: 3}
+  m_Sprite: {fileID: 5261723099887994737, guid: de063c6426f12094e9440a70a76f8984, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -99,18 +99,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0015654564, y: 0.4710372}
+  m_Offset: {x: 0.023239017, y: 0.49404883}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 3, y: 1}
+    newSize: {x: 3, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9929075, y: 0.059278578}
+  m_Size: {x: 3.2292316, y: 0.013255358}
   m_EdgeRadius: 0
 --- !u!251 &3668348581139770618
 PlatformEffector2D:
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holdTime: 0.3
---- !u!114 &7721836646192919312
+--- !u!114 &5194793988932018861
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
