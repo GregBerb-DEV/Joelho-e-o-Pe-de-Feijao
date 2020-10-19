@@ -15,7 +15,6 @@ public class PlayerMovement : MonoBehaviour
     private PlayerInput _playerInput;
     private PlayerSpriteHandler _playerSpriteHandler;
     private PlayerWallMovement _playerWallMovement;
-    private PlayerHealth _playerHealth;
     private PlayerJump _playerJump;
     #endregion
 
@@ -27,15 +26,12 @@ public class PlayerMovement : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _playerSpriteHandler = GetComponent<PlayerSpriteHandler>();
         _playerWallMovement = GetComponent<PlayerWallMovement>();
-        _playerHealth = GetComponent<PlayerHealth>();
         _playerJump = GetComponent<PlayerJump>();
         #endregion instanciando
     }
 
     void Update()
     {
-        if (_playerHealth.IsDead)
-            return;
 
         horizontalMovement = _playerInput.GetHorizontalMovement();
         _playerSpriteHandler.TurnPlayer(horizontalMovement);
@@ -65,13 +61,17 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D outro){
-        if(outro.gameObject.tag=="PlataformaMovel"){
+    void OnCollisionEnter2D(Collision2D outro)
+    {
+        if (outro.gameObject.tag == "PlataformaMovel")
+        {
             this.transform.parent = outro.transform;
         }
     }
-    void OnCollisionExit2D(Collision2D outro){
-        if(outro.gameObject.tag=="PlataformaMovel"){
+    void OnCollisionExit2D(Collision2D outro)
+    {
+        if (outro.gameObject.tag == "PlataformaMovel")
+        {
             this.transform.parent = null;
         }
     }

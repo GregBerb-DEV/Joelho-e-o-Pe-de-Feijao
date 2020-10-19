@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-
-
     public static AudioClip playerKickSound;
     public static AudioClip playerDieSound;
     public static AudioClip playerDamageSound;
@@ -16,7 +14,7 @@ public class SoundManager : MonoBehaviour
     public static AudioClip playerWalkingSound;
     public static AudioClip playerStepSound;
     public static AudioClip playerJumpSound;
-    static AudioSource audioSrc;
+    public static AudioSource audioSrc;
 
 
     // Start is called before the first frame update

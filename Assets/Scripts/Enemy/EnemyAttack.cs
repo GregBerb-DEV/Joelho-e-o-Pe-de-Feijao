@@ -38,6 +38,7 @@ public class EnemyAttack : MonoBehaviour
     {
         if (outro.gameObject.GetComponent<PlayerHealth>())
         {
+            SoundManager.PlaySound("kickHit");
             PlayerHealth playerHealth = outro.gameObject.GetComponent<PlayerHealth>();
             playerHealth.TakeDamage(_forca);
         }

@@ -16,11 +16,13 @@ public class CameraFollowPlayer : MonoBehaviour
     [SerializeField]
     private float yMin = default;
 
-    // Update is called once per frame
     void LateUpdate()
     {
-        float x = Mathf.Clamp(player.transform.position.x, xMin, xMax);
-        float y = Mathf.Clamp(player.transform.position.y, yMin, yMax);
-        transform.position = new Vector3(x, y, gameObject.transform.position.z);
+        if (player != null)
+        {
+            float x = Mathf.Clamp(player.transform.position.x, xMin, xMax);
+            float y = Mathf.Clamp(player.transform.position.y, yMin, yMax);
+            transform.position = new Vector3(x, y, gameObject.transform.position.z);
+        }
     }
 }

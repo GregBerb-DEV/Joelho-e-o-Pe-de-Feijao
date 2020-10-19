@@ -243,8 +243,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00027303176, y: -0.1892882}
-  m_Size: {x: 0.502603, y: 0.37931693}
+  m_Offset: {x: -0.00027302775, y: -0.15570572}
+  m_Size: {x: 0.5026033, y: 0.312154}
   m_Direction: 1
 --- !u!50 &5491745311113271166
 Rigidbody2D:
@@ -326,6 +326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsAttacking: 0
   _forca: 1
+  _initialTimeBetweenKicks: 1
 --- !u!114 &369728929544591439
 MonoBehaviour:
   m_ObjectHideFlags: 0
