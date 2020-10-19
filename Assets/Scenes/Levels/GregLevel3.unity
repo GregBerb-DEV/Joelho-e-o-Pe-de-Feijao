@@ -33863,6 +33863,10 @@ PrefabInstance:
       propertyPath: _followNodes.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7721836646192919312, guid: f8c19081bccd4fb4b85c181e3cae1688, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8c19081bccd4fb4b85c181e3cae1688, type: 3}
 --- !u!4 &1751266542 stripped

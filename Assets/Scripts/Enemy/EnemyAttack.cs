@@ -12,7 +12,7 @@ public class EnemyAttack : MonoBehaviour
     private float _initialTimeBetweenKicks = 1f;
     private EnemyAnimation _enemyAnimation;
     private float _currentTimeBetweenKicks;
-    
+
 
     void Start()
     {
@@ -23,40 +23,24 @@ public class EnemyAttack : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D outro)
     {
-        if (_currentTimeBetweenKicks <= 0){
-            if (outro.gameObject.tag == "Player"){
-                Attack(outro);
-                _currentTimeBetweenKicks = _initialTimeBetweenKicks;
-            }
-        }else{
-            _currentTimeBetweenKicks -= Time.deltaTime;    
+        if (_currentTimeBetweenKicks <= 0)
+        {
+            Attack(outro);
+            _currentTimeBetweenKicks = _initialTimeBetweenKicks;
+        }
+        else
+        {
+            _currentTimeBetweenKicks -= Time.deltaTime;
         }
     }
 
     void Attack(Collider2D outro)
     {
-        if (!IsAttacking)
+        if (outro.gameObject.GetComponent<PlayerHealth>())
         {
-            if (outro.gameObject.GetComponent<PlayerHealth>())
-            {
-
-                PlayerHealth playerHealth = outro.gameObject.GetComponent<PlayerHealth>();
-                playerHealth.TakeDamage(_forca);
-
-                //StartCoroutine(WaitAttack());
-            }
-
+            PlayerHealth playerHealth = outro.gameObject.GetComponent<PlayerHealth>();
+            playerHealth.TakeDamage(_forca);
         }
     }
-
-    // IEnumerator WaitAttack()
-    // {
-        
-    //     IsAttacking = true;
-    //     _enemyAnimation.EnemyAttack();
-    //     yield return new WaitForSeconds(1f);
-    //     IsAttacking = false;
-    //     yield return new WaitForSeconds(2f);
-    // }
 }
 
