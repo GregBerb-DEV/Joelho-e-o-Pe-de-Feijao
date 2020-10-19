@@ -822,22 +822,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 113250089}
     m_Modifications:
-    - target: {fileID: 369728929835060351, guid: 37299c78f40c6374c8555aa1ee411b63, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 369728929835060351, guid: 37299c78f40c6374c8555aa1ee411b63, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 369728930656704772, guid: 37299c78f40c6374c8555aa1ee411b63, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.67
-      objectReference: {fileID: 0}
-    - target: {fileID: 369728930656704772, guid: 37299c78f40c6374c8555aa1ee411b63, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.13
-      objectReference: {fileID: 0}
     - target: {fileID: 5491745312397148256, guid: 37299c78f40c6374c8555aa1ee411b63, type: 3}
       propertyPath: m_Name
       value: Slime
@@ -3452,29 +3436,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 113250089}
     m_Modifications:
-    - target: {fileID: 369728929835060351, guid: 447aed637aa936749899179a05ac0c3d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 369728930656704772, guid: 447aed637aa936749899179a05ac0c3d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.79
-      objectReference: {fileID: 0}
-    - target: {fileID: 5491745311113271137, guid: 447aed637aa936749899179a05ac0c3d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10.17
-      objectReference: {fileID: 0}
     - target: {fileID: 5491745312397148256, guid: 447aed637aa936749899179a05ac0c3d, type: 3}
       propertyPath: m_Name
       value: Mushroom (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5491745312397148257, guid: 447aed637aa936749899179a05ac0c3d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.3
+      value: 4.38
       objectReference: {fileID: 0}
     - target: {fileID: 5491745312397148257, guid: 447aed637aa936749899179a05ac0c3d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5800717
+      value: -2.45
       objectReference: {fileID: 0}
     - target: {fileID: 5491745312397148257, guid: 447aed637aa936749899179a05ac0c3d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4303,11 +4275,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6016998710654705275, guid: 3f01f60306a316f468ec8f533df87d00, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.3887367
+      value: 1.5144739
       objectReference: {fileID: 0}
     - target: {fileID: 6016998710654705275, guid: 3f01f60306a316f468ec8f533df87d00, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5934386
+      value: -1.3721771
       objectReference: {fileID: 0}
     - target: {fileID: 6016998710654705275, guid: 3f01f60306a316f468ec8f533df87d00, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11070,17 +11042,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 113250089}
     m_Modifications:
+    - target: {fileID: 369728929835060351, guid: 447aed637aa936749899179a05ac0c3d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 369728929835060351, guid: 447aed637aa936749899179a05ac0c3d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 369728930656704772, guid: 447aed637aa936749899179a05ac0c3d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.93
+      objectReference: {fileID: 0}
     - target: {fileID: 5491745312397148256, guid: 447aed637aa936749899179a05ac0c3d, type: 3}
       propertyPath: m_Name
       value: Mushroom (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5491745312397148257, guid: 447aed637aa936749899179a05ac0c3d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.3938684
+      value: 8.27
       objectReference: {fileID: 0}
     - target: {fileID: 5491745312397148257, guid: 447aed637aa936749899179a05ac0c3d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.500243
+      value: 8.43
       objectReference: {fileID: 0}
     - target: {fileID: 5491745312397148257, guid: 447aed637aa936749899179a05ac0c3d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19483,6 +19467,14 @@ PrefabInstance:
       propertyPath: _nodes.Array.data[1]
       value: 
       objectReference: {fileID: 891532579}
+    - target: {fileID: 369728929835060351, guid: 447aed637aa936749899179a05ac0c3d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 369728929835060351, guid: 447aed637aa936749899179a05ac0c3d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.29
+      objectReference: {fileID: 0}
     - target: {fileID: 5491745312397148256, guid: 447aed637aa936749899179a05ac0c3d, type: 3}
       propertyPath: m_Name
       value: Mushroom
@@ -20515,10 +20507,6 @@ PrefabInstance:
       propertyPath: _gameOverScoreDisplay
       value: 
       objectReference: {fileID: 1170660511}
-    - target: {fileID: 5585110331149199436, guid: 164948862b9715b448bae9492278b7be, type: 3}
-      propertyPath: _nextLevelName
-      value: GregLevel1
-      objectReference: {fileID: 0}
     - target: {fileID: 5874959990058124456, guid: 164948862b9715b448bae9492278b7be, type: 3}
       propertyPath: _healthDisplay
       value: 
@@ -20533,11 +20521,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5874959990058124462, guid: 164948862b9715b448bae9492278b7be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.113211
+      value: -11.34
       objectReference: {fileID: 0}
     - target: {fileID: 5874959990058124462, guid: 164948862b9715b448bae9492278b7be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.6212616
+      value: -6.34
       objectReference: {fileID: 0}
     - target: {fileID: 5874959990058124462, guid: 164948862b9715b448bae9492278b7be, type: 3}
       propertyPath: m_LocalPosition.z

@@ -22,7 +22,7 @@ public class EnemyAttack : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other){
         if(other.tag == "Player")
-            _currentTimeBetweenKicks = _initialTimeBetweenKicks/2f;    
+            _currentTimeBetweenKicks = _initialTimeBetweenKicks/3f;    
     }
 
     void OnTriggerStay2D(Collider2D other)

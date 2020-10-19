@@ -425,6 +425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f07869d9cedf40a419c328f6a5a4d323, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _initialTimeBetweenKicks: 0.5
 --- !u!114 &5874959990058124453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,7 +455,6 @@ MonoBehaviour:
   _maxHealth: 3
   _healthDisplay: {fileID: 0}
   _gameOverCanvasGroup: {fileID: 0}
-  IsDead: 0
 --- !u!114 &5585110331149199454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,7 +502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3029196b9d66e54dbeba8cc714d72ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nextLevelName: Level3
+  _nextLevelName: GregLevel1
 --- !u!114 &1680829485
 MonoBehaviour:
   m_ObjectHideFlags: 0
