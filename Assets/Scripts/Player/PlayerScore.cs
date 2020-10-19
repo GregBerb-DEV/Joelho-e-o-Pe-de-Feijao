@@ -24,6 +24,7 @@ public class PlayerScore : MonoBehaviour
         _currentScore += givenScore;
         _scoreDisplay.SetText($"x{_currentScore}");
         _gameOverScoreDisplay.SetText($"Sua pontuação: {_currentScore}");
+        SoundManager.PlaySound("coin");
     }
 
     public void DumpScore()

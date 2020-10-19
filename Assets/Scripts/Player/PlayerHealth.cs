@@ -41,14 +41,15 @@ public class PlayerHealth : MonoBehaviour, IHaveHealth
         _currentHealth = 0;
         _healthDisplay.SetText($"HP: {_currentHealth}");
         SoundManager.PlaySound("die");
-        SoundManager.audioSrc.volume /= 2;
-        SoundManager.audioSrc.pitch /= 2;
+        SoundManager.SFXAudioSrc.volume /= 2;
+        SoundManager.SFXAudioSrc.pitch /= 2;
         _gameOverCanvasGroup.SetActive(true);
         Destroy(gameObject);
     }
 
     public void IncreaseHealth(int healthAmount)
     {
+        SoundManager.PlaySound("extraLife");
         _currentHealth += healthAmount;
         if (_currentHealth >= _maxHealth)
             _currentHealth = _maxHealth;

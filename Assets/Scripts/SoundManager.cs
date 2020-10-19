@@ -4,34 +4,38 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public static AudioClip playerKickSound;
-    public static AudioClip playerDieSound;
-    public static AudioClip playerDamageSound;
-    public static AudioClip playerKickHitSound;
-    public static AudioClip playerExtraJumpSound;
-    public static AudioClip playerLandSound;
-    public static AudioClip playerShootSound;
-    public static AudioClip playerWalkingSound;
-    public static AudioClip playerStepSound;
-    public static AudioClip playerJumpSound;
-    public static AudioSource audioSrc;
+    public static AudioClip KickSound;
+    public static AudioClip DieSound;
+    public static AudioClip DamageSound;
+    public static AudioClip KickHitSound;
+    public static AudioClip ExtraJumpSound;
+    public static AudioClip LandSound;
+    public static AudioClip ShootSound;
+    public static AudioClip WalkingSound;
+    public static AudioClip StepSound;
+    public static AudioClip JumpSound;
+    public static AudioClip CoinSound;
+    public static AudioClip ExtraLifeSound;
+    public static AudioSource SFXAudioSrc;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        playerKickSound = Resources.Load<AudioClip>("kick");
-        playerKickHitSound = Resources.Load<AudioClip>("kickHit");
-        playerDamageSound = Resources.Load<AudioClip>("damage");
-        playerDieSound = Resources.Load<AudioClip>("die");
-        playerExtraJumpSound = Resources.Load<AudioClip>("extraJump");
-        playerLandSound = Resources.Load<AudioClip>("land");
-        playerShootSound = Resources.Load<AudioClip>("shoot");
-        playerWalkingSound = Resources.Load<AudioClip>("walking");
-        playerStepSound = Resources.Load<AudioClip>("step");
-        playerJumpSound = Resources.Load<AudioClip>("jump");
+        KickSound = Resources.Load<AudioClip>("kick");
+        KickHitSound = Resources.Load<AudioClip>("kickHit");
+        DamageSound = Resources.Load<AudioClip>("damage");
+        DieSound = Resources.Load<AudioClip>("die");
+        ExtraJumpSound = Resources.Load<AudioClip>("extraJump");
+        LandSound = Resources.Load<AudioClip>("land");
+        ShootSound = Resources.Load<AudioClip>("shoot");
+        WalkingSound = Resources.Load<AudioClip>("walking");
+        StepSound = Resources.Load<AudioClip>("step");
+        JumpSound = Resources.Load<AudioClip>("jump");
+        CoinSound = Resources.Load<AudioClip>("coin");
+        ExtraLifeSound = Resources.Load<AudioClip>("extraLife");
 
-        audioSrc = GetComponent<AudioSource>();
+        SFXAudioSrc = GetComponent<AudioSource>();
     }
 
     public static void PlaySound(string clip)
@@ -39,34 +43,40 @@ public class SoundManager : MonoBehaviour
         switch (clip)
         {
             case "kick":
-                audioSrc.PlayOneShot(playerKickSound, 5);
+                SFXAudioSrc.PlayOneShot(KickSound, 5);
                 break;
             case "kickHit":
-                audioSrc.PlayOneShot(playerKickHitSound);
+                SFXAudioSrc.PlayOneShot(KickHitSound);
                 break;
             case "die":
-                audioSrc.PlayOneShot(playerDieSound);
+                SFXAudioSrc.PlayOneShot(DieSound);
                 break;
             case "damage":
-                audioSrc.PlayOneShot(playerDamageSound);
+                SFXAudioSrc.PlayOneShot(DamageSound);
                 break;
             case "jump":
-                audioSrc.PlayOneShot(playerJumpSound);
+                SFXAudioSrc.PlayOneShot(JumpSound);
                 break;
             case "extraJump":
-                audioSrc.PlayOneShot(playerExtraJumpSound, 10);
+                SFXAudioSrc.PlayOneShot(ExtraJumpSound, 10);
                 break;
             case "land":
-                audioSrc.PlayOneShot(playerLandSound);
+                SFXAudioSrc.PlayOneShot(LandSound);
                 break;
             case "shoot":
-                audioSrc.PlayOneShot(playerShootSound, 2);
+                SFXAudioSrc.PlayOneShot(ShootSound, 2);
                 break;
             case "walking":
-                audioSrc.PlayOneShot(playerWalkingSound, 10);
+                SFXAudioSrc.PlayOneShot(WalkingSound, 10);
                 break;
             case "step":
-                audioSrc.PlayOneShot(playerStepSound, 10);
+                SFXAudioSrc.PlayOneShot(StepSound, 10);
+                break;
+            case "coin":
+                SFXAudioSrc.PlayOneShot(CoinSound);
+                break;
+            case "extraLife":
+                SFXAudioSrc.PlayOneShot(ExtraLifeSound);
                 break;
         }
     }
