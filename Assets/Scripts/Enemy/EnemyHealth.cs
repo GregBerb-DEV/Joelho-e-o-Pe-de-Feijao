@@ -28,7 +28,7 @@ public class EnemyHealth : MonoBehaviour, IHaveHealth
     {
         IsDead = true;
         FindObjectOfType<PlayerScore>().IncreaseScore(1);
-        Destroy(gameObject);
         _enemyAnimation.EnemyDeath();
+        Destroy(gameObject, 0.2f);
     }
 }

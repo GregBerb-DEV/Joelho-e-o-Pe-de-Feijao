@@ -37,24 +37,18 @@ public class EnemyMoveAI : MonoBehaviour
         if (!_enemyHealth.IsDead)
         {
             if (Time.time >= _nextTimeToMove)
-            {
-                CheckIfTurn();
-            }
+                CheckIfTurnSprite();
             if (!_enemyAttack.IsAttacking)
-            {
                 MoveToNextNode();
-            }
+            _enemyAnimation.EnemyRunning(_isMoving);
         }
     }
 
-    void CheckIfTurn()
+    void CheckIfTurnSprite()
     {
-
         if (!_isMoving)
         {
-            Vector2 enemyScale = transform.localScale;
-            enemyScale.x = enemyScale.x * -1;
-            transform.localScale = enemyScale;
+            GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
             _isMoving = true;
         }
     }
@@ -66,18 +60,16 @@ public class EnemyMoveAI : MonoBehaviour
             transform.position = Vector3.MoveTowards(_enemyGameObject.transform.position, _nodes[_currentNodeIndex].transform.position, _enemySpeed * Time.deltaTime);
             CheckIfIsOnNode();
             CheckIfLoop();
-            _enemyAnimation.EnemyRunning(true);
         }
     }
 
     void CheckIfIsOnNode()
     {
-        if (Vector3.Distance(_nodes[_currentNodeIndex].transform.position, _enemyGameObject.transform.position) <= 0.001)
+        if (Vector3.Distance(_nodes[_currentNodeIndex].transform.position, _enemyGameObject.transform.position) <= 0.0001)
         {
             _currentNodeIndex++;
             _nextTimeToMove = Time.time + _waitTimeBetweenLoops;
             _isMoving = false;
-            //Setar animação pra andar
         }
     }
     void CheckIfLoop()
