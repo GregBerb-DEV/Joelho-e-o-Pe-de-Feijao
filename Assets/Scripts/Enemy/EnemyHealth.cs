@@ -10,19 +10,23 @@ public class EnemyHealth : MonoBehaviour, IHaveHealth
     private int _enemyHealth = 10;
 
     private EnemyAnimation _enemyAnimation;
-    
-    void Start(){
+
+    void Start()
+    {
         _enemyAnimation = GetComponent<EnemyAnimation>();
     }
 
-    public void TakeDamage(int damageTaken){
+    public void TakeDamage(int damageTaken)
+    {
         _enemyHealth -= damageTaken;
-        if(_enemyHealth <= 0)
+        if (_enemyHealth <= 0)
             Kill();
     }
 
-    public void Kill(){
+    public void Kill()
+    {
         IsDead = true;
+        FindObjectOfType<PlayerScore>().IncreaseScore(1);
         Destroy(gameObject);
     }
 }
