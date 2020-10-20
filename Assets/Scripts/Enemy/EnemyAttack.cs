@@ -47,6 +47,7 @@ public class EnemyAttack : MonoBehaviour
         {
             SoundManager.PlaySound("kickHit");
             PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
+            //_enemyAnimation.EnemyAttack();
             playerHealth.TakeDamage(_forca);
         }
     }

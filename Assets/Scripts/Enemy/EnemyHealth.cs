@@ -19,6 +19,7 @@ public class EnemyHealth : MonoBehaviour, IHaveHealth
     public void TakeDamage(int damageTaken)
     {
         _enemyHealth -= damageTaken;
+        _enemyAnimation.EnemyHit();
         if (_enemyHealth <= 0)
             Kill();
     }
@@ -28,5 +29,6 @@ public class EnemyHealth : MonoBehaviour, IHaveHealth
         IsDead = true;
         FindObjectOfType<PlayerScore>().IncreaseScore(1);
         Destroy(gameObject);
+        _enemyAnimation.EnemyDeath();
     }
 }

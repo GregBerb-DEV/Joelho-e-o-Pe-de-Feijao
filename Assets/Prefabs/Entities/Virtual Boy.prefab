@@ -326,6 +326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsAttacking: 0
   _forca: 1
+  _initialTimeBetweenKicks: 1
 --- !u!114 &369728929544591439
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -28,6 +28,7 @@ public class EnemyMoveAI : MonoBehaviour
         _enemyAnimation = GetComponent<EnemyAnimation>();
         _enemyHealth = GetComponent<EnemyHealth>();
         _enemyAttack = GetComponent<EnemyAttack>();
+        Vector2 enemyScale = transform.localScale;
 
     }
 
@@ -65,6 +66,7 @@ public class EnemyMoveAI : MonoBehaviour
             transform.position = Vector3.MoveTowards(_enemyGameObject.transform.position, _nodes[_currentNodeIndex].transform.position, _enemySpeed * Time.deltaTime);
             CheckIfIsOnNode();
             CheckIfLoop();
+            _enemyAnimation.EnemyRunning(true);
         }
     }
 

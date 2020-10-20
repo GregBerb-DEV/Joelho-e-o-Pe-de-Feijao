@@ -19,5 +19,13 @@ public class EnemyAnimation : MonoBehaviour
     public void EnemyAttack(){
         _enemyAnimator.SetTrigger("Attack");
     }
-    
+    public void EnemyRunning(bool Running){
+        _enemyAnimator.SetBool("Running", Running);
+    }
+    public void EnemyHit(){
+        _enemyAnimator.SetTrigger("Hit");
+    }
+    public void EnemyDeath(){
+        _enemyAnimator.SetTrigger("Death");
+    }
 }

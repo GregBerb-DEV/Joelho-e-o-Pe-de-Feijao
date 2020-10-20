@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerKick : MonoBehaviour
 {
     [SerializeField]
-    private int _damageAmount = 5;
+    private int _damageAmount = 1;
     [SerializeField]
     private string _enemyTag = "inimigo";
     [SerializeField]

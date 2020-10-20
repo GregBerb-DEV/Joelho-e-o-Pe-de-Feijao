@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7fe6ed0aa5e87d4db5d7e52b83a9d03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damageAmount: 5
+  _damageAmount: 1
   _enemyTag: inimigo
   _explosionEffect: {fileID: 0}
 --- !u!70 &5874959988757203160
