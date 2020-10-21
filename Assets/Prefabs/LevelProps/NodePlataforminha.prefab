@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 3668348581139770596}
   - component: {fileID: 3668348581139770597}
   - component: {fileID: 3668348581139770618}
-  - component: {fileID: 3668348581139770598}
   - component: {fileID: 7721836646192919312}
   m_Layer: 10
-  m_Name: Plataforminha
+  m_Name: NodePlataforminha
   m_TagString: PlataformaMovel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +98,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0015654564, y: 0.4710372}
+  m_Offset: {x: 0.030906558, y: 0.48252296}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -110,7 +109,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9929075, y: 0.059278578}
+  m_Size: {x: 1.3405483, y: 0.036407113}
   m_EdgeRadius: 0
 --- !u!251 &3668348581139770618
 PlatformEffector2D:
@@ -131,19 +130,6 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 0
---- !u!114 &3668348581139770598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3668348581139770619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5baef2b571a36ee44817f85f458d571b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  holdTime: 0.3
 --- !u!114 &7721836646192919312
 MonoBehaviour:
   m_ObjectHideFlags: 0

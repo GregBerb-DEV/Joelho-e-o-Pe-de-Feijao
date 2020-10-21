@@ -8,11 +8,22 @@ public class PlayerWinGame : MonoBehaviour
 {
     [SerializeField]
     private string _nextLevelName;
+    [SerializeField]
+    private int _scoreToWin = 15;
+
+    private PlayerScore _playerScore;
+
+    void Start()
+    {
+        _playerScore = GetComponent<PlayerScore>();
+    }
 
     public void Win()
     {
-        Debug.Log("Venceu!");
-        GetComponent<PlayerScore>().DumpScore();
-        SceneManager.LoadScene(_nextLevelName);
+        if (_playerScore._currentScore >= _scoreToWin)
+        {
+            _playerScore.DumpScore();
+            SceneManager.LoadScene(_nextLevelName);
+        }
     }
 }

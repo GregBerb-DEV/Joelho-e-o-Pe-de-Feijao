@@ -10,10 +10,11 @@ public class PlayerScore : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _gameOverScoreDisplay = default;
 
-    private int _currentScore = 0;
+    public int _currentScore { get; private set; }
 
     void Start()
     {
+        _currentScore = 0;
         _currentScore = DataTrackerPlayer.Instance.TotalScore;
         _scoreDisplay.SetText($"x{_currentScore}");
         _gameOverScoreDisplay.SetText($"Sua pontuação: {_currentScore}");

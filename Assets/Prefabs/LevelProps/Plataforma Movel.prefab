@@ -156,7 +156,8 @@ PrefabInstance:
       propertyPath: _followNodes.Array.data[1]
       value: 
       objectReference: {fileID: 5194793990523546366}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3668348581139770598, guid: 953e026bbf7fce94882795781c5cc6c9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 953e026bbf7fce94882795781c5cc6c9, type: 3}
 --- !u!4 &810459289248704249 stripped
 Transform:

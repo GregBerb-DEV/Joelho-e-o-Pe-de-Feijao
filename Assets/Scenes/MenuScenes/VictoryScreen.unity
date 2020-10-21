@@ -646,6 +646,7 @@ GameObject:
   - component: {fileID: 1483005298}
   - component: {fileID: 1483005300}
   - component: {fileID: 1483005299}
+  - component: {fileID: 1483005301}
   m_Layer: 5
   m_Name: WinText
   m_TagString: Untagged
@@ -769,6 +770,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483005297}
   m_CullTransparentMesh: 0
+--- !u!114 &1483005301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483005297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a942029a55e0fa548acc76751ae77db4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 1483005299}
 --- !u!1 &1624647682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,7 +1028,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1700918350}
         m_TargetAssemblyTypeName: LoadSceneButton, Assembly-CSharp
-        m_MethodName: OnClick
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1111,10 +1125,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1895779885}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cef528d6a2a09894abf64bb6a9910a7a, type: 3}
+  m_Script: {fileID: 11500000, guid: 23d116b30c7b8ff479a773005b1b225f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneToLoad: MainMenu
 --- !u!114 &1895779888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1159,7 +1172,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1895779887}
-        m_TargetAssemblyTypeName: LoadSceneButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: QuitButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
