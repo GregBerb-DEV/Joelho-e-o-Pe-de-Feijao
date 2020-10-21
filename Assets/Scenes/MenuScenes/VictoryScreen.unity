@@ -646,7 +646,6 @@ GameObject:
   - component: {fileID: 1483005298}
   - component: {fileID: 1483005300}
   - component: {fileID: 1483005299}
-  - component: {fileID: 1483005301}
   m_Layer: 5
   m_Name: WinText
   m_TagString: Untagged
@@ -770,19 +769,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483005297}
   m_CullTransparentMesh: 0
---- !u!114 &1483005301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1483005297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a942029a55e0fa548acc76751ae77db4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 1483005299}
 --- !u!1 &1624647682
 GameObject:
   m_ObjectHideFlags: 0
