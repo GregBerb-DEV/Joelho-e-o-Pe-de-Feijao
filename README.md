@@ -39,6 +39,6 @@ Este jogo foi feito por [Bernardo](https://github.com/Bemesko) e [Grégori](http
 ---
 
 Desenvolvedores:
-<strong>[Bernardo Pires Mesko](https://github.com/Bemesko))</strong>
+<strong>[Bernardo Pires Mesko](https://github.com/Bemesko)</strong>
 e
-<strong>[Grégori Sabe](https://github.com/Greg-art)</strong>
+<strong>[Grégori Sabel](https://github.com/Greg-art)</strong>
