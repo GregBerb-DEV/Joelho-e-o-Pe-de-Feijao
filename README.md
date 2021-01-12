@@ -4,7 +4,9 @@
 
 Este é "Joelho e o Pé de Feijão", um jogo sobre um coelho chamado Joelho que precisa subir em um pé de feijão para recuperar seus ovos de chocolate de ouro perdidos. Acompanhe Joelho desde o momento em que ele entra no pé de feijão e ajude-o a vencer os desafios e derrotar os perigos que lá residem!
 
-### Menu - Fase 2 - Fase y
+---
+
+### Menu - Fase 2 - Fase 4
 
 <a href="https://gb-dev.itch.io/joelho">
                                         <img height="400" src="https://imgur.com/qGAtPbU.png" title="source: imgur.com" />
@@ -18,15 +20,25 @@ para ver mais imagens ou jogar [clique aqui](https://gb-dev.itch.io/joelho)
 
 ### Movimentação
 
+Um dos aspectos nos quais mais houve foco durante o desenvolvimento deste projeto foi garantir que o personagem se movimentasse bem, por ser uma característica fundamental de platformers como este. Neste jogo o jogador pode se prender na parede, pular dela, e ao dar um duplo pulo atirar um feijão em quem estiver abaixo. Os ajustes foram feitos por meio de scripts em C# e componentes nativos do Unity, como os Colliders. 
+
 ### Animações:
 
-Para criar a animação do nome da jogada que aparece após o player pontuar, foi utilizada a biblioteca LeanTween. Tal biblioteca visa facilitar a criação de animações e após usa-la nesse projeto, percebemos a agilidade e novas possibilidades que a mesma dispõe. Provavelmente usaremos novamente nos próximos jogos.
+As animações dos personagens foram feitas usando o gerenciador padrão de animações do Unity, o Mecanim, em conjunto com scripts em C# para controlar a lógica da movimentação. Todos os sprites, com exceção das criaturas inimigas, foram feitos pelos autores usando o Aseprite.
 
 ### Sonorização
 
+Os efeitos sonoros são de autoria da equipe, sendo que a maioria deles foi feito usando gravações de voz com efeitos do Audacity ou exportados do programa Bfxr
+
 ### Música
 
+A trilha sonora do jogo foi originalmente feita por Bernardo Mesko usando o software FL Studio 20. O resultado partiu de uma experimentação com timbres, mudanças de compasso e o modo mixolídio.
+
 ### Fases
+
+O projeto foi arquitetado de modo que a construção de fases pudesse acontecer de forma prática, portanto usamos diversos atalhos para agilizar o processo, como uma ferramenta feita pelos criadores do Unity para melhorar o trabalho com tilemaps (disponível em [https://github.com/Unity-Technologies/2d-extras](https://github.com/Unity-Technologies/2d-extras))
+
+---
 
 ## Créditos e Agradecimentos!
 
