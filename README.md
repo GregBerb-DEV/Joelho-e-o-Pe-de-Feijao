@@ -6,12 +6,14 @@ Este é "Joelho e o Pé de Feijão", um jogo sobre um coelho chamado Joelho que 
 
 ### Menu - Fase 2 - Fase y
 
-<a href="https://gb-dev.itch.io/joelho"><img height="400" src="https://imgur.com/qGAtPbU.png" title="source: imgur.com" />
+<a href="https://gb-dev.itch.io/joelho">
+                                        <img height="400" src="https://imgur.com/qGAtPbU.png" title="source: imgur.com" />
                                         <img height="200" src="https://imgur.com/Ymt7P06.png" title="source: imgur.com" />
-                                        <img height="200" src="https://imgur.com/NmhB4QQ.png" title="source: imgur.com" />
-                                        <img height="133" src="https://imgur.com/NmhB4QQ.png" title="source: imgur.com" />
-                                        <img height="133" src="https://imgur.com/NmhB4QQ.png" title="source: imgur.com" />
-                                        <img height="133" src="https://imgur.com/NmhB4QQ.png" title="source: imgur.com" />
+                                        <img height="200" src="https://imgur.com/NmhB4QQ.png" title="source: imgur.com" /> 
+  <br>
+                                        <img height="133" src="https://imgur.com/OCEd1yX.png" title="source: imgur.com" />
+                                        <img height="132" src="https://imgur.com/G6qCVCV.png" title="source: imgur.com" />
+                                        <img height="133" src="https://imgur.com/ZHH0VOr.png" title="source: imgur.com" />
 </a>
 
 ---
