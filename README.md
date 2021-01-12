@@ -4,6 +4,8 @@
 
 Este é "Joelho e o Pé de Feijão", um jogo sobre um coelho chamado Joelho que precisa subir em um pé de feijão para recuperar seus ovos de chocolate de ouro perdidos. Acompanhe Joelho desde o momento em que ele entra no pé de feijão e ajude-o a vencer os desafios e derrotar os perigos que lá residem!
 
+<strong>Links:</strong> [Gamejolt](https://gamejolt.com/games/joelho/538967) - [Itch.io](https://gb-dev.itch.io/joelho) - [GitHub](https://github.com/GregBerb-DEV/Golfita-BG) - [Vídeo de apresentação](https://www.youtube.com/watch?v=WIF7puhvXpE)
+
 ---
 
 ### Menu - Fase 2 - Fase 4
