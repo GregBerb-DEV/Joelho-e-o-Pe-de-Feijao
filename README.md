@@ -9,12 +9,10 @@ Este é "Joelho e o Pé de Feijão", um jogo sobre um coelho chamado Joelho que 
 <a href="https://gb-dev.itch.io/joelho">
                                         <img height="400" src="https://imgur.com/qGAtPbU.png" title="source: imgur.com" />
                                         <img height="200" src="https://imgur.com/Ymt7P06.png" title="source: imgur.com" />
-                                        <img height="200" src="https://imgur.com/NmhB4QQ.png" title="source: imgur.com" /> 
-  <br>
-                                        <img height="133" src="https://imgur.com/OCEd1yX.png" title="source: imgur.com" />
-                                        <img height="132" src="https://imgur.com/G6qCVCV.png" title="source: imgur.com" />
-                                        <img height="133" src="https://imgur.com/ZHH0VOr.png" title="source: imgur.com" />
+                                        <img height="200" src="https://imgur.com/NmhB4QQ.png" title="source: imgur.com" />                                  
 </a>
+
+para ver mais imagens ou jogar [clique aqui](https://gb-dev.itch.io/joelho)
 
 ---
 
@@ -41,6 +39,6 @@ Este jogo foi feito por [Bernardo](https://github.com/Bemesko) e [Grégori](http
 ---
 
 Desenvolvedores:
-<strong>Bernardo Pires Mesko</strong>
+<strong>[Bernardo Pires Mesko](https://github.com/Bemesko))</strong>
 e
-<strong>Grégori Sabel</strong>
+<strong>[Grégori Sabe](https://github.com/Greg-art)</strong>
