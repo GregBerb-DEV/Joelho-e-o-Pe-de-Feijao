@@ -4,11 +4,11 @@
 
 Este é "Joelho e o Pé de Feijão", um jogo sobre um coelho chamado Joelho que precisa subir em um pé de feijão para recuperar seus ovos de chocolate de ouro perdidos. Acompanhe Joelho desde o momento em que ele entra no pé de feijão e ajude-o a vencer os desafios e derrotar os perigos que lá residem!
 
-### Menu - Fase x - Fase y
+### Menu - Fase 2 - Fase y
 
-<a href="[https://imgur.com/qGAtPbU](https://imgur.com/qGAtPbU)"><img height="400" src="[https://i.imgur.com/ptWArYg.png](https://i.imgur.com/ptWArYg.png)" title="source: [imgur.com](http://imgur.com/)" /></a>
-<a href="[https://imgur.com/NIXEEd6](https://imgur.com/NIXEEd6)"><img height="350" src="[https://i.imgur.com/NIXEEd6.png](https://i.imgur.com/NIXEEd6.png)" title="source: [imgur.com](http://imgur.com/)" /></a>
-<a href="[https://imgur.com/bV6rZZq](https://imgur.com/bV6rZZq)"><img height="350" src="[https://i.imgur.com/bV6rZZq.png](https://i.imgur.com/bV6rZZq.png)" title="source: [imgur.com](http://imgur.com/)" /></a>
+<a href="https://gb-dev.itch.io/joelho"><img height="400" src="https://imgur.com/qGAtPbU.png" title="source: imgur.com" />
+                                        <img height="200" src="https://imgur.com/Ymt7P06.png" title="source: imgur.com" />
+                                        <img height="200" src="https://imgur.com/NmhB4QQ.png" title="source: imgur.com" /></a>
 
 ---
 
